@@ -1,0 +1,36 @@
+<section id="s3d3">
+  <div class="sh"><h2>Из распила в шкаф</h2><span class="time">8 шагов · какая деталь куда встаёт</span></div>
+  <p>На полу лежат все панели, уже разрезанные по картам распила. По шагам детали группами встают на свои места в шкафу, цвета совпадают с картами. Если нажать на любую деталь, под кнопками появится, с какой она карты и куда встаёт. Модель вращается мышью, колесо приближает.</p>
+  <div id="a3d" class="v3d">
+    <div class="v3d-stage">
+      <div class="v3d-canvas d3d-wrap" id="a3d-canvas" aria-label="3D: детали из карт распила собираются в шкаф"></div>
+      <div class="v3d-hint">тянуть: вращать · колесо: масштаб · клик: деталь</div>
+      <p class="v3d-fallback" id="a3d-fallback" hidden>3D не запустилось в этом браузере. Ниже те же шаги картинками.</p>
+    </div>
+    <div class="v3d-panel">
+      <div class="v3d-count"><span id="a3d-n">Шаг 1 из 8</span><span id="a3d-sec" class="v3d-sec">распил</span></div>
+      <h3 id="a3d-title"></h3>
+      <p id="a3d-text"></p>
+      <div class="v3d-nav">
+        <button type="button" id="a3d-prev">← Назад</button>
+        <button type="button" id="a3d-next" class="primary">Дальше →</button>
+      </div>
+      <div class="v3d-nav"><button type="button" id="a3d-play">▶ Проиграть всё</button></div>
+      <div class="v3d-dots" id="a3d-dots" role="tablist" aria-label="Шаги сборки из деталей"></div>
+      <div class="a3d-info" id="a3d-info" aria-live="polite">Нажми на деталь, и здесь появится, откуда она и куда встаёт.</div>
+      <button type="button" id="a3d-lbl" class="lbl-toggle" aria-pressed="true">Обозначения: вкл</button>
+      <div class="v3d-codes">Б боковина · Г горизонталь · П1–П3 стойки · П4 перегородка антресоли · Р полка · А боковина антресоли · Ц царга</div>
+      <div class="v3d-legend">
+        <span><i style="background:#eef0ee"></i>Б боковина</span>
+        <span><i style="background:#8fcbb9"></i>Г горизонталь</span>
+        <span><i style="background:#c4b5e6"></i>Р полка</span>
+        <span><i style="background:#ecc27c"></i>А боковина антресоли</span>
+        <span><i style="background:#c9bea8"></i>П1–П4 стойки</span>
+        <span><i style="background:#9dbbe0"></i>Ц царга</span>
+        <span><i style="background:#9aa3a0"></i>отход</span>
+      </div>
+    </div>
+  </div>
+  <h3>Все шаги на одном листе</h3>
+  <ol class="board" id="a3d-board"></ol>
+</section>

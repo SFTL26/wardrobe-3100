@@ -1,0 +1,549 @@
+<title>Шкаф в прихожую 3100</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Unbounded:wght@500;700&display=swap">
+<style>
+:root{
+  --paper:#F1F3F0; --surface:#FFFFFF; --ink:#1B211E; --muted:#58635E; --line:#CBD2CD;
+  --accent:#0D6B59; --accent-soft:#DCECE7; --accent-ink:#FFFFFF;
+  --warn-bg:#FBF0D2; --warn-ink:#6E4C00; --warn-line:#E4C472;
+  --part:#3A4541; --back:#E4E9E6; --sheet:#F7F8F6; --adj:#9FB9B1; --rod:#0D6B59; --waste:#C7CEC9;
+  --pcG:#D5E7E1; --pcR:#E6E0F0; --pcA:#F3E3C6; --pcZ:#E3E0D8; --pcC:#DCE4EC; --rail:#DDE3DF; --stud:#E2CFA8;
+  --display:"Unbounded", "Golos Text", "Segoe UI", Arial, sans-serif;
+  --body:"Golos Text", "Segoe UI", Roboto, Arial, sans-serif;
+  --mono:"JetBrains Mono", Consolas, "Courier New", monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --paper:#131715; --surface:#1B211F; --ink:#E4E9E6; --muted:#98A39E; --line:#2E3834;
+    --accent:#56C3A9; --accent-soft:#1D3530; --accent-ink:#0B1411;
+    --warn-bg:#2D2611; --warn-ink:#EBC870; --warn-line:#5E4C1C;
+    --part:#C9D2CE; --back:#222A27; --sheet:#1F2623; --adj:#4F7A6E; --rod:#56C3A9; --waste:#3A4440;
+    --pcG:#1F3A33; --pcR:#2F2A3D; --pcA:#3B3222; --pcZ:#302E29; --pcC:#26303A; --rail:#28302D; --stud:#4A3E28;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#131715; --surface:#1B211F; --ink:#E4E9E6; --muted:#98A39E; --line:#2E3834;
+  --accent:#56C3A9; --accent-soft:#1D3530; --accent-ink:#0B1411;
+  --warn-bg:#2D2611; --warn-ink:#EBC870; --warn-line:#5E4C1C;
+  --part:#C9D2CE; --back:#222A27; --sheet:#1F2623; --adj:#4F7A6E; --rod:#56C3A9; --waste:#3A4440;
+  --pcG:#1F3A33; --pcR:#2F2A3D; --pcA:#3B3222; --pcZ:#302E29; --pcC:#26303A; --rail:#28302D; --stud:#4A3E28;
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font:16px/1.6 var(--body);margin:0;padding-inline:20px;padding-block:0 64px}
+.wrap{max-width:900px;margin:0 auto}
+header.top{padding-block:40px 24px;border-bottom:2px solid var(--ink)}
+.eyebrow{font:600 12px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+h1{font:700 clamp(28px,5vw,44px)/1.1 var(--display);margin:12px 0 10px;text-wrap:balance;letter-spacing:-.01em}
+.lede{color:var(--muted);max-width:62ch;margin:0}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:24px}
+.facts div{background:var(--surface);padding:12px 14px}
+.facts b{display:block;font:600 20px/1.2 var(--mono);font-variant-numeric:tabular-nums}
+.facts span{font-size:13px;color:var(--muted)}
+nav.toc{display:flex;flex-wrap:wrap;gap:6px;padding-block:18px;border-bottom:1px solid var(--line)}
+nav.toc a{font:500 13px/1 var(--body);color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--surface);padding:7px 10px;border-radius:3px}
+nav.toc a:hover,nav.toc a:focus-visible{border-color:var(--accent);color:var(--accent);outline:none}
+nav.toc a b{font-family:var(--mono);color:var(--accent);margin-right:4px}
+section{padding-block:36px 8px;border-bottom:1px solid var(--line)}
+.sh{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.num{font:700 15px/1 var(--display);color:var(--accent-ink);background:var(--accent);min-width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;border-radius:3px;flex:none;transform:translateY(-4px)}
+h2{font:700 24px/1.2 var(--display);margin:0;text-wrap:balance}
+.time{font:500 12px/1 var(--mono);color:var(--muted);letter-spacing:.04em}
+h3{font:600 17px/1.3 var(--body);margin:26px 0 8px}
+p{margin:10px 0;max-width:68ch}
+ul,ol{padding-left:22px;margin:10px 0}
+li{margin:4px 0}
+.mono,.d{font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:.92em}
+.d{background:var(--accent-soft);padding:0 4px;border-radius:2px;white-space:nowrap}
+.note{border-left:3px solid var(--warn-line);background:var(--warn-bg);color:var(--warn-ink);padding:12px 16px;margin:16px 0;max-width:72ch}
+.note strong{color:inherit}
+.why{border:1px solid var(--line);background:var(--surface);padding:6px 18px 10px;margin-top:24px}
+.why h3{margin-top:14px}
+figure{margin:18px 0;background:var(--surface);border:1px solid var(--line);padding:14px;overflow-x:auto}
+figure svg{display:block;width:100%;min-width:520px;height:auto}
+figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+.tw{overflow-x:auto;margin:14px 0;border:1px solid var(--line);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:600 12px/1.3 var(--body);text-transform:uppercase;letter-spacing:.05em;color:var(--muted);background:var(--sheet)}
+td.n,th.n{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+td.art{font-family:var(--mono);font-size:13px;white-space:nowrap}
+tr.total td{font-weight:600;border-bottom:none}
+.code{display:inline-block;min-width:28px;text-align:center;font:600 13px/22px var(--mono);border-radius:2px;color:var(--ink)}
+.cG{background:var(--pcG)}.cR{background:var(--pcR)}.cA{background:var(--pcA)}.cZ{background:var(--pcZ)}.cB{background:var(--back)}.cC{background:var(--pcC)}
+ol.steps{list-style:none;padding:0;counter-reset:st}
+ol.steps>li{counter-increment:st;position:relative;padding:10px 0 10px 44px;border-top:1px dashed var(--line);margin:0}
+ol.steps>li::before{content:counter(st);position:absolute;left:0;top:10px;font:600 13px/26px var(--mono);width:28px;text-align:center;border:1px solid var(--ink);border-radius:50%}
+ul.chk{list-style:none;padding:0}
+ul.chk li{display:flex;gap:10px;align-items:flex-start;padding:5px 0}
+ul.chk input{width:18px;height:18px;margin-top:3px;accent-color:var(--accent);flex:none}
+ul.chk input:checked+label{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--line)}
+ul.chk input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.handout{border:2px dashed var(--ink);background:var(--surface);padding:6px 20px 14px;margin:18px 0}
+.handout h3{margin-top:14px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+footer{padding-top:28px;color:var(--muted);font-size:13px}
+/* SVG */
+svg .part{fill:var(--part)} svg .back{fill:var(--back)} svg .adj{fill:var(--adj)}
+svg .rod{stroke:var(--rod);stroke-width:3;stroke-linecap:round}
+svg .lbl,svg .note{fill:var(--muted);font:500 11px var(--body)}
+svg .mod{fill:var(--ink);font:600 12px var(--mono)}
+svg .dim{stroke:var(--muted);stroke-width:1} svg .floor{stroke:var(--ink);stroke-width:1.5;stroke-dasharray:6 3}
+svg .dim-t{fill:var(--ink);font:500 11px var(--mono)} svg .dim-s{fill:var(--muted);font:400 10px var(--body)}
+svg .sheet{fill:var(--sheet);stroke:var(--muted);stroke-width:1} svg .waste{fill:var(--waste)}
+svg .pc{stroke:var(--ink);stroke-width:1} svg .pc-Г{fill:var(--pcG)} svg .pc-Р{fill:var(--pcR)} svg .pc-А{fill:var(--pcA)} svg .pc-З{fill:var(--pcZ)} svg .pc-П{fill:var(--pcZ)} svg .pc-Ц{fill:var(--pcC)} svg .rail{fill:var(--rail)} svg .pin2{fill:none;stroke:var(--ink);stroke-width:.8} svg .rodmark2{fill:none;stroke:var(--accent);stroke-width:1.2;stroke-dasharray:2 1.5} svg .stud{fill:var(--stud);stroke:var(--muted);stroke-width:.8} svg .osb{fill:var(--pcA);stroke:var(--muted);stroke-width:.8} svg .finish{fill:var(--sheet);stroke:var(--muted);stroke-width:.8} svg .pc-spare{fill:var(--sheet);stroke-dasharray:3 2}
+svg .pc-code{fill:var(--ink);font:700 15px var(--mono)}
+svg .edge{stroke:var(--accent);stroke-width:2.5}
+svg .shelfline{fill:var(--adj);opacity:.7} svg .conf{fill:var(--accent)} svg .pin{fill:var(--ink)} svg .rodmark{fill:none;stroke:var(--accent);stroke-width:1.5}
+svg .wall{fill:var(--waste)} svg .shim{fill:var(--pcA);stroke:var(--ink);stroke-width:.8} svg .dowel{fill:var(--back);stroke:var(--muted)} svg .screw{stroke:var(--ink);stroke-width:2} svg .screwhead{fill:var(--ink)}
+.v3d{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(0,1fr);gap:0;border:1px solid var(--line);background:var(--surface);margin:18px 0}
+.v3d-stage{position:relative;border-right:1px solid var(--line);min-width:0}
+.v3d-canvas canvas{display:block;width:100%;height:auto;touch-action:none;cursor:grab}
+.v3d-canvas canvas:active{cursor:grabbing}
+.v3d-hint{position:absolute;left:10px;bottom:8px;font:500 11px var(--mono);color:var(--muted);pointer-events:none}
+.v3d-fallback{padding:24px;margin:0}
+.v3d.no3d{grid-template-columns:1fr}.v3d.no3d .v3d-canvas,.v3d.no3d .v3d-hint{display:none}
+.v3d-panel{padding:16px 18px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.v3d-count{display:flex;justify-content:space-between;gap:8px;font:600 12px/1 var(--mono);color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
+.v3d-sec{color:var(--accent)}
+.v3d-panel h3{margin:0;font:700 19px/1.25 var(--display)}
+.v3d-panel p{margin:0;font-size:15px;min-height:7.5em}
+.v3d-nav{display:flex;gap:8px}
+.v3d-nav button{flex:1;font:600 14px var(--body);padding:10px 12px;border-radius:3px;border:1px solid var(--ink);background:var(--surface);color:var(--ink);cursor:pointer}
+.v3d-nav button.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.v3d-nav button:disabled{opacity:.35;cursor:default}
+.v3d-nav button:focus-visible,.v3d-dots button:focus-visible,.board-img:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.v3d-dots{display:flex;flex-wrap:wrap;gap:4px}
+.v3d-dots button{font:600 11px/1 var(--mono);width:28px;height:26px;border:1px solid var(--line);background:var(--sheet);color:var(--muted);border-radius:2px;cursor:pointer;padding:0}
+.v3d-dots button[aria-selected="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.v3d-legend{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:12px;color:var(--muted);margin-top:auto;padding-top:6px;border-top:1px dashed var(--line)}
+.v3d-legend span{display:inline-flex;align-items:center;gap:5px}
+.v3d-legend i{display:inline-block;width:11px;height:11px;border:1px solid var(--line)}
+ol.board{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+ol.board li{margin:0;border:1px solid var(--line);background:var(--surface);display:flex;flex-direction:column}
+.board-img{display:block;padding:0;border:0;background:var(--sheet);cursor:pointer;aspect-ratio:1.6;width:100%}
+.board-img img{display:block;width:100%;height:100%;object-fit:cover}
+.board-cap{padding:10px 12px 12px}
+.board-h{display:flex;align-items:baseline;gap:8px}
+.board-h b{font:700 13px/22px var(--mono);min-width:24px;text-align:center;background:var(--accent);color:var(--accent-ink);border-radius:2px}
+.board-h span{font-weight:600}
+.board-h em{margin-left:auto;font:normal 500 11px var(--mono);color:var(--muted);white-space:nowrap}
+.board-cap p{font-size:13px;line-height:1.5;margin:6px 0 0;color:var(--muted)}
+.d3d-wrap{position:relative}
+.lbl-toggle{font:600 13px var(--body);padding:8px 10px;border-radius:3px;border:1px solid var(--line);background:var(--sheet);color:var(--ink);cursor:pointer;text-align:left}
+.lbl-toggle[aria-pressed="true"]{border-color:var(--accent);color:var(--accent)}
+.lbl-toggle:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.v3d-codes{font:500 11px/1.5 var(--mono);color:var(--muted)}
+.a3d-info{font-size:13px;line-height:1.45;background:var(--sheet);border:1px dashed var(--line);padding:8px 10px;color:var(--ink)}
+.d3d-overlay{position:absolute;left:0;top:0;pointer-events:none}
+@media (max-width:720px){ .v3d{grid-template-columns:1fr} .v3d-stage{border-right:0;border-bottom:1px solid var(--line)} .v3d-panel p{min-height:0} }
+@media print{ .v3d{display:none} ol.board{grid-template-columns:1fr 1fr} ol.board li{break-inside:avoid} }
+svg .room{fill:var(--surface);stroke:var(--line)} svg .wallfill{fill:var(--part)} svg .glass{fill:var(--pcC);stroke:var(--part);stroke-width:1} svg .trim{fill:var(--muted)} svg .wardrobe{fill:var(--pcG);stroke:var(--ink);stroke-width:1.2} svg .doorzone{fill:none;stroke:var(--accent);stroke-width:1;stroke-dasharray:4 3} svg .swing{fill:none;stroke:var(--muted);stroke-width:1;stroke-dasharray:3 2} svg .swingleaf{stroke:var(--part);stroke-width:2} svg .dimw{stroke:#d6336c;stroke-width:1.2} svg .dim-w{fill:#d6336c;font:600 11px var(--mono)}
+@media (max-width:520px){ body{font-size:15px} h2{font-size:20px} }
+@media print{ nav.toc{display:none} section{break-inside:auto} figure,.handout,.tw{break-inside:avoid} body{padding-inline:0} }
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+<header class="top">
+  <div class="eyebrow">Инструкция · версия 3.1 · 27.09.2026 · коридор DUB 138</div>
+  <h1>Шкаф в прихожую 3100 × 3100 × 500</h1>
+  <p class="lede">Открытый шкаф из готовых белых деталей Лемана ПРО: два модуля по 1550 мм и две антресоли сверху. Стоит в коридоре модульного дома DUBLDOM DUB 138 вдоль стены «Вид 1», от наружной стены до стены с проёмом в холл. Задней стенки нет, шкаф крепится к каркасу дома через задние царги. Двери-купе ставятся потом отдельно, на стены и потолок. Здесь всё, что нужно: что купить, как распилить, как сверлить, в каком порядке собирать. Галочки в списках сохраняются в этом браузере.</p>
+  <div class="facts">
+    <div><b>2 + 2</b><span>модуля и антресоли</span></div>
+    <div><b>17 + 4</b><span>деталей 2700×500 и 2700×100</span></div>
+    <div><b>≈ 37 300 ₽</b><span>материалы, без распила</span></div>
+    <div><b>2 дня</b><span>работы, поднимать втроём</span></div>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Этапы">
+  <a href="#s3d"><b>3D</b>По шагам</a><a href="#s3d2"><b>3D</b>Сверление</a><a href="#s3d3"><b>3D</b>Детали → шкаф</a><a href="#s0"><b>0</b>Ниша и стены</a><a href="#s1"><b>1</b>Покупки</a><a href="#s2"><b>2</b>Распил</a><a href="#s3"><b>3</b>Инструмент</a><a href="#s4"><b>4</b>Маркировка</a><a href="#s5"><b>5</b>Сверление</a><a href="#s6"><b>6</b>Модули</a><a href="#s7"><b>7</b>Антресоли</a><a href="#s8"><b>8</b>Установка</a><a href="#s9"><b>9</b>К стенам</a><a href="#s10"><b>10</b>Наполнение</a><a href="#s11"><b>11</b>Приёмка</a>
+</nav>
+
+<section id="scheme">
+  <div class="sh"><h2>Как устроен шкаф</h2></div>
+  <figure>
+    {{FRONT}}
+    <figcaption>Вид спереди в масштабе. Тёмное — детали на конфирматах. Светлое — регулируемые полки на полкодержателях. Полосы на 220–320 и 2600–2700 — задние царги, они видны сквозь проёмы. Все высоты указаны от пола до верхней плоскости полки, в миллиметрах.</figcaption>
+  </figure>
+  <ul>
+    <li><b>Модуль М1, М2</b>: корпус 1550 × 2700 × 500. Две боковины и три горизонтали на всю ширину: полка на <span class="d">320</span>, полка на <span class="d">2112</span> и крышка на <span class="d">2700</span>. По центру перегородка из трёх стоек П1–П3, вставленных между полками. Сзади две царги 1550×100 вместо задней стенки.</li>
+    <li><b>Секции</b>, как раньше: 1 с длинной одеждой, 2 с двумя штангами, 3 и 4 по 4 полки. В верхней зоне каждой секции переставная полка. Проём секции <span class="d">751</span>.</li>
+    <li><b>Антресоль 1, 2</b>: короб 1550 × 400 × 500 с перегородкой по центру, стоит на крышке своего модуля.</li>
+    <li><b>Глубина</b> 500 по корпусу и <span class="d">516</span> по царгам. Задней стенки нет, поэтому сквозь полки будет видна стена ниши.</li>
+  </ul>
+
+  <div class="why">
+    <h3>Что поменялось в версии 3 и почему</h3>
+    <ul>
+      <li><b>Нет задней стенки.</b> Её работу делают две царги 1550×100 на каждом модуле, вверху и внизу. Царга держит модуль прямоугольным, пока его поднимают, а в нише через неё шкаф крепится к стойкам каркаса. Царги — готовые детали 2700×100 с кромкой, их только отрезают по длине.</li>
+      <li><b>2 модуля вместо 4.</b> Деталей меньше, двойная стенка одна, по центру. Проёмы стали 751 мм вместо 743. Перегородка внутри модуля собрана из трёх стоек между полками: так каждую стойку можно прикрутить конфирматами сквозь полку. Сплошная перегородка упёрлась бы в ту же проблему со встречными конфирматами. Цена за это: модуль тяжелее (около 75 кг) и больше (1,55 × 2,7 м). Собирать его нужно на площади 3 × 2 м, поднимать вдвоём, а лучше втроём.</li>
+      <li><b>Крепление под каркасный дом.</b> Дюбель-гвозди убраны: в дереве и ОСП они не держат. Вместо них саморезы по дереву в стойки каркаса, а где стоек нет — в ОСП.</li>
+      <li><b>Верхняя штанга секции 2 теперь на 1950.</b> Держатели секций 1 и 2 крепятся к перегородке с двух сторон, и на одной высоте их саморезы встретились бы в толще 16 мм.</li>
+      <li><b>Полки 320 и 2112 вместо 300 и 2100.</b> Так отверстия под полкодержатели на боковинах и на стойках попадают в одну сетку кондуктора МК-20 и каждая деталь сверлится от своего нижнего торца. Под обувь стало 304 мм вместо 284, высоты штанг не поменялись.</li>
+      <li>Осталось как было: детали Лемана 2700×500 с заводской кромкой и регулируемые полки на 2 мм уже проёма (749 при 751).</li>
+    </ul>
+  </div>
+</section>
+
+{{V3D}}
+
+<section id="s0">
+  <div class="sh"><span class="num">0</span><h2>Ниша и стены</h2><span class="time">по развёрткам DUB 138, лист 11</span></div>
+  <figure>{{PLAN}}<figcaption>План коридора по развёртке. Шкаф вдоль стены «Вид 1». Слева наружная стена с окном и входной дверью, справа проём в холл.</figcaption></figure>
+    <div class="tw"><table>
+      <thead><tr><th>Проверено</th><th>Значение</th></tr></thead>
+      <tbody>
+        <tr><td>Ширина ниши (стена «Вид 1»)</td><td class="mono">3149 по чертежу, по замеру ≥ 3105 ✓</td></tr>
+        <tr><td>Высота у стены</td><td class="mono">3377, потолок двускатный ✓</td></tr>
+        <tr><td>Глубина до окна / проёма</td><td class="mono">611 / 618, шкаф 516</td></tr>
+        <tr><td>Проход после шкафа</td><td class="mono">≈ 2130</td></tr>
+        <tr><td>Стены</td><td>деревянный каркас, отделка вагонкой ✓</td></tr>
+        <tr><td>Светильники</td><td>у конька, над шкафом их нет ✓</td></tr>
+      </tbody>
+    </table></div>
+  <p>Шкаф 3100 в нише 3149, зазор около 49 мм. У наружной стены оставить <b>15–20 мм</b> на проветривание, остальное уходит к стене у проёма. Оба зазора закрываются проставками в точках крепления, за дверями-купе их не видно.</p>
+  <h3>Что осталось сделать перед сборкой</h3>
+  <ul class="chk">
+    <li class="c"><b>Найти стойки каркаса на стене «Вид 1».</b> Вагонка прибита к стойкам, поэтому гвозди и саморезы идут вертикальными рядами, обычно через 400–600 мм. Их видно или находит магнит. Отметить линии стоек карандашом до высоты 2700. В углах, где стены сходятся, стойка есть почти всегда.</li>
+    <li class="c"><b>Проводка.</b> На стене «Вид 1» по развёртке розеток и выключателей нет. Всё равно проверить детектором места под царги: 220–320 и 2600–2700 от пола.</li>
+    <li class="c"><b>Пол</b>: уровнем 2 м вдоль стены найти самую высокую точку.</li>
+    <li class="c"><b>Плинтус</b> вдоль стены «Вид 1» и на 60 см по боковым стенам снять.</li>
+    <li class="c"><b>Место для сборки</b>: 3 × 2 м. Коридор 3149 × 2748 подходит, модули собираются прямо в нём по очереди.</li>
+  </ul>
+  <div class="note"><strong>Двери-купе, сказать мастеру заранее.</strong> Шкаф глубиной 516 мм. От стены до наличника окна 611 мм, до проёма в холл 618 мм, поэтому система нужна не толще 95 мм. Потолок над дверями наклонный (от 3377 у стены вверх к коньку 3806), для верхнего рельса нужен горизонтальный короб или фальш-панель.</div>
+</section>
+
+<section id="s1">
+  <div class="sh"><span class="num">1</span><h2>Список покупок</h2><span class="time">цены lemanapro.ru, Москва, 25–27.09.2026</span></div>
+  <div class="tw"><table>
+    <thead><tr><th>Позиция</th><th>Артикул</th><th class="n">Кол-во</th><th class="n">Цена</th><th class="n">Сумма</th></tr></thead>
+    <tbody>
+      <tr><td>Деталь мебельная 2700×500×16 ЛДСП белый премиум, кромка с длинных сторон</td><td class="art">82036041</td><td class="n">17 шт</td><td class="n">1 860</td><td class="n">31 620</td></tr>
+      <tr><td>Деталь мебельная 2700×100×16 ЛДСП белый премиум, кромка с длинных сторон (царги)</td><td class="art">82124609</td><td class="n">4 шт</td><td class="n">547</td><td class="n">2 188</td></tr>
+      <tr><td>Конфирмат DIN 7541 7×50, 40 шт</td><td class="art">89403046</td><td class="n">4 уп</td><td class="n">184</td><td class="n">736</td></tr>
+      <tr><td>Сверло под конфирмат 7×50 (ступенчатое, с зенковкой)</td><td class="art">82909835</td><td class="n">1 шт</td><td class="n">271</td><td class="n">271</td></tr>
+      <tr><td>Полкодержатель 5×16 никель, 20 шт</td><td class="art">89413609</td><td class="n">3 уп</td><td class="n">98</td><td class="n">294</td></tr>
+      <tr><td>Штанга овальная 30×15 хром L‑800, с креплениями</td><td class="art">91796682</td><td class="n">3 шт</td><td class="n">270</td><td class="n">810</td></tr>
+      <tr><td>Уголок мебельный 20×20, 4 шт (низ стоек П3)</td><td class="art">90546533</td><td class="n">1 уп</td><td class="n">50</td><td class="n">50</td></tr>
+      <tr><td>Саморезы потайные 3,5×16, 100 шт (уголки)</td><td class="art">89454917</td><td class="n">1 уп</td><td class="n">78</td><td class="n">78</td></tr>
+      <tr><td>Саморезы потайные 4×25, 400 шт (стяжка модулей, антресоли)</td><td class="art">89454935</td><td class="n">1 уп</td><td class="n">288</td><td class="n">288</td></tr>
+      <tr><td>Саморезы универсальные потайные 6×90, 40 шт (царги и боковины в стойки каркаса)</td><td class="art">89344133</td><td class="n">1 уп</td><td class="n">176</td><td class="n">176</td></tr>
+      <tr><td>Саморезы универсальные 6×120, на вес, около 6 шт (боковина к наружной стене через проставку)</td><td class="art">89384748</td><td class="n">6 шт</td><td class="n">528/кг</td><td class="n">≈ 80</td></tr>
+      <tr><td>Саморезы по дереву потайные 5×60, 80 шт (в вагонку, где нет стойки)</td><td class="art">89386282</td><td class="n">1 уп</td><td class="n">328</td><td class="n">328</td></tr>
+      <tr><td>Клин монтажный 91×43×15, 2 шт</td><td class="art">18657836</td><td class="n">4 уп</td><td class="n">85</td><td class="n">340</td></tr>
+      <tr class="total"><td>Итого материалы</td><td></td><td></td><td></td><td class="n">≈ 37 260</td></tr>
+    </tbody>
+  </table></div>
+  <ul>
+    <li><b>Запасной детали нет.</b> Если при сборке что-то сколется, нужная деталь дозаказывается с распилом в том же магазине и приезжает уже готовой. Одна запасная полка <span class="code cR">Р</span> всё же получится сама собой из карты 4.</li>
+
+
+    <li><b>Распил</b> в Лемана ПРО Зеленоград стоит 85 ₽ за рез ЛДСП. По картам выходит 48 резов вместе с торцовкой, это около 4 100 ₽. Если заводские торцы ровные и торцовку пропустить, 37 резов, около 3 150 ₽. Царги ещё 4 реза, около 340 ₽. Всего с распилом проект стоит около 41 000 ₽.</li>
+    <li><b>Доставка:</b> около 280 кг, длина 2,7 м. Нужна доставка Лемана или грузовое такси.</li>
+    <li><b>Крепёж</b> подобран под твои стены (каркас и вагонка): саморезы по дереву 6×90 в стойки и 5×60 в вагонку. Для наружной стены добавь 6 саморезов 6×120.</li>
+    <li>Штанги в карточке идут «с креплениями». Перед оплатой проверь, что в комплекте по два держателя.</li>
+    <li>ДВП, саморезы к ней и дюбель-гвозди из прошлой версии больше не нужны.</li>
+  </ul>
+
+  <h3>Инструмент и расходники в Лемана ПРО</h3>
+  <p>Если чего-то из этого нет дома. Можно взять вместе с деталями, чтобы не ездить второй раз. Шуруповёрт и стремянки не считала: скорее всего, они у тебя есть. Кондуктор МК-20 тоже уже есть.</p>
+  <div class="tw"><table>
+    <thead><tr><th>Позиция</th><th>Артикул</th><th class="n">Кол-во</th><th class="n">Цена</th><th class="n">Сумма</th><th>Зачем</th></tr></thead>
+    <tbody>
+      <tr><td>Набор свёрл по дереву Fit 36103, 3–10 мм, 8 шт</td><td class="art">93007280</td><td class="n">1</td><td class="n">475</td><td class="n">475</td><td>5 мм под полкодержатели, 4 мм под 6×90, 3 мм под 4×25</td></tr>
+      <tr><td>Набор бит магнитных Vira 554106, 32 шт (есть HEX4 и PH2)</td><td class="art">89383370</td><td class="n">1</td><td class="n">978</td><td class="n">978</td><td>HEX4 для конфирматов, PH2 для саморезов</td></tr>
+      <tr><td>Ключ шестигранный Matrix 4 мм</td><td class="art">87788431</td><td class="n">1</td><td class="n">20</td><td class="n">20</td><td>дотягивать конфирматы рукой</td></tr>
+      <tr><td>Струбцина F‑образная Dexter 300 мм</td><td class="art">82305121</td><td class="n">2</td><td class="n">494</td><td class="n">988</td><td>зажать кондуктор, стянуть модули при стяжке</td></tr>
+      <tr><td>Ремень стяжной UVE 5 м, 25 мм, с храповиком</td><td class="art">92351794</td><td class="n">2</td><td class="n">528</td><td class="n">1 056</td><td>стянуть модуль шириной 1550 при сборке</td></tr>
+      <tr><td>Малярная лента Unibob 50 мм × 50 м</td><td class="art">89472023</td><td class="n">1</td><td class="n">348</td><td class="n">348</td><td>подписи деталей, флажок глубины на сверле</td></tr>
+      <tr><td>Карандаш строительный Кобальт</td><td class="art">89374069</td><td class="n">2</td><td class="n">27</td><td class="n">54</td><td>разметка</td></tr>
+      <tr><td>Рулетка Вихрь 5 м с автостопом</td><td class="art">89415105</td><td class="n">1</td><td class="n">218</td><td class="n">218</td><td>замеры и разметка</td></tr>
+      <tr><td>Угольник алюминиевый 300 мм</td><td class="art">86813676</td><td class="n">1</td><td class="n">460</td><td class="n">460</td><td>проверка 90° при сборке</td></tr>
+      <tr><td>Уровень пузырьковый Вихрь 2000 мм, 3 глазка</td><td class="art">91055284</td><td class="n">1</td><td class="n">890</td><td class="n">890</td><td>выставить модули, пол</td></tr>
+      <tr><td>Детектор проводки и металла Ermenrich Ping SA30</td><td class="art">92050367</td><td class="n">1</td><td class="n">1 190</td><td class="n">1 190</td><td>найти гвозди в вагонке (= стойки) и проводку</td></tr>
+      <tr><td>Пила ручная по металлу Vertextools 300 мм</td><td class="art">89471571</td><td class="n">1</td><td class="n">110</td><td class="n">110</td><td>укоротить штанги</td></tr>
+      <tr><td>Напильник Вихрь 200 мм</td><td class="art">91934833</td><td class="n">1</td><td class="n">200</td><td class="n">200</td><td>снять заусенец со штанги</td></tr>
+      <tr class="total"><td>Итого инструмент</td><td></td><td></td><td></td><td class="n">≈ 6 990</td><td></td></tr>
+      <tr><td>По ситуации: пила по ламинату Gross Piranha 360 мм</td><td class="art">84952632</td><td class="n">1</td><td class="n">1 448</td><td class="n">1 448</td><td>только если в магазине не возьмутся резать царги 100 мм</td></tr>
+    </tbody>
+  </table></div>
+  <p>Картон на пол брать не нужно, хватит упаковки от доставки. Если сверло 5 мм сломается, отдельное сверло по дереву 5 мм есть на той же полке, стоит копейки.</p>
+</section>
+
+<section id="s2">
+  <div class="sh"><span class="num">2</span><h2>Распил в Лемана ПРО</h2><span class="time">в день покупки</span></div>
+  <p>Распил делают только для товара, купленного в этом же магазине. Блок ниже можно распечатать или показать с телефона на стойке «Резка дерева».</p>
+  <div class="note"><strong>Ограничения Лемана ПРО Зеленоград</strong> и как проект в них укладывается:
+    <ul>
+      <li><b>«Возможен только поперечный распил».</b> Весь раскрой поперечный, продольных резов нет. Поэтому проект и собран из деталей шириной 500.</li>
+      <li><b>«Детали менее 25 см не подлежат распилу».</b> Самая маленькая деталь — стойка П1 304×500, она проходит. Торцовка 10 мм и хвосты по краям — отход, а не детали, но перед поездкой это лучше уточнить по телефону.</li>
+      <li><b>Царги 100 мм уже 25 см.</b> Возможно, их резать откажутся. Тогда 4 реза делаются дома ножовкой с мелким зубом по малярному скотчу. Торцы царг прячутся в стыках, так что небольшой скол не страшен.</li>
+    </ul>
+  </div>
+  <div class="handout">
+    <h3>Для стойки распила</h3>
+    <p><b>ЛДСП 2700×500×16, 17 шт.</b> Все резы поперёк, ширину 500 не трогать. Перед первым резом выровнять торец (10 мм), если он не под 90° или побит. Если торец ровный, торцовку можно пропустить. Резать от больших деталей к меньшим.</p>
+    <ul>
+      <li><b>4 шт без распила</b>: целые боковины.</li>
+      <li><b>4 шт по карте 1</b>: 1518 + 749 + 400.</li>
+      <li><b>2 шт по карте 2</b>: 1518 + 749 + 368.</li>
+      <li><b>4 шт по карте 3</b>: 1518 + 749.</li>
+      <li><b>1 шт по карте 4</b>: 749 + 749 + 749.</li>
+      <li><b>2 шт по карте 5</b>: 1776 + 572 + 304.</li>
+    </ul>
+    <p>Все 1518 резать с одного упора, допуск <b>±0,5 мм</b>: от них зависят ширина модуля 1550 и общая 3100. Все 749 тоже с одного упора.</p>
+    <p><b>ЛДСП 2700×100×16, 4 шт.</b> Отрезать 1550, торцовка не нужна. Если узкое не режут, эти 4 реза сделаю дома.</p>
+    <p>Итого на выходе: 10 шт 1518×500, 13 шт 749×500, 4 шт 400×500, 2 шт 368×500, по 2 шт 1776, 572 и 304 ×500, 4 шт 1550×100.</p>
+  </div>
+  <figure>
+    {{CUT}}
+    <figcaption>Куда встаёт каждая деталь, показано в 3D ниже, в разделе «Из распила в шкаф». Карты распила в масштабе. Кромка остаётся на длинных сторонах панели, то есть спереди и сзади у каждой детали. Сырые торцы уходят в стыки.</figcaption>
+  </figure>
+  <h3>Сверить спецификацию</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Код</th><th>Деталь</th><th>Размер</th><th class="n">Нужно</th><th class="n">Получится</th><th>Где стоит</th></tr></thead>
+    <tbody>
+      <tr><td><span class="code cB">Б</span></td><td>Боковина модуля</td><td class="mono">2700×500</td><td class="n">4</td><td class="n">4</td><td>по 2 на М1, М2</td></tr>
+      <tr><td><span class="code cG">Г</span></td><td>Горизонталь</td><td class="mono">1518×500</td><td class="n">10</td><td class="n">10</td><td>модули: полка 320, полка 2112, крышка (6); антресоли: дно и крыша (4)</td></tr>
+      <tr><td><span class="code cZ">П1</span></td><td>Стойка перегородки, низ</td><td class="mono">304×500</td><td class="n">2</td><td class="n">2</td><td>под полкой 320</td></tr>
+      <tr><td><span class="code cZ">П2</span></td><td>Стойка перегородки, середина</td><td class="mono">1776×500</td><td class="n">2</td><td class="n">2</td><td>между полками 320 и 2112</td></tr>
+      <tr><td><span class="code cZ">П3</span></td><td>Стойка перегородки, верх</td><td class="mono">572×500</td><td class="n">2</td><td class="n">2</td><td>между полкой 2112 и крышкой</td></tr>
+      <tr><td><span class="code cZ">П4</span></td><td>Перегородка антресоли</td><td class="mono">368×500</td><td class="n">2</td><td class="n">2</td><td>по центру антресолей</td></tr>
+      <tr><td><span class="code cR">Р</span></td><td>Полка регулируемая</td><td class="mono">749×500</td><td class="n">12</td><td class="n">13</td><td>секции 3–4 по 4, верх каждой секции по 1</td></tr>
+      <tr><td><span class="code cA">А</span></td><td>Боковина антресоли</td><td class="mono">400×500</td><td class="n">4</td><td class="n">4</td><td>по 2 на антресоль</td></tr>
+      <tr><td><span class="code cC">Ц</span></td><td>Царга</td><td class="mono">1550×100</td><td class="n">4</td><td class="n">4</td><td>по 2 на модуль, сзади</td></tr>
+    </tbody>
+  </table></div>
+  <h3>Приёмка прямо у стойки</h3>
+  <ul class="chk">
+    <li class="c">Панели выбрать самому до распила: без сколов, кромка приклеена по всей длине, лежит на полу ровно, без «пропеллера».</li>
+    <li class="c">Рулеткой проверить все <span class="code cG">Г</span>: <span class="d">1518</span>, разброс между ними не больше 1 мм. Стойки <span class="code cZ">П2</span> <span class="d">1776</span>, <span class="code cZ">П3</span> <span class="d">572</span>, <span class="code cZ">П1</span> <span class="d">304</span>.</li>
+    <li class="c">Угольником проверить, что рез под 90°.</li>
+    <li class="c">На каждой детали карандашом написать код.</li>
+  </ul>
+</section>
+
+{{ASM}}
+
+<section id="s3">
+  <div class="sh"><span class="num">3</span><h2>Инструмент</h2></div>
+  <div class="grid2">
+    <div>
+      <h3>Обязательно</h3>
+      <p style="font-size:14px;color:var(--muted);margin:0 0 6px">Что из этого купить в Лемана, с артикулами, есть в конце этапа 1.</p>
+      <ul class="chk">
+        <li class="c">Шуруповёрт с регулировкой момента, биты PH2 и шестигранник 4 мм (шлиц конфирмата уточнить по упаковке)</li>
+        <li class="c">Шестигранный ключ 4 мм</li>
+        <li class="c">Сверло под конфирмат (есть в покупках)</li>
+        <li class="c">Свёрла по дереву 5 мм (полкодержатели), 4 мм (пилотные под 6×90 в ЛДСП), 3 мм (под 4×25)</li>
+        <li class="c">Два стяжных ремня с храповиком, 5 м: стянуть модуль шириной 1550, обычная струбцина столько не охватит</li>
+        <li class="c">Струбцины F‑образные 300 мм, 2–4 шт</li>
+        <li class="c">Рулетка 5 м, металлическая линейка 1 м, столярный угольник</li>
+        <li class="c">Уровень 2 м</li>
+        <li class="c">Магнит или детектор металла, чтобы найти стойки каркаса</li>
+        <li class="c">Ножовка по металлу и напильник (штанги)</li>
+        <li class="c">Карандаш, малярный скотч, маркер, шило</li>
+        <li class="c">Две стремянки</li>
+        <li class="c">Картон на пол, 3 × 2 м</li>
+        <li class="c">Два помощника на подъём модулей</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Желательно</h3>
+      <ul class="chk">
+        <li class="c">Лазерный уровень</li>
+        <li class="c">Кондуктор МК-20 «угольник», система 32, втулка Ø5 (у тебя есть)</li>
+        <li class="c">Длинная струбцина 1600 мм вместо ремней</li>
+      </ul>
+      <h3>Не понадобится</h3>
+      <p>Перфоратор: бетона нет, в каркас всё крепится шуруповёртом. Пила и кромочный утюг тоже не нужны.</p>
+    </div>
+  </div>
+</section>
+
+<section id="s4">
+  <div class="sh"><span class="num">4</span><h2>Разложить и подписать детали</h2><span class="time">40 мин</span></div>
+  <ol class="steps">
+    <li>Измерить 4 боковины <span class="code cB">Б</span> и разбить на пары с разницей не больше 1 мм: <b>1Л/1П</b> для М1, <b>2Л/2П</b> для М2.</li>
+    <li>На задней кромке каждой детали наклеить скотч и написать код, стрелкой указать низ. На боковинах подписать «ВНУТРЬ» на той пласти, что смотрит в модуль.</li>
+    <li>Стойки подписать по модулям: «М1‑П2», «М2‑П3» и так далее, стрелкой указать низ. У стоек М2 подписать стороны «секция 3» и «секция 4». Отверстия с этих сторон сверлятся с разным отступом.</li>
+    <li>У горизонталей <span class="code cG">Г</span> выбрать переднюю кромку (ту, где кромка лучше) и разложить стопками: 2 крышки, 2 полки на 2112, 2 полки на 320, 4 детали для антресолей.</li>
+  </ol>
+</section>
+
+{{DRILL}}
+
+<section id="s5">
+  <div class="sh"><span class="num">5</span><h2>Разметка и сверление</h2><span class="time">3 часа</span></div>
+  <p>Сверление в 3D с размерами показано выше, в разделе <a href="#s3d2">«Сверление крупным планом»</a>.</p>
+  <figure>
+    {{SIDE}}
+    <figcaption>Внутренние пласти боковин и обе стороны стоек перегородки. Чёрные точки — отверстия под полкодержатели на одной стороне (37 мм от кромок). Полые точки — на обратной стороне (60 мм от кромок). Конфирматы сверлятся при сборке, здесь показано, где их разметить.</figcaption>
+  </figure>
+
+  <h3>5.1 Разметка</h3>
+  <ol class="steps">
+    <li><b>Боковины:</b> от нижнего торца провести по внутренней пласти линии <span class="d">304</span>/<span class="d">320</span> и <span class="d">2096</span>/<span class="d">2112</span>. На наружной пласти отметить центры конфирматов: высоты <span class="d">312</span>, <span class="d">2104</span>, <span class="d">2692</span>, по 50, 250 и 450 мм от передней кромки.</li>
+    <li><b>Горизонтали модулей:</b> ось перегородки на <span class="d">759</span> мм от каждого торца. Толщина стойки ложится на отметки 751–767. На оси отметить 3 точки конфирматов (50, 250, 450 от переда): на верхней пласти полки 2112, на нижней пласти полки 320, на верхней пласти крышки.</li>
+    <li><b>Дно и крыша антресолей:</b> ось 759 от торцов, 3 точки снаружи: на нижней пласти дна и на верхней пласти крыши.</li>
+    <li><b>Царги:</b> на задней пласти отметить точки конфирматов. В 8 мм от каждого торца (в торцы боковин) на высоте 30 и 70 от нижней кромки царги. На 775 мм (в стойку) тоже на 30 и 70. Ещё в 300 мм от каждого торца, в 8 мм от верхней кромки царги (в кромку полки или крышки).</li>
+  </ol>
+
+  <h3>5.2 Отверстия под полкодержатели и штанги</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Деталь</th><th>Сторона</th><th>Отверстия Ø5 × 9, шаг 32</th><th>Отступ рядов</th></tr></thead>
+    <tbody>
+      <tr><td>Боковины 1Л, 1П</td><td>внутренняя</td><td>верхняя зона 2309–2501 от низа, 7 шт</td><td class="mono">37 / 37</td></tr>
+      <tr><td>Боковины 2Л, 2П</td><td>внутренняя</td><td>357–1957 (51 шт) и 2309–2501 (7 шт)</td><td class="mono">37 / 37</td></tr>
+      <tr><td>М2‑П2</td><td>обе</td><td>от низа стойки 37–1637, 51 шт (это 357–1957 от пола)</td><td class="mono">секция 3: 37 · секция 4: 60</td></tr>
+      <tr><td>М2‑П3, М1‑П3</td><td>обе</td><td>от низа стойки 197–389, 7 шт</td><td class="mono">одна сторона 37, другая 60</td></tr>
+      <tr><td>Держатели штанг</td><td></td><td colspan="2">центр в 250 мм от переда. 1Л: 2000. 1П: 1950 и 1100. М1‑П2: со стороны секции 1 на 1680 от низа стойки, со стороны секции 2 на 1630 и 780</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note"><strong>Глубина 9 мм.</strong> Флажок на сверле ставится на толщину кондуктора у втулки + 9 мм от кончика. На стойках, где отверстия с двух сторон, одна сторона сверлится на 37 мм от кромок, другая на 60 мм. Тогда отверстия не встречаются в толще 16 мм.</div>
+  <h3>5.3 Сверлить кондуктором МК-20</h3>
+  <p>У кондуктора голова-упор, носик и 17 втулок Ø5 с шагом 32. Первая втулка стоит в <b>37 мм</b> от упора. Все высоты в инструкции подобраны под эту сетку, поэтому каждая деталь сверлится одинаково: <b>головой в нижний торец</b>.</p>
+  <ol class="steps">
+    <li>Деталь положить внутренней пластью вверх. У нижнего торца провести короткую риску в 37 мм от передней кромки (или в 60 мм для второй стороны стойки).</li>
+    <li>Голову кондуктора прижать к нижнему торцу, носик поставить на риску, зажать струбциной.</li>
+    <li><b>Боковины:</b> втулки 1–10 попадают ниже полки 320, их пропускаем. Сверлить втулки 11–17 (357…549). <b>Стойка П2:</b> сверлить сразу с втулки 1, это и есть 357 от пола. <b>Стойка П3:</b> втулки 6–12 (197…389 от её низа).</li>
+    <li>Продолжить ряд. Кондуктор перевернуть головой вверх, упор (полкодержатель или хвостовик сверла 5 мм) вставить через первую втулку в последнее отверстие. Ряд выровнять по риске, продолженной карандашом вдоль детали, и сверлить втулки 2–17. Повторять до 1957.</li>
+    <li>Второй ряд: риска в 37 мм от задней кромки, всё так же.</li>
+    <li><b>Верхняя зона боковин 1Л и 1П</b> (там нет нижнего ряда, от которого продолжать): отметить рулеткой 2309 от низа, поставить на отметку первую втулку, выровнять по риске и сверлить 7 отверстий.</li>
+  </ol>
+  <p>Пошагово с анимацией это показано в разделе <a href="#s3d2">«Сверление крупным планом»</a>, шаги 6–13.</p>
+</section>
+
+<section id="s6">
+  <div class="sh"><span class="num">6</span><h2>Сборка модулей М1 и М2</h2><span class="time">~2,5 часа на модуль</span></div>
+  <p>Модуль собирается лёжа лицом вниз, на передних кромках. Царги ложатся сверху. Порядок важен: стойки перегородки ставятся в строгой очерёдности, иначе к части конфирматов не подобраться.</p>
+  <ol class="steps">
+    <li>Постелить картон. Боковины поставить на передние кромки, пластями «ВНУТРЬ» друг к другу, на расстоянии 1518 мм.</li>
+    <li><b>Крышка</b> вровень с верхними торцами и передними кромками. Стянуть модуль ремнём через обе боковины, проверить угольник. Ступенчатым сверлом насквозь через боковину в торец и 3 конфирмата с каждой стороны. Головки вровень с пластью.</li>
+    <li><b>Полка на 2112</b> по линиям 2096–2112, 3 + 3 конфирмата.</li>
+    <li><b>Полка на 320</b> по линиям 304–320, 3 + 3 конфирмата. Под середину длинных полок подложить обрезок, чтобы не провисали.</li>
+    <li><b>Стойка П2</b> (1776) между полками 320 и 2112 по оси 759. Рулеткой проверить 751 мм до обеих боковин спереди и сзади. Сверху через полку 2112 (из верхней зоны) 3 конфирмата в торец стойки. Снизу через полку 320 ещё 3: низ модуля открыт, дрель заходит со стороны нижнего торца.</li>
+    <li><b>Стойка П3</b> (572) между полкой 2112 и крышкой по той же оси. Сверху через крышку 3 конфирмата. Низ закрепить двумя уголками 20×20, по одному с каждой стороны, саморезами 3,5×16.</li>
+    <li><b>Стойка П1</b> (304) под полку 320 по той же оси. Пока она просто вставлена, её зафиксирует нижняя царга.</li>
+    <li><b>Диагонали:</b> обе <span class="d">≈ 3113</span>, разница не больше 2 мм. Если больше, надавить на угол по длинной диагонали.</li>
+    <li><b>Верхняя царга</b> 1550×100 на задние кромки, вровень с верхними торцами и наружными пластями боковин (на 2600–2700). Сверлить по разметке сквозь царгу и вкрутить 8 конфирматов: по 2 в торцы боковин, 2 в стойку П3, 2 в кромку крышки.</li>
+    <li><b>Нижняя царга</b> на 220–320, верхняя кромка вровень с плоскостью полки 320. Так же 8 конфирматов: боковины, П1, кромка полки. Теперь модуль жёсткий.</li>
+    <li>Подписать модуль и отставить. Поднимать его только с обеими царгами.</li>
+  </ol>
+  <div class="note"><strong>Перед вторым модулем проверить:</strong> 43 конфирмата утоплены, стойка на оси (751 / 751), крышка и царга вровень с торцами, диагонали сходятся.</div>
+</section>
+
+<section id="s7">
+  <div class="sh"><span class="num">7</span><h2>Сборка антресолей</h2><span class="time">~40 мин на короб</span></div>
+  <ol class="steps">
+    <li>Две боковины <span class="code cA">А</span> поставить на передние кромки, между ними дно и крышу <span class="code cG">Г</span> вровень с торцами. Стянуть ремнём, 12 конфирматов.</li>
+    <li>Перегородку <span class="code cZ">П4</span> (368) поставить по оси 759. Снаружи 3 конфирмата через дно и 3 через крышу.</li>
+    <li>Сверить диагонали <span class="d">≈ 1601</span>. Задника у антресоли нет, жёсткость ей дают перегородка и крепление к модулю.</li>
+  </ol>
+</section>
+
+<section id="s8">
+  <div class="sh"><span class="num">8</span><h2>Установка в нишу</h2><span class="time">3 часа, втроём</span></div>
+  <h3>8.1 Модули</h3>
+  <ol class="steps">
+    <li>Поднять М1 в вертикаль: около 75 кг, диагональ 2750 мм, у стены 3377 места хватает. Задвинуть к наружной стене царгами к стене «Вид 1» и оставить до наружной стены 15–20 мм, подложив проставки.</li>
+    <li>Выставить по уровню: вертикаль по передней кромке и пласти боковины, горизонт по крышке. Клинья подбивать под торцы боковин и под стойку П1, она тоже должна стоять на полу.</li>
+    <li>М2 вплотную к М1, передние кромки и верх заподлицо, стянуть струбцинами у передней кромки.</li>
+    <li>Скрутить модули 8 саморезами 4×25 с пилотным отверстием 3 мм. Из М1 в 80 мм от передней кромки, из М2 в 80 мм от задней, на высотах <span class="d">150</span>, <span class="d">1000</span>, <span class="d">1700</span>, <span class="d">2400</span>.</li>
+    <li>Проверить общую ширину <span class="d">3100</span>, крышки в одной плоскости, фасад по шнуру с отклонением не больше 2 мм. До стены у проёма останется около 30 мм.</li>
+  </ol>
+  <h3>8.2 Антресоли</h3>
+  <ol class="steps">
+    <li>Вдвоём со стремянок поставить антресоль на крышку модуля. Боковины над боковинами, перегородка над стойкой П3, передние кромки заподлицо.</li>
+    <li>Изнутри модуля, из верхней зоны, прикрутить снизу через крышку 6 саморезами 4×25 с пилотным отверстием: по паре у каждой боковины и у перегородки, в 80 мм от переда и зада.</li>
+    <li>Вторую антресоль так же, короба стянуть между собой 4 саморезами 4×25.</li>
+  </ol>
+</section>
+
+<section id="s9">
+  <div class="sh"><span class="num">9</span><h2>Крепление к стенам модульного дома</h2><span class="time">1,5 часа</span></div>
+  <p>Без задней стенки шкаф держится за стены, и главное крепление идёт через царги в стойки каркаса стены «Вид 1». Крайние боковины дополнительно крепятся к наружной стене и к стене у проёма. <b>У тебя каркас с вагонкой</b>, это первая строка таблицы.</p>
+  <div class="tw"><table>
+    <thead><tr><th>Какая стена</th><th>Как понять</th><th>Царги к задней стене</th><th>Боковины к боковым стенам</th></tr></thead>
+    <tbody>
+      <tr><td><b>Каркас:</b> стойки, ОСП, отделка</td><td>саморезы обшивки идут вертикальными рядами через 400–600 мм</td><td>в каждую стойку за царгой по 2 самореза <b>6×90</b> (на 30 и 70 мм от низа царги)</td><td>если попали в стойку, 6×90. Иначе в ОСП 2 самореза <b>5×60</b> на точку</td></tr>
+      <tr><td><b>SIP-панели</b></td><td>под отделкой сплошная ОСП, стойки только на стыках панелей</td><td>в ОСП <b>5×60</b> через 150–200 мм по всей длине царги, 8 шт на царгу</td><td>в ОСП по 2 самореза 5×60 на точку</td></tr>
+      <tr><td><b>Гипсокартон по металлопрофилю</b></td><td>магнит липнет к профилю, стена звучит пусто</td><td colspan="2">6×90 и 5×60 не подходят. Нужны саморезы по металлу в профиль или закладные, подберём отдельно</td></tr>
+    </tbody>
+  </table></div>
+  <div class="grid2">
+    <div>
+      <h3>Точки крепления</h3>
+      <ul>
+        <li><b>Царги:</b> все стойки, что попали за царгу, обычно 2–3 на модуль. Каждая из 4 царг держится минимум за 2 стойки.</li>
+        <li><b>Боковины</b>: левая у М1 к наружной стене, правая у М2 к стене у проёма. Высоты <span class="d">150</span>, <span class="d">1000</span>, <span class="d">1700</span>, <span class="d">2450</span>, <b>в 60 мм от задней кромки</b>: там, в углу стен, стоит стойка каркаса. Если стойки в этом месте нет, по 2 самореза 5×60 в вагонку на точку.</li>
+        <li><b>Антресоли:</b> по 1 точке в крайних боковинах на высоте <span class="d">2900</span>.</li>
+      </ul>
+    </div>
+    <figure style="margin:0">{{WALL}}<figcaption>Вид сверху на узел: проставка в зазоре, саморез проходит отделку и ОСП и входит в стойку минимум на 40 мм.</figcaption></figure>
+  </div>
+  <ol class="steps">
+    <li>Перенести отметки стоек со стены на царги: карандашом по верхней кромке царги.</li>
+    <li>В каждой точке измерить зазор до стены. Если он больше 1 мм, вставить жёсткую проставку этой толщины: обрезки ЛДСП или клинья. Без проставки саморез притянет царгу или боковину к стене и изогнёт её.</li>
+    <li>В ЛДСП сверлить пилотное отверстие 4 мм под 6×90 (или 3 мм под 5×60), иначе плита расколется. В дерево стойки можно без пилотного.</li>
+    <li>Затягивать до прижима, без усилия. Головка должна встать вровень с ЛДСП.</li>
+    <li><b>Длина самореза</b> = 16 мм (ЛДСП) + проставка + вагонка (обычно 14–20 мм) + минимум 40 мм в стойку. С проставкой 20 мм у наружной стены выходит 16 + 20 + 20 + 40 = 96, там лучше взять 6×120. В остальных местах хватит 6×90.</li>
+  </ol>
+  <div class="note"><strong>Не делать:</strong> не использовать дюбель-гвозди и пластиковые дюбели для бетона, в дереве они не держат. Не крепить шкаф к потолку. Проверка: шкаф не качается, если потянуть за переднюю кромку крышки.</div>
+</section>
+
+<section id="s10">
+  <div class="sh"><span class="num">10</span><h2>Наполнение</h2><span class="time">1 час</span></div>
+  <h3>Штанги</h3>
+  <ol class="steps">
+    <li>Измерить проём секции на высоте штанги (≈ 751). Надеть держатели на штангу, приложить, отметить длину, отпилить и снять заусенец.</li>
+    <li>Секция 1: штанга на <span class="d">2000</span>. Секция 2: на <span class="d">1950</span> и <span class="d">1100</span>. Центр держателя в 250 мм от переда, горизонт проверить уровнем.</li>
+  </ol>
+  <h3>Полки</h3>
+  <ul class="chk">
+    <li class="c">Секции 3 и 4: по 4 полки <span class="code cR">Р</span> на отверстиях <span class="d">677</span>, <span class="d">1029</span>, <span class="d">1381</span>, <span class="d">1733</span> от пола.</li>
+    <li class="c">Все 4 секции, верхняя зона: по 1 полке на <span class="d">2405</span>.</li>
+    <li class="c">Каждая полка стоит на 4 полкодержателях на одной высоте, проверить уровнем. На стойке П2 отверстия со стороны секции 4 смещены (60 мм от кромки), это нормально.</li>
+  </ul>
+</section>
+
+<section id="s11">
+  <div class="sh"><span class="num">11</span><h2>Приёмка и подготовка под купе</h2></div>
+  <ul class="chk">
+    <li class="c">Все конфирматы затянуты, модули и антресоли стянуты, каждая царга держится минимум за 2 стойки каркаса.</li>
+    <li class="c">Общий размер <span class="d">3100 × 3100</span>, верх антресолей в одной плоскости.</li>
+    <li class="c">Фасадная плоскость ровная, отклонение не больше 2–3 мм. Ничего не выступает за передние кромки.</li>
+    <li class="c">Клинья подрезаны заподлицо с передней кромкой.</li>
+    <li class="c">Мастеру по дверям передать: глубина шкафа <b>516 мм</b>, до наличника окна 611, до проёма 618, потолок наклонный, нужен короб под рельс. К корпусу ничего не крепить.</li>
+  </ul>
+</section>
+
+<footer>
+  Детали и размеры в миллиметрах. Цены и артикулы с lemanapro.ru (Москва) на 25–27.09.2026, в магазине могут отличаться.
+  Предыдущие версии: v1 (5 вертикалей, модель в <span class="mono">Desktop\wardrobe_3100x3100x500_3d_bundle</span>) и v2 (4 модуля с задником).
+</footer>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>{{V3DJS}}</script>
+<script>{{DRILLJS}}</script>
+<script>{{ASMJS}}</script>
+<script>
+(function(){
+  var KEY='wardrobe3100-v2';
+  var state={};
+  try{ state=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){ state={}; }
+  document.querySelectorAll('ul.chk input[type=checkbox]').forEach(function(cb){
+    if(state[cb.id]) cb.checked=true;
+    cb.addEventListener('change',function(){
+      state[cb.id]=cb.checked;
+      try{ localStorage.setItem(KEY,JSON.stringify(state)); }catch(e){}
+    });
+  });
+})();
+</script>

@@ -1,0 +1,1607 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Шкаф в прихожую 3100</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Unbounded:wght@500;700&display=swap">
+<style>
+:root{
+  --paper:#F1F3F0; --surface:#FFFFFF; --ink:#1B211E; --muted:#58635E; --line:#CBD2CD;
+  --accent:#0D6B59; --accent-soft:#DCECE7; --accent-ink:#FFFFFF;
+  --warn-bg:#FBF0D2; --warn-ink:#6E4C00; --warn-line:#E4C472;
+  --part:#3A4541; --back:#E4E9E6; --sheet:#F7F8F6; --adj:#9FB9B1; --rod:#0D6B59; --waste:#C7CEC9;
+  --pcG:#D5E7E1; --pcR:#E6E0F0; --pcA:#F3E3C6; --pcZ:#E3E0D8; --pcC:#DCE4EC; --rail:#DDE3DF; --stud:#E2CFA8;
+  --display:"Unbounded", "Golos Text", "Segoe UI", Arial, sans-serif;
+  --body:"Golos Text", "Segoe UI", Roboto, Arial, sans-serif;
+  --mono:"JetBrains Mono", Consolas, "Courier New", monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --paper:#131715; --surface:#1B211F; --ink:#E4E9E6; --muted:#98A39E; --line:#2E3834;
+    --accent:#56C3A9; --accent-soft:#1D3530; --accent-ink:#0B1411;
+    --warn-bg:#2D2611; --warn-ink:#EBC870; --warn-line:#5E4C1C;
+    --part:#C9D2CE; --back:#222A27; --sheet:#1F2623; --adj:#4F7A6E; --rod:#56C3A9; --waste:#3A4440;
+    --pcG:#1F3A33; --pcR:#2F2A3D; --pcA:#3B3222; --pcZ:#302E29; --pcC:#26303A; --rail:#28302D; --stud:#4A3E28;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#131715; --surface:#1B211F; --ink:#E4E9E6; --muted:#98A39E; --line:#2E3834;
+  --accent:#56C3A9; --accent-soft:#1D3530; --accent-ink:#0B1411;
+  --warn-bg:#2D2611; --warn-ink:#EBC870; --warn-line:#5E4C1C;
+  --part:#C9D2CE; --back:#222A27; --sheet:#1F2623; --adj:#4F7A6E; --rod:#56C3A9; --waste:#3A4440;
+  --pcG:#1F3A33; --pcR:#2F2A3D; --pcA:#3B3222; --pcZ:#302E29; --pcC:#26303A; --rail:#28302D; --stud:#4A3E28;
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font:16px/1.6 var(--body);margin:0;padding-inline:20px;padding-block:0 64px}
+.wrap{max-width:900px;margin:0 auto}
+header.top{padding-block:40px 24px;border-bottom:2px solid var(--ink)}
+.eyebrow{font:600 12px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+h1{font:700 clamp(28px,5vw,44px)/1.1 var(--display);margin:12px 0 10px;text-wrap:balance;letter-spacing:-.01em}
+.lede{color:var(--muted);max-width:62ch;margin:0}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:24px}
+.facts div{background:var(--surface);padding:12px 14px}
+.facts b{display:block;font:600 20px/1.2 var(--mono);font-variant-numeric:tabular-nums}
+.facts span{font-size:13px;color:var(--muted)}
+nav.toc{display:flex;flex-wrap:wrap;gap:6px;padding-block:18px;border-bottom:1px solid var(--line)}
+nav.toc a{font:500 13px/1 var(--body);color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--surface);padding:7px 10px;border-radius:3px}
+nav.toc a:hover,nav.toc a:focus-visible{border-color:var(--accent);color:var(--accent);outline:none}
+nav.toc a b{font-family:var(--mono);color:var(--accent);margin-right:4px}
+section{padding-block:36px 8px;border-bottom:1px solid var(--line)}
+.sh{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.num{font:700 15px/1 var(--display);color:var(--accent-ink);background:var(--accent);min-width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;border-radius:3px;flex:none;transform:translateY(-4px)}
+h2{font:700 24px/1.2 var(--display);margin:0;text-wrap:balance}
+.time{font:500 12px/1 var(--mono);color:var(--muted);letter-spacing:.04em}
+h3{font:600 17px/1.3 var(--body);margin:26px 0 8px}
+p{margin:10px 0;max-width:68ch}
+ul,ol{padding-left:22px;margin:10px 0}
+li{margin:4px 0}
+.mono,.d{font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:.92em}
+.d{background:var(--accent-soft);padding:0 4px;border-radius:2px;white-space:nowrap}
+.note{border-left:3px solid var(--warn-line);background:var(--warn-bg);color:var(--warn-ink);padding:12px 16px;margin:16px 0;max-width:72ch}
+.note strong{color:inherit}
+.why{border:1px solid var(--line);background:var(--surface);padding:6px 18px 10px;margin-top:24px}
+.why h3{margin-top:14px}
+figure{margin:18px 0;background:var(--surface);border:1px solid var(--line);padding:14px;overflow-x:auto}
+figure svg{display:block;width:100%;min-width:520px;height:auto}
+figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+.tw{overflow-x:auto;margin:14px 0;border:1px solid var(--line);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:600 12px/1.3 var(--body);text-transform:uppercase;letter-spacing:.05em;color:var(--muted);background:var(--sheet)}
+td.n,th.n{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+td.art{font-family:var(--mono);font-size:13px;white-space:nowrap}
+tr.total td{font-weight:600;border-bottom:none}
+.code{display:inline-block;min-width:28px;text-align:center;font:600 13px/22px var(--mono);border-radius:2px;color:var(--ink)}
+.cG{background:var(--pcG)}.cR{background:var(--pcR)}.cA{background:var(--pcA)}.cZ{background:var(--pcZ)}.cB{background:var(--back)}.cC{background:var(--pcC)}
+ol.steps{list-style:none;padding:0;counter-reset:st}
+ol.steps>li{counter-increment:st;position:relative;padding:10px 0 10px 44px;border-top:1px dashed var(--line);margin:0}
+ol.steps>li::before{content:counter(st);position:absolute;left:0;top:10px;font:600 13px/26px var(--mono);width:28px;text-align:center;border:1px solid var(--ink);border-radius:50%}
+ul.chk{list-style:none;padding:0}
+ul.chk li{display:flex;gap:10px;align-items:flex-start;padding:5px 0}
+ul.chk input{width:18px;height:18px;margin-top:3px;accent-color:var(--accent);flex:none}
+ul.chk input:checked+label{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--line)}
+ul.chk input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.handout{border:2px dashed var(--ink);background:var(--surface);padding:6px 20px 14px;margin:18px 0}
+.handout h3{margin-top:14px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+footer{padding-top:28px;color:var(--muted);font-size:13px}
+/* SVG */
+svg .part{fill:var(--part)} svg .back{fill:var(--back)} svg .adj{fill:var(--adj)}
+svg .rod{stroke:var(--rod);stroke-width:3;stroke-linecap:round}
+svg .lbl,svg .note{fill:var(--muted);font:500 11px var(--body)}
+svg .mod{fill:var(--ink);font:600 12px var(--mono)}
+svg .dim{stroke:var(--muted);stroke-width:1} svg .floor{stroke:var(--ink);stroke-width:1.5;stroke-dasharray:6 3}
+svg .dim-t{fill:var(--ink);font:500 11px var(--mono)} svg .dim-s{fill:var(--muted);font:400 10px var(--body)}
+svg .sheet{fill:var(--sheet);stroke:var(--muted);stroke-width:1} svg .waste{fill:var(--waste)}
+svg .pc{stroke:var(--ink);stroke-width:1} svg .pc-Г{fill:var(--pcG)} svg .pc-Р{fill:var(--pcR)} svg .pc-А{fill:var(--pcA)} svg .pc-З{fill:var(--pcZ)} svg .pc-П{fill:var(--pcZ)} svg .pc-Ц{fill:var(--pcC)} svg .rail{fill:var(--rail)} svg .pin2{fill:none;stroke:var(--ink);stroke-width:.8} svg .rodmark2{fill:none;stroke:var(--accent);stroke-width:1.2;stroke-dasharray:2 1.5} svg .stud{fill:var(--stud);stroke:var(--muted);stroke-width:.8} svg .osb{fill:var(--pcA);stroke:var(--muted);stroke-width:.8} svg .finish{fill:var(--sheet);stroke:var(--muted);stroke-width:.8} svg .pc-spare{fill:var(--sheet);stroke-dasharray:3 2}
+svg .pc-code{fill:var(--ink);font:700 15px var(--mono)}
+svg .edge{stroke:var(--accent);stroke-width:2.5}
+svg .shelfline{fill:var(--adj);opacity:.7} svg .conf{fill:var(--accent)} svg .pin{fill:var(--ink)} svg .rodmark{fill:none;stroke:var(--accent);stroke-width:1.5}
+svg .wall{fill:var(--waste)} svg .shim{fill:var(--pcA);stroke:var(--ink);stroke-width:.8} svg .dowel{fill:var(--back);stroke:var(--muted)} svg .screw{stroke:var(--ink);stroke-width:2} svg .screwhead{fill:var(--ink)}
+.v3d{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(0,1fr);gap:0;border:1px solid var(--line);background:var(--surface);margin:18px 0}
+.v3d-stage{position:relative;border-right:1px solid var(--line);min-width:0}
+.v3d-canvas canvas{display:block;width:100%;height:auto;touch-action:none;cursor:grab}
+.v3d-canvas canvas:active{cursor:grabbing}
+.v3d-hint{position:absolute;left:10px;bottom:8px;font:500 11px var(--mono);color:var(--muted);pointer-events:none}
+.v3d-fallback{padding:24px;margin:0}
+.v3d.no3d{grid-template-columns:1fr}.v3d.no3d .v3d-canvas,.v3d.no3d .v3d-hint{display:none}
+.v3d-panel{padding:16px 18px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.v3d-count{display:flex;justify-content:space-between;gap:8px;font:600 12px/1 var(--mono);color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
+.v3d-sec{color:var(--accent)}
+.v3d-panel h3{margin:0;font:700 19px/1.25 var(--display)}
+.v3d-panel p{margin:0;font-size:15px;min-height:7.5em}
+.v3d-nav{display:flex;gap:8px}
+.v3d-nav button{flex:1;font:600 14px var(--body);padding:10px 12px;border-radius:3px;border:1px solid var(--ink);background:var(--surface);color:var(--ink);cursor:pointer}
+.v3d-nav button.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.v3d-nav button:disabled{opacity:.35;cursor:default}
+.v3d-nav button:focus-visible,.v3d-dots button:focus-visible,.board-img:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.v3d-dots{display:flex;flex-wrap:wrap;gap:4px}
+.v3d-dots button{font:600 11px/1 var(--mono);width:28px;height:26px;border:1px solid var(--line);background:var(--sheet);color:var(--muted);border-radius:2px;cursor:pointer;padding:0}
+.v3d-dots button[aria-selected="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.v3d-legend{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:12px;color:var(--muted);margin-top:auto;padding-top:6px;border-top:1px dashed var(--line)}
+.v3d-legend span{display:inline-flex;align-items:center;gap:5px}
+.v3d-legend i{display:inline-block;width:11px;height:11px;border:1px solid var(--line)}
+ol.board{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+ol.board li{margin:0;border:1px solid var(--line);background:var(--surface);display:flex;flex-direction:column}
+.board-img{display:block;padding:0;border:0;background:var(--sheet);cursor:pointer;aspect-ratio:1.6;width:100%}
+.board-img img{display:block;width:100%;height:100%;object-fit:cover}
+.board-cap{padding:10px 12px 12px}
+.board-h{display:flex;align-items:baseline;gap:8px}
+.board-h b{font:700 13px/22px var(--mono);min-width:24px;text-align:center;background:var(--accent);color:var(--accent-ink);border-radius:2px}
+.board-h span{font-weight:600}
+.board-h em{margin-left:auto;font:normal 500 11px var(--mono);color:var(--muted);white-space:nowrap}
+.board-cap p{font-size:13px;line-height:1.5;margin:6px 0 0;color:var(--muted)}
+.d3d-wrap{position:relative}
+.lbl-toggle{font:600 13px var(--body);padding:8px 10px;border-radius:3px;border:1px solid var(--line);background:var(--sheet);color:var(--ink);cursor:pointer;text-align:left}
+.lbl-toggle[aria-pressed="true"]{border-color:var(--accent);color:var(--accent)}
+.lbl-toggle:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.v3d-codes{font:500 11px/1.5 var(--mono);color:var(--muted)}
+.a3d-info{font-size:13px;line-height:1.45;background:var(--sheet);border:1px dashed var(--line);padding:8px 10px;color:var(--ink)}
+.d3d-overlay{position:absolute;left:0;top:0;pointer-events:none}
+@media (max-width:720px){ .v3d{grid-template-columns:1fr} .v3d-stage{border-right:0;border-bottom:1px solid var(--line)} .v3d-panel p{min-height:0} }
+@media print{ .v3d{display:none} ol.board{grid-template-columns:1fr 1fr} ol.board li{break-inside:avoid} }
+svg .room{fill:var(--surface);stroke:var(--line)} svg .wallfill{fill:var(--part)} svg .glass{fill:var(--pcC);stroke:var(--part);stroke-width:1} svg .trim{fill:var(--muted)} svg .wardrobe{fill:var(--pcG);stroke:var(--ink);stroke-width:1.2} svg .doorzone{fill:none;stroke:var(--accent);stroke-width:1;stroke-dasharray:4 3} svg .swing{fill:none;stroke:var(--muted);stroke-width:1;stroke-dasharray:3 2} svg .swingleaf{stroke:var(--part);stroke-width:2} svg .dimw{stroke:#d6336c;stroke-width:1.2} svg .dim-w{fill:#d6336c;font:600 11px var(--mono)}
+@media (max-width:520px){ body{font-size:15px} h2{font-size:20px} }
+@media print{ nav.toc{display:none} section{break-inside:auto} figure,.handout,.tw{break-inside:avoid} body{padding-inline:0} }
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+<header class="top">
+  <div class="eyebrow">Инструкция · версия 3.1 · 27.09.2026 · коридор DUB 138</div>
+  <h1>Шкаф в прихожую 3100 × 3100 × 500</h1>
+  <p class="lede">Открытый шкаф из готовых белых деталей Лемана ПРО: два модуля по 1550 мм и две антресоли сверху. Стоит в коридоре модульного дома DUBLDOM DUB 138 вдоль стены «Вид 1», от наружной стены до стены с проёмом в холл. Задней стенки нет, шкаф крепится к каркасу дома через задние царги. Двери-купе ставятся потом отдельно, на стены и потолок. Здесь всё, что нужно: что купить, как распилить, как сверлить, в каком порядке собирать. Галочки в списках сохраняются в этом браузере.</p>
+  <div class="facts">
+    <div><b>2 + 2</b><span>модуля и антресоли</span></div>
+    <div><b>17 + 4</b><span>деталей 2700×500 и 2700×100</span></div>
+    <div><b>≈ 37 300 ₽</b><span>материалы, без распила</span></div>
+    <div><b>2 дня</b><span>работы, поднимать втроём</span></div>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Этапы">
+  <a href="#s3d"><b>3D</b>По шагам</a><a href="#s3d2"><b>3D</b>Сверление</a><a href="#s3d3"><b>3D</b>Детали → шкаф</a><a href="#s0"><b>0</b>Ниша и стены</a><a href="#s1"><b>1</b>Покупки</a><a href="#s2"><b>2</b>Распил</a><a href="#s3"><b>3</b>Инструмент</a><a href="#s4"><b>4</b>Маркировка</a><a href="#s5"><b>5</b>Сверление</a><a href="#s6"><b>6</b>Модули</a><a href="#s7"><b>7</b>Антресоли</a><a href="#s8"><b>8</b>Установка</a><a href="#s9"><b>9</b>К стенам</a><a href="#s10"><b>10</b>Наполнение</a><a href="#s11"><b>11</b>Приёмка</a>
+</nav>
+
+<section id="scheme">
+  <div class="sh"><h2>Как устроен шкаф</h2></div>
+  <figure>
+    <svg viewBox="0 0 760 740" role="img" aria-label="Вид спереди: 2 модуля по 1550 мм, 4 секции по 751 мм, антресоли 400 мм"><rect x="70.0" y="580.0" width="310.0" height="20.0" class="rail"/><rect x="70.0" y="104.0" width="310.0" height="20.0" class="rail"/><rect x="70.0" y="104.0" width="3.2" height="540.0" class="part"/><rect x="376.8" y="104.0" width="3.2" height="540.0" class="part"/><rect x="73.2" y="580.0" width="303.6" height="3.2" class="part"/><rect x="73.2" y="221.6" width="303.6" height="3.2" class="part"/><rect x="73.2" y="104.0" width="303.6" height="3.2" class="part"/><rect x="223.4" y="583.2" width="3.2" height="60.8" class="part"/><rect x="223.4" y="224.8" width="3.2" height="355.2" class="part"/><rect x="223.4" y="107.2" width="3.2" height="114.4" class="part"/><rect x="70.0" y="24.0" width="3.2" height="80.0" class="part"/><rect x="376.8" y="24.0" width="3.2" height="80.0" class="part"/><rect x="73.2" y="100.8" width="303.6" height="3.2" class="part"/><rect x="73.2" y="24.0" width="303.6" height="3.2" class="part"/><rect x="223.4" y="27.2" width="3.2" height="73.6" class="part"/><text x="225.0" y="68.0" class="mod" text-anchor="middle">антресоль 1</text><text x="225.0" y="660.0" class="mod" text-anchor="middle">М1</text><rect x="74.2" y="159.2" width="148.2" height="3.2" class="adj"/><line x1="79.2" y1="244.0" x2="217.4" y2="244.0" class="rod"/><text x="148.3" y="238.0" class="dim-s" text-anchor="middle">штанга 2000</text><text x="148.3" y="550.0" class="note" text-anchor="middle">1 · длинная одежда</text><rect x="227.6" y="159.2" width="148.2" height="3.2" class="adj"/><line x1="232.6" y1="254.0" x2="370.8" y2="254.0" class="rod"/><text x="301.7" y="248.0" class="dim-s" text-anchor="middle">штанга 1950</text><line x1="232.6" y1="424.0" x2="370.8" y2="424.0" class="rod"/><text x="301.7" y="418.0" class="dim-s" text-anchor="middle">штанга 1100</text><text x="301.7" y="550.0" class="note" text-anchor="middle">2 · две штанги</text><rect x="380.0" y="580.0" width="310.0" height="20.0" class="rail"/><rect x="380.0" y="104.0" width="310.0" height="20.0" class="rail"/><rect x="380.0" y="104.0" width="3.2" height="540.0" class="part"/><rect x="686.8" y="104.0" width="3.2" height="540.0" class="part"/><rect x="383.2" y="580.0" width="303.6" height="3.2" class="part"/><rect x="383.2" y="221.6" width="303.6" height="3.2" class="part"/><rect x="383.2" y="104.0" width="303.6" height="3.2" class="part"/><rect x="533.4" y="583.2" width="3.2" height="60.8" class="part"/><rect x="533.4" y="224.8" width="3.2" height="355.2" class="part"/><rect x="533.4" y="107.2" width="3.2" height="114.4" class="part"/><rect x="380.0" y="24.0" width="3.2" height="80.0" class="part"/><rect x="686.8" y="24.0" width="3.2" height="80.0" class="part"/><rect x="383.2" y="100.8" width="303.6" height="3.2" class="part"/><rect x="383.2" y="24.0" width="303.6" height="3.2" class="part"/><rect x="533.4" y="27.2" width="3.2" height="73.6" class="part"/><text x="535.0" y="68.0" class="mod" text-anchor="middle">антресоль 2</text><text x="535.0" y="660.0" class="mod" text-anchor="middle">М2</text><rect x="384.2" y="159.2" width="148.2" height="3.2" class="adj"/><rect x="384.2" y="504.8" width="148.2" height="3.2" class="adj"/><rect x="384.2" y="434.4" width="148.2" height="3.2" class="adj"/><rect x="384.2" y="364.0" width="148.2" height="3.2" class="adj"/><rect x="384.2" y="293.6" width="148.2" height="3.2" class="adj"/><text x="458.3" y="550.0" class="note" text-anchor="middle">3 · полки</text><rect x="537.6" y="159.2" width="148.2" height="3.2" class="adj"/><rect x="537.6" y="504.8" width="148.2" height="3.2" class="adj"/><rect x="537.6" y="434.4" width="148.2" height="3.2" class="adj"/><rect x="537.6" y="364.0" width="148.2" height="3.2" class="adj"/><rect x="537.6" y="293.6" width="148.2" height="3.2" class="adj"/><text x="611.7" y="550.0" class="note" text-anchor="middle">4 · полки</text><line x1="73.2" y1="674.0" x2="73.2" y2="682.0" class="dim"/><line x1="223.4" y1="674.0" x2="223.4" y2="682.0" class="dim"/><line x1="73.2" y1="678.0" x2="223.4" y2="678.0" class="dim"/><text x="148.3" y="674.0" class="dim-t" text-anchor="middle">751</text><line x1="226.6" y1="674.0" x2="226.6" y2="682.0" class="dim"/><line x1="376.8" y1="674.0" x2="376.8" y2="682.0" class="dim"/><line x1="226.6" y1="678.0" x2="376.8" y2="678.0" class="dim"/><text x="301.7" y="674.0" class="dim-t" text-anchor="middle">751</text><line x1="383.2" y1="674.0" x2="383.2" y2="682.0" class="dim"/><line x1="533.4" y1="674.0" x2="533.4" y2="682.0" class="dim"/><line x1="383.2" y1="678.0" x2="533.4" y2="678.0" class="dim"/><text x="458.3" y="674.0" class="dim-t" text-anchor="middle">751</text><line x1="536.6" y1="674.0" x2="536.6" y2="682.0" class="dim"/><line x1="686.8" y1="674.0" x2="686.8" y2="682.0" class="dim"/><line x1="536.6" y1="678.0" x2="686.8" y2="678.0" class="dim"/><text x="611.7" y="674.0" class="dim-t" text-anchor="middle">751</text><line x1="70.0" y1="698.0" x2="70.0" y2="706.0" class="dim"/><line x1="380.0" y1="698.0" x2="380.0" y2="706.0" class="dim"/><line x1="70.0" y1="702.0" x2="380.0" y2="702.0" class="dim"/><text x="225.0" y="698.0" class="dim-t" text-anchor="middle">1550</text><line x1="380.0" y1="698.0" x2="380.0" y2="706.0" class="dim"/><line x1="690.0" y1="698.0" x2="690.0" y2="706.0" class="dim"/><line x1="380.0" y1="702.0" x2="690.0" y2="702.0" class="dim"/><text x="535.0" y="698.0" class="dim-t" text-anchor="middle">1550</text><line x1="70.0" y1="726.0" x2="690.0" y2="726.0" class="dim"/><line x1="70.0" y1="722.0" x2="70.0" y2="730.0" class="dim"/><line x1="690.0" y1="722.0" x2="690.0" y2="730.0" class="dim"/><text x="380.0" y="722.0" class="dim-t" text-anchor="middle">3100 общая ширина</text><line x1="708.0" y1="644.0" x2="708.0" y2="24.0" class="dim"/><line x1="703.0" y1="644.0" x2="713.0" y2="644.0" class="dim"/><text x="717.0" y="648.0" class="dim-t" text-anchor="start">0</text><line x1="703.0" y1="580.0" x2="713.0" y2="580.0" class="dim"/><text x="717.0" y="584.0" class="dim-t" text-anchor="start">320</text><line x1="703.0" y1="221.6" x2="713.0" y2="221.6" class="dim"/><text x="717.0" y="225.6" class="dim-t" text-anchor="start">2112</text><line x1="703.0" y1="104.0" x2="713.0" y2="104.0" class="dim"/><text x="717.0" y="108.0" class="dim-t" text-anchor="start">2700</text><line x1="703.0" y1="24.0" x2="713.0" y2="24.0" class="dim"/><text x="717.0" y="28.0" class="dim-t" text-anchor="start">3100</text><line x1="40.0" y1="644.0" x2="698.0" y2="644.0" class="floor"/><text x="62.0" y="639.0" class="dim-s" text-anchor="end">пол</text><text x="62.0" y="590.0" class="dim-s" text-anchor="end">царга</text><text x="62.0" y="114.0" class="dim-s" text-anchor="end">царга</text></svg>
+    <figcaption>Вид спереди в масштабе. Тёмное — детали на конфирматах. Светлое — регулируемые полки на полкодержателях. Полосы на 220–320 и 2600–2700 — задние царги, они видны сквозь проёмы. Все высоты указаны от пола до верхней плоскости полки, в миллиметрах.</figcaption>
+  </figure>
+  <ul>
+    <li><b>Модуль М1, М2</b>: корпус 1550 × 2700 × 500. Две боковины и три горизонтали на всю ширину: полка на <span class="d">320</span>, полка на <span class="d">2112</span> и крышка на <span class="d">2700</span>. По центру перегородка из трёх стоек П1–П3, вставленных между полками. Сзади две царги 1550×100 вместо задней стенки.</li>
+    <li><b>Секции</b>, как раньше: 1 с длинной одеждой, 2 с двумя штангами, 3 и 4 по 4 полки. В верхней зоне каждой секции переставная полка. Проём секции <span class="d">751</span>.</li>
+    <li><b>Антресоль 1, 2</b>: короб 1550 × 400 × 500 с перегородкой по центру, стоит на крышке своего модуля.</li>
+    <li><b>Глубина</b> 500 по корпусу и <span class="d">516</span> по царгам. Задней стенки нет, поэтому сквозь полки будет видна стена ниши.</li>
+  </ul>
+
+  <div class="why">
+    <h3>Что поменялось в версии 3 и почему</h3>
+    <ul>
+      <li><b>Нет задней стенки.</b> Её работу делают две царги 1550×100 на каждом модуле, вверху и внизу. Царга держит модуль прямоугольным, пока его поднимают, а в нише через неё шкаф крепится к стойкам каркаса. Царги — готовые детали 2700×100 с кромкой, их только отрезают по длине.</li>
+      <li><b>2 модуля вместо 4.</b> Деталей меньше, двойная стенка одна, по центру. Проёмы стали 751 мм вместо 743. Перегородка внутри модуля собрана из трёх стоек между полками: так каждую стойку можно прикрутить конфирматами сквозь полку. Сплошная перегородка упёрлась бы в ту же проблему со встречными конфирматами. Цена за это: модуль тяжелее (около 75 кг) и больше (1,55 × 2,7 м). Собирать его нужно на площади 3 × 2 м, поднимать вдвоём, а лучше втроём.</li>
+      <li><b>Крепление под каркасный дом.</b> Дюбель-гвозди убраны: в дереве и ОСП они не держат. Вместо них саморезы по дереву в стойки каркаса, а где стоек нет — в ОСП.</li>
+      <li><b>Верхняя штанга секции 2 теперь на 1950.</b> Держатели секций 1 и 2 крепятся к перегородке с двух сторон, и на одной высоте их саморезы встретились бы в толще 16 мм.</li>
+      <li><b>Полки 320 и 2112 вместо 300 и 2100.</b> Так отверстия под полкодержатели на боковинах и на стойках попадают в одну сетку кондуктора МК-20 и каждая деталь сверлится от своего нижнего торца. Под обувь стало 304 мм вместо 284, высоты штанг не поменялись.</li>
+      <li>Осталось как было: детали Лемана 2700×500 с заводской кромкой и регулируемые полки на 2 мм уже проёма (749 при 751).</li>
+    </ul>
+  </div>
+</section>
+
+<section id="s3d">
+  <div class="sh"><h2>3D-сборка по шагам</h2><span class="time">13 шагов</span></div>
+  <p>Модель в масштабе. Бирюзовым подсвечено то, что добавляется на текущем шаге, жёлтые точки показывают крепёж. Модель можно вращать мышью или пальцем и приближать колесом. Подробности к каждому шагу есть в этапах ниже, номер этапа указан над заголовком шага.</p>
+  <div id="v3d" class="v3d">
+    <div class="v3d-stage">
+      <div id="v3d-canvas" class="v3d-canvas" aria-label="3D-модель шкафа"></div>
+      <div class="v3d-hint">тянуть: вращать · колесо: масштаб</div>
+      <p class="v3d-fallback" id="v3d-fallback" hidden>3D не запустилось в этом браузере. Ниже те же шаги картинками и текстом.</p>
+    </div>
+    <div class="v3d-panel">
+      <div class="v3d-count"><span id="v3d-n">Шаг 1 из 13</span><span id="v3d-sec" class="v3d-sec">этап 6</span></div>
+      <h3 id="v3d-title">Боковины на ребро</h3>
+      <p id="v3d-text"></p>
+      <div class="v3d-nav">
+        <button type="button" id="v3d-prev">← Назад</button>
+        <button type="button" id="v3d-next" class="primary">Дальше →</button>
+      </div>
+      <div class="v3d-dots" id="v3d-dots" role="tablist" aria-label="Шаги"></div>
+      <button type="button" id="v3d-lbl" class="lbl-toggle" aria-pressed="true">Обозначения: вкл</button>
+      <div class="v3d-codes">Б боковина · Г горизонталь · П1–П3 стойки · П4 перегородка антресоли · Р полка · А боковина антресоли · Ц царга</div>
+      <div class="v3d-legend">
+        <span><i style="background:#5cc8ad"></i>новое на шаге</span>
+        <span><i style="background:#eef0ee"></i>ЛДСП</span>
+        <span><i style="background:#c9a46a"></i>стойка каркаса</span>
+        <span><i style="background:#e0a21b;border-radius:50%"></i>крепёж</span>
+        <span><i style="background:#0d6b59;border-radius:50%"></i>конфирмат</span>
+      </div>
+    </div>
+  </div>
+  <h3>Все шаги на одном листе</h3>
+  <ol class="board" id="board"></ol>
+</section>
+
+
+<section id="s0">
+  <div class="sh"><span class="num">0</span><h2>Ниша и стены</h2><span class="time">по развёрткам DUB 138, лист 11</span></div>
+  <figure><svg viewBox="0 0 775 547" role="img" aria-label="План коридора: шкаф вдоль стены 3149, наружная стена с окном и дверью, проём в холл"><rect x="90.0" y="50.0" width="535.3" height="467.2" class="room"/><rect x="78.0" y="38.0" width="559.3" height="12.0" class="wallfill"/><rect x="78.0" y="517.2" width="559.3" height="12.0" class="wallfill"/><rect x="66.0" y="50.0" width="24.0" height="103.9" class="wallfill"/><rect x="66.0" y="271.2" width="24.0" height="24.8" class="wallfill"/><rect x="66.0" y="449.8" width="24.0" height="67.3" class="wallfill"/><rect x="66.0" y="159.0" width="24.0" height="112.2" class="glass"/><rect x="66.0" y="153.9" width="24.0" height="5.1" class="trim"/><rect x="66.0" y="266.1" width="24.0" height="5.1" class="trim"/><path d="M 66.0 296.0 A 148.8 148.8 0 0 0 -82.8 444.7" class="swing"/><line x1="66.0" y1="296.0" x2="-82.8" y2="296.0" class="swingleaf"/><text x="20.0" y="396.0" class="dim-s" text-anchor="middle">вход</text><text x="54.0" y="215.1" class="dim-s" text-anchor="end">окно</text><rect x="625.3" y="50.0" width="12.0" height="105.1" class="wallfill"/><rect x="625.3" y="412.1" width="12.0" height="105.1" class="wallfill"/><text x="643.3" y="283.6" class="dim-s" text-anchor="start">проём в холл 1472</text><rect x="93.4" y="50.0" width="527.0" height="87.7" class="wardrobe"/><text x="356.9" y="97.9" class="mod" text-anchor="middle">шкаф 3100 × 516</text><rect x="90.0" y="137.7" width="535.3" height="17.0" class="doorzone"/><text x="357.6" y="150.2" class="dim-s" text-anchor="middle">зона дверей-купе ~95–100</text><text x="357.6" y="305.0" class="note" text-anchor="middle">коридор</text><line x1="90.0" y1="20.0" x2="625.3" y2="20.0" class="dim"/><line x1="90.0" y1="15.0" x2="90.0" y2="25.0" class="dim"/><line x1="625.3" y1="15.0" x2="625.3" y2="25.0" class="dim"/><text x="357.7" y="16.0" class="dim-t" text-anchor="middle">3149 — стена «Вид 1», вдоль неё шкаф</text><line x1="40.0" y1="50.0" x2="40.0" y2="153.9" class="dimw"/><text x="35.0" y="101.8" class="dim-w" text-anchor="end">611</text><line x1="655.3" y1="50.0" x2="655.3" y2="155.1" class="dimw"/><text x="660.3" y="102.5" class="dim-w" text-anchor="start">618</text><line x1="605.3" y1="50.0" x2="605.3" y2="517.2" class="dim"/><text x="599.3" y="477.2" class="dim-t" text-anchor="end">2748</text></svg><figcaption>План коридора по развёртке. Шкаф вдоль стены «Вид 1». Слева наружная стена с окном и входной дверью, справа проём в холл.</figcaption></figure>
+    <div class="tw"><table>
+      <thead><tr><th>Проверено</th><th>Значение</th></tr></thead>
+      <tbody>
+        <tr><td>Ширина ниши (стена «Вид 1»)</td><td class="mono">3149 по чертежу, по замеру ≥ 3105 ✓</td></tr>
+        <tr><td>Высота у стены</td><td class="mono">3377, потолок двускатный ✓</td></tr>
+        <tr><td>Глубина до окна / проёма</td><td class="mono">611 / 618, шкаф 516</td></tr>
+        <tr><td>Проход после шкафа</td><td class="mono">≈ 2130</td></tr>
+        <tr><td>Стены</td><td>деревянный каркас, отделка вагонкой ✓</td></tr>
+        <tr><td>Светильники</td><td>у конька, над шкафом их нет ✓</td></tr>
+      </tbody>
+    </table></div>
+  <p>Шкаф 3100 в нише 3149, зазор около 49 мм. У наружной стены оставить <b>15–20 мм</b> на проветривание, остальное уходит к стене у проёма. Оба зазора закрываются проставками в точках крепления, за дверями-купе их не видно.</p>
+  <h3>Что осталось сделать перед сборкой</h3>
+  <ul class="chk">
+    <li class="c"><input type="checkbox" id="c1"><label for="c1"><b>Найти стойки каркаса на стене «Вид 1».</b> Вагонка прибита к стойкам, поэтому гвозди и саморезы идут вертикальными рядами, обычно через 400–600 мм. Их видно или находит магнит. Отметить линии стоек карандашом до высоты 2700. В углах, где стены сходятся, стойка есть почти всегда.</label></li>
+    <li class="c"><input type="checkbox" id="c2"><label for="c2"><b>Проводка.</b> На стене «Вид 1» по развёртке розеток и выключателей нет. Всё равно проверить детектором места под царги: 220–320 и 2600–2700 от пола.</label></li>
+    <li class="c"><input type="checkbox" id="c3"><label for="c3"><b>Пол</b>: уровнем 2 м вдоль стены найти самую высокую точку.</label></li>
+    <li class="c"><input type="checkbox" id="c4"><label for="c4"><b>Плинтус</b> вдоль стены «Вид 1» и на 60 см по боковым стенам снять.</label></li>
+    <li class="c"><input type="checkbox" id="c5"><label for="c5"><b>Место для сборки</b>: 3 × 2 м. Коридор 3149 × 2748 подходит, модули собираются прямо в нём по очереди.</label></li>
+  </ul>
+  <div class="note"><strong>Двери-купе, сказать мастеру заранее.</strong> Шкаф глубиной 516 мм. От стены до наличника окна 611 мм, до проёма в холл 618 мм, поэтому система нужна не толще 95 мм. Потолок над дверями наклонный (от 3377 у стены вверх к коньку 3806), для верхнего рельса нужен горизонтальный короб или фальш-панель.</div>
+</section>
+
+<section id="s1">
+  <div class="sh"><span class="num">1</span><h2>Список покупок</h2><span class="time">цены lemanapro.ru, Москва, 25–27.09.2026</span></div>
+  <div class="tw"><table>
+    <thead><tr><th>Позиция</th><th>Артикул</th><th class="n">Кол-во</th><th class="n">Цена</th><th class="n">Сумма</th></tr></thead>
+    <tbody>
+      <tr><td>Деталь мебельная 2700×500×16 ЛДСП белый премиум, кромка с длинных сторон</td><td class="art">82036041</td><td class="n">17 шт</td><td class="n">1 860</td><td class="n">31 620</td></tr>
+      <tr><td>Деталь мебельная 2700×100×16 ЛДСП белый премиум, кромка с длинных сторон (царги)</td><td class="art">82124609</td><td class="n">4 шт</td><td class="n">547</td><td class="n">2 188</td></tr>
+      <tr><td>Конфирмат DIN 7541 7×50, 40 шт</td><td class="art">89403046</td><td class="n">4 уп</td><td class="n">184</td><td class="n">736</td></tr>
+      <tr><td>Сверло под конфирмат 7×50 (ступенчатое, с зенковкой)</td><td class="art">82909835</td><td class="n">1 шт</td><td class="n">271</td><td class="n">271</td></tr>
+      <tr><td>Полкодержатель 5×16 никель, 20 шт</td><td class="art">89413609</td><td class="n">3 уп</td><td class="n">98</td><td class="n">294</td></tr>
+      <tr><td>Штанга овальная 30×15 хром L‑800, с креплениями</td><td class="art">91796682</td><td class="n">3 шт</td><td class="n">270</td><td class="n">810</td></tr>
+      <tr><td>Уголок мебельный 20×20, 4 шт (низ стоек П3)</td><td class="art">90546533</td><td class="n">1 уп</td><td class="n">50</td><td class="n">50</td></tr>
+      <tr><td>Саморезы потайные 3,5×16, 100 шт (уголки)</td><td class="art">89454917</td><td class="n">1 уп</td><td class="n">78</td><td class="n">78</td></tr>
+      <tr><td>Саморезы потайные 4×25, 400 шт (стяжка модулей, антресоли)</td><td class="art">89454935</td><td class="n">1 уп</td><td class="n">288</td><td class="n">288</td></tr>
+      <tr><td>Саморезы универсальные потайные 6×90, 40 шт (царги и боковины в стойки каркаса)</td><td class="art">89344133</td><td class="n">1 уп</td><td class="n">176</td><td class="n">176</td></tr>
+      <tr><td>Саморезы универсальные 6×120, на вес, около 6 шт (боковина к наружной стене через проставку)</td><td class="art">89384748</td><td class="n">6 шт</td><td class="n">528/кг</td><td class="n">≈ 80</td></tr>
+      <tr><td>Саморезы по дереву потайные 5×60, 80 шт (в вагонку, где нет стойки)</td><td class="art">89386282</td><td class="n">1 уп</td><td class="n">328</td><td class="n">328</td></tr>
+      <tr><td>Клин монтажный 91×43×15, 2 шт</td><td class="art">18657836</td><td class="n">4 уп</td><td class="n">85</td><td class="n">340</td></tr>
+      <tr class="total"><td>Итого материалы</td><td></td><td></td><td></td><td class="n">≈ 37 260</td></tr>
+    </tbody>
+  </table></div>
+  <ul>
+    <li><b>Запасной детали нет.</b> Если при сборке что-то сколется, нужная деталь дозаказывается с распилом в том же магазине и приезжает уже готовой. Одна запасная полка <span class="code cR">Р</span> всё же получится сама собой из карты 4.</li>
+
+
+    <li><b>Распил</b> в Лемана ПРО Зеленоград стоит 85 ₽ за рез ЛДСП. По картам выходит 48 резов вместе с торцовкой, это около 4 100 ₽. Если заводские торцы ровные и торцовку пропустить, 37 резов, около 3 150 ₽. Царги ещё 4 реза, около 340 ₽. Всего с распилом проект стоит около 41 000 ₽.</li>
+    <li><b>Доставка:</b> около 280 кг, длина 2,7 м. Нужна доставка Лемана или грузовое такси.</li>
+    <li><b>Крепёж</b> подобран под твои стены (каркас и вагонка): саморезы по дереву 6×90 в стойки и 5×60 в вагонку. Для наружной стены добавь 6 саморезов 6×120.</li>
+    <li>Штанги в карточке идут «с креплениями». Перед оплатой проверь, что в комплекте по два держателя.</li>
+    <li>ДВП, саморезы к ней и дюбель-гвозди из прошлой версии больше не нужны.</li>
+  </ul>
+
+  <h3>Инструмент и расходники в Лемана ПРО</h3>
+  <p>Если чего-то из этого нет дома. Можно взять вместе с деталями, чтобы не ездить второй раз. Шуруповёрт и стремянки не считала: скорее всего, они у тебя есть. Кондуктор МК-20 тоже уже есть.</p>
+  <div class="tw"><table>
+    <thead><tr><th>Позиция</th><th>Артикул</th><th class="n">Кол-во</th><th class="n">Цена</th><th class="n">Сумма</th><th>Зачем</th></tr></thead>
+    <tbody>
+      <tr><td>Набор свёрл по дереву Fit 36103, 3–10 мм, 8 шт</td><td class="art">93007280</td><td class="n">1</td><td class="n">475</td><td class="n">475</td><td>5 мм под полкодержатели, 4 мм под 6×90, 3 мм под 4×25</td></tr>
+      <tr><td>Набор бит магнитных Vira 554106, 32 шт (есть HEX4 и PH2)</td><td class="art">89383370</td><td class="n">1</td><td class="n">978</td><td class="n">978</td><td>HEX4 для конфирматов, PH2 для саморезов</td></tr>
+      <tr><td>Ключ шестигранный Matrix 4 мм</td><td class="art">87788431</td><td class="n">1</td><td class="n">20</td><td class="n">20</td><td>дотягивать конфирматы рукой</td></tr>
+      <tr><td>Струбцина F‑образная Dexter 300 мм</td><td class="art">82305121</td><td class="n">2</td><td class="n">494</td><td class="n">988</td><td>зажать кондуктор, стянуть модули при стяжке</td></tr>
+      <tr><td>Ремень стяжной UVE 5 м, 25 мм, с храповиком</td><td class="art">92351794</td><td class="n">2</td><td class="n">528</td><td class="n">1 056</td><td>стянуть модуль шириной 1550 при сборке</td></tr>
+      <tr><td>Малярная лента Unibob 50 мм × 50 м</td><td class="art">89472023</td><td class="n">1</td><td class="n">348</td><td class="n">348</td><td>подписи деталей, флажок глубины на сверле</td></tr>
+      <tr><td>Карандаш строительный Кобальт</td><td class="art">89374069</td><td class="n">2</td><td class="n">27</td><td class="n">54</td><td>разметка</td></tr>
+      <tr><td>Рулетка Вихрь 5 м с автостопом</td><td class="art">89415105</td><td class="n">1</td><td class="n">218</td><td class="n">218</td><td>замеры и разметка</td></tr>
+      <tr><td>Угольник алюминиевый 300 мм</td><td class="art">86813676</td><td class="n">1</td><td class="n">460</td><td class="n">460</td><td>проверка 90° при сборке</td></tr>
+      <tr><td>Уровень пузырьковый Вихрь 2000 мм, 3 глазка</td><td class="art">91055284</td><td class="n">1</td><td class="n">890</td><td class="n">890</td><td>выставить модули, пол</td></tr>
+      <tr><td>Детектор проводки и металла Ermenrich Ping SA30</td><td class="art">92050367</td><td class="n">1</td><td class="n">1 190</td><td class="n">1 190</td><td>найти гвозди в вагонке (= стойки) и проводку</td></tr>
+      <tr><td>Пила ручная по металлу Vertextools 300 мм</td><td class="art">89471571</td><td class="n">1</td><td class="n">110</td><td class="n">110</td><td>укоротить штанги</td></tr>
+      <tr><td>Напильник Вихрь 200 мм</td><td class="art">91934833</td><td class="n">1</td><td class="n">200</td><td class="n">200</td><td>снять заусенец со штанги</td></tr>
+      <tr class="total"><td>Итого инструмент</td><td></td><td></td><td></td><td class="n">≈ 6 990</td><td></td></tr>
+      <tr><td>По ситуации: пила по ламинату Gross Piranha 360 мм</td><td class="art">84952632</td><td class="n">1</td><td class="n">1 448</td><td class="n">1 448</td><td>только если в магазине не возьмутся резать царги 100 мм</td></tr>
+    </tbody>
+  </table></div>
+  <p>Картон на пол брать не нужно, хватит упаковки от доставки. Если сверло 5 мм сломается, отдельное сверло по дереву 5 мм есть на той же полке, стоит копейки.</p>
+</section>
+
+<section id="s2">
+  <div class="sh"><span class="num">2</span><h2>Распил в Лемана ПРО</h2><span class="time">в день покупки</span></div>
+  <p>Распил делают только для товара, купленного в этом же магазине. Блок ниже можно распечатать или показать с телефона на стойке «Резка дерева».</p>
+  <div class="note"><strong>Ограничения Лемана ПРО Зеленоград</strong> и как проект в них укладывается:
+    <ul>
+      <li><b>«Возможен только поперечный распил».</b> Весь раскрой поперечный, продольных резов нет. Поэтому проект и собран из деталей шириной 500.</li>
+      <li><b>«Детали менее 25 см не подлежат распилу».</b> Самая маленькая деталь — стойка П1 304×500, она проходит. Торцовка 10 мм и хвосты по краям — отход, а не детали, но перед поездкой это лучше уточнить по телефону.</li>
+      <li><b>Царги 100 мм уже 25 см.</b> Возможно, их резать откажутся. Тогда 4 реза делаются дома ножовкой с мелким зубом по малярному скотчу. Торцы царг прячутся в стыках, так что небольшой скол не страшен.</li>
+    </ul>
+  </div>
+  <div class="handout">
+    <h3>Для стойки распила</h3>
+    <p><b>ЛДСП 2700×500×16, 17 шт.</b> Все резы поперёк, ширину 500 не трогать. Перед первым резом выровнять торец (10 мм), если он не под 90° или побит. Если торец ровный, торцовку можно пропустить. Резать от больших деталей к меньшим.</p>
+    <ul>
+      <li><b>4 шт без распила</b>: целые боковины.</li>
+      <li><b>4 шт по карте 1</b>: 1518 + 749 + 400.</li>
+      <li><b>2 шт по карте 2</b>: 1518 + 749 + 368.</li>
+      <li><b>4 шт по карте 3</b>: 1518 + 749.</li>
+      <li><b>1 шт по карте 4</b>: 749 + 749 + 749.</li>
+      <li><b>2 шт по карте 5</b>: 1776 + 572 + 304.</li>
+    </ul>
+    <p>Все 1518 резать с одного упора, допуск <b>±0,5 мм</b>: от них зависят ширина модуля 1550 и общая 3100. Все 749 тоже с одного упора.</p>
+    <p><b>ЛДСП 2700×100×16, 4 шт.</b> Отрезать 1550, торцовка не нужна. Если узкое не режут, эти 4 реза сделаю дома.</p>
+    <p>Итого на выходе: 10 шт 1518×500, 13 шт 749×500, 4 шт 400×500, 2 шт 368×500, по 2 шт 1776, 572 и 304 ×500, 4 шт 1550×100.</p>
+  </div>
+  <figure>
+    <svg viewBox="0 0 696 904" role="img" aria-label="Карты распила панелей 2700×500 и царг 2700×100"><text x="24.0" y="20.0" class="mod" text-anchor="start">Карта 1</text><text x="104.0" y="20.0" class="dim-t" text-anchor="start">× 4 панели</text><rect x="24.0" y="30.0" width="648.0" height="120.0" class="sheet"/><rect x="24.0" y="30.0" width="2.4" height="120.0" class="waste"/><rect x="27.4" y="30.0" width="364.3" height="120.0" class="pc pc-Г"/><text x="209.5" y="88.0" class="pc-code" text-anchor="middle">Г</text><text x="209.5" y="104.0" class="dim-t" text-anchor="middle">1518×500</text><rect x="392.6" y="30.0" width="179.8" height="120.0" class="pc pc-Р"/><text x="482.5" y="88.0" class="pc-code" text-anchor="middle">Р</text><text x="482.5" y="104.0" class="dim-t" text-anchor="middle">749×500</text><rect x="573.4" y="30.0" width="96.0" height="120.0" class="pc pc-А"/><text x="621.4" y="88.0" class="pc-code" text-anchor="middle">А</text><text x="621.4" y="104.0" class="dim-t" text-anchor="middle">400×500</text><line x1="24.0" y1="31.0" x2="672.0" y2="31.0" class="edge"/><line x1="24.0" y1="149.0" x2="672.0" y2="149.0" class="edge"/><text x="24.0" y="184.0" class="mod" text-anchor="start">Карта 2</text><text x="104.0" y="184.0" class="dim-t" text-anchor="start">× 2 панели</text><rect x="24.0" y="194.0" width="648.0" height="120.0" class="sheet"/><rect x="24.0" y="194.0" width="2.4" height="120.0" class="waste"/><rect x="27.4" y="194.0" width="364.3" height="120.0" class="pc pc-Г"/><text x="209.5" y="252.0" class="pc-code" text-anchor="middle">Г</text><text x="209.5" y="268.0" class="dim-t" text-anchor="middle">1518×500</text><rect x="392.6" y="194.0" width="179.8" height="120.0" class="pc pc-Р"/><text x="482.5" y="252.0" class="pc-code" text-anchor="middle">Р</text><text x="482.5" y="268.0" class="dim-t" text-anchor="middle">749×500</text><rect x="573.4" y="194.0" width="88.3" height="120.0" class="pc pc-П"/><text x="617.5" y="252.0" class="pc-code" text-anchor="middle">П</text><text x="617.5" y="268.0" class="dim-t" text-anchor="middle">368×500</text><line x1="24.0" y1="195.0" x2="672.0" y2="195.0" class="edge"/><line x1="24.0" y1="313.0" x2="672.0" y2="313.0" class="edge"/><text x="24.0" y="348.0" class="mod" text-anchor="start">Карта 3</text><text x="104.0" y="348.0" class="dim-t" text-anchor="start">× 4 панели</text><rect x="24.0" y="358.0" width="648.0" height="120.0" class="sheet"/><rect x="24.0" y="358.0" width="2.4" height="120.0" class="waste"/><rect x="27.4" y="358.0" width="364.3" height="120.0" class="pc pc-Г"/><text x="209.5" y="416.0" class="pc-code" text-anchor="middle">Г</text><text x="209.5" y="432.0" class="dim-t" text-anchor="middle">1518×500</text><rect x="392.6" y="358.0" width="179.8" height="120.0" class="pc pc-Р"/><text x="482.5" y="416.0" class="pc-code" text-anchor="middle">Р</text><text x="482.5" y="432.0" class="dim-t" text-anchor="middle">749×500</text><text x="622.2" y="422.0" class="dim-s" text-anchor="middle">остаток ~415</text><line x1="24.0" y1="359.0" x2="672.0" y2="359.0" class="edge"/><line x1="24.0" y1="477.0" x2="672.0" y2="477.0" class="edge"/><text x="24.0" y="512.0" class="mod" text-anchor="start">Карта 4</text><text x="104.0" y="512.0" class="dim-t" text-anchor="start">× 1 панель</text><rect x="24.0" y="522.0" width="648.0" height="120.0" class="sheet"/><rect x="24.0" y="522.0" width="2.4" height="120.0" class="waste"/><rect x="27.4" y="522.0" width="179.8" height="120.0" class="pc pc-Р"/><text x="117.2" y="580.0" class="pc-code" text-anchor="middle">Р</text><text x="117.2" y="596.0" class="dim-t" text-anchor="middle">749×500</text><rect x="208.1" y="522.0" width="179.8" height="120.0" class="pc pc-Р"/><text x="298.0" y="580.0" class="pc-code" text-anchor="middle">Р</text><text x="298.0" y="596.0" class="dim-t" text-anchor="middle">749×500</text><rect x="388.8" y="522.0" width="179.8" height="120.0" class="pc pc-Р"/><text x="478.7" y="580.0" class="pc-code" text-anchor="middle">Р</text><text x="478.7" y="596.0" class="dim-t" text-anchor="middle">749×500</text><text x="620.3" y="586.0" class="dim-s" text-anchor="middle">остаток ~431</text><line x1="24.0" y1="523.0" x2="672.0" y2="523.0" class="edge"/><line x1="24.0" y1="641.0" x2="672.0" y2="641.0" class="edge"/><text x="24.0" y="676.0" class="mod" text-anchor="start">Карта 5</text><text x="104.0" y="676.0" class="dim-t" text-anchor="start">× 2 панели</text><rect x="24.0" y="686.0" width="648.0" height="120.0" class="sheet"/><rect x="24.0" y="686.0" width="2.4" height="120.0" class="waste"/><rect x="27.4" y="686.0" width="426.2" height="120.0" class="pc pc-П"/><text x="240.5" y="744.0" class="pc-code" text-anchor="middle">П</text><text x="240.5" y="760.0" class="dim-t" text-anchor="middle">1776×500</text><rect x="454.6" y="686.0" width="137.3" height="120.0" class="pc pc-П"/><text x="523.2" y="744.0" class="pc-code" text-anchor="middle">П</text><text x="523.2" y="760.0" class="dim-t" text-anchor="middle">572×500</text><rect x="592.8" y="686.0" width="73.0" height="120.0" class="pc pc-П"/><text x="629.3" y="744.0" class="pc-code" text-anchor="middle">П</text><text x="629.3" y="760.0" class="dim-t" text-anchor="middle">304×500</text><line x1="24.0" y1="687.0" x2="672.0" y2="687.0" class="edge"/><line x1="24.0" y1="805.0" x2="672.0" y2="805.0" class="edge"/><text x="24.0" y="840.0" class="mod" text-anchor="start">Царги</text><text x="104.0" y="840.0" class="dim-t" text-anchor="start">× 4 детали 2700×100</text><rect x="24.0" y="850.0" width="648.0" height="24.0" class="sheet"/><rect x="24.0" y="850.0" width="2.4" height="24.0" class="waste"/><rect x="27.4" y="850.0" width="372.0" height="24.0" class="pc pc-Ц"/><text x="213.4" y="866.0" class="dim-t" text-anchor="middle">Ц 1550×100</text><text x="536.4" y="866.0" class="dim-s" text-anchor="middle">остаток ~1130</text><line x1="24.0" y1="851.0" x2="672.0" y2="851.0" class="edge"/><line x1="24.0" y1="873.0" x2="672.0" y2="873.0" class="edge"/><line x1="24.0" y1="894.0" x2="54.0" y2="894.0" class="edge"/><text x="62.0" y="898.0" class="dim-s" text-anchor="start">заводская кромка (передняя и задняя стороны деталей)</text><rect x="414.0" y="888.0" width="10.0" height="10.0" class="waste"/><text x="430.0" y="898.0" class="dim-s" text-anchor="start">торцовка 10 мм</text></svg>
+    <figcaption>Куда встаёт каждая деталь, показано в 3D ниже, в разделе «Из распила в шкаф». Карты распила в масштабе. Кромка остаётся на длинных сторонах панели, то есть спереди и сзади у каждой детали. Сырые торцы уходят в стыки.</figcaption>
+  </figure>
+  <h3>Сверить спецификацию</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Код</th><th>Деталь</th><th>Размер</th><th class="n">Нужно</th><th class="n">Получится</th><th>Где стоит</th></tr></thead>
+    <tbody>
+      <tr><td><span class="code cB">Б</span></td><td>Боковина модуля</td><td class="mono">2700×500</td><td class="n">4</td><td class="n">4</td><td>по 2 на М1, М2</td></tr>
+      <tr><td><span class="code cG">Г</span></td><td>Горизонталь</td><td class="mono">1518×500</td><td class="n">10</td><td class="n">10</td><td>модули: полка 320, полка 2112, крышка (6); антресоли: дно и крыша (4)</td></tr>
+      <tr><td><span class="code cZ">П1</span></td><td>Стойка перегородки, низ</td><td class="mono">304×500</td><td class="n">2</td><td class="n">2</td><td>под полкой 320</td></tr>
+      <tr><td><span class="code cZ">П2</span></td><td>Стойка перегородки, середина</td><td class="mono">1776×500</td><td class="n">2</td><td class="n">2</td><td>между полками 320 и 2112</td></tr>
+      <tr><td><span class="code cZ">П3</span></td><td>Стойка перегородки, верх</td><td class="mono">572×500</td><td class="n">2</td><td class="n">2</td><td>между полкой 2112 и крышкой</td></tr>
+      <tr><td><span class="code cZ">П4</span></td><td>Перегородка антресоли</td><td class="mono">368×500</td><td class="n">2</td><td class="n">2</td><td>по центру антресолей</td></tr>
+      <tr><td><span class="code cR">Р</span></td><td>Полка регулируемая</td><td class="mono">749×500</td><td class="n">12</td><td class="n">13</td><td>секции 3–4 по 4, верх каждой секции по 1</td></tr>
+      <tr><td><span class="code cA">А</span></td><td>Боковина антресоли</td><td class="mono">400×500</td><td class="n">4</td><td class="n">4</td><td>по 2 на антресоль</td></tr>
+      <tr><td><span class="code cC">Ц</span></td><td>Царга</td><td class="mono">1550×100</td><td class="n">4</td><td class="n">4</td><td>по 2 на модуль, сзади</td></tr>
+    </tbody>
+  </table></div>
+  <h3>Приёмка прямо у стойки</h3>
+  <ul class="chk">
+    <li class="c"><input type="checkbox" id="c6"><label for="c6">Панели выбрать самому до распила: без сколов, кромка приклеена по всей длине, лежит на полу ровно, без «пропеллера».</label></li>
+    <li class="c"><input type="checkbox" id="c7"><label for="c7">Рулеткой проверить все <span class="code cG">Г</span>: <span class="d">1518</span>, разброс между ними не больше 1 мм. Стойки <span class="code cZ">П2</span> <span class="d">1776</span>, <span class="code cZ">П3</span> <span class="d">572</span>, <span class="code cZ">П1</span> <span class="d">304</span>.</label></li>
+    <li class="c"><input type="checkbox" id="c8"><label for="c8">Угольником проверить, что рез под 90°.</label></li>
+    <li class="c"><input type="checkbox" id="c9"><label for="c9">На каждой детали карандашом написать код.</label></li>
+  </ul>
+</section>
+
+<section id="s3d3">
+  <div class="sh"><h2>Из распила в шкаф</h2><span class="time">8 шагов · какая деталь куда встаёт</span></div>
+  <p>На полу лежат все панели, уже разрезанные по картам распила. По шагам детали группами встают на свои места в шкафу, цвета совпадают с картами. Если нажать на любую деталь, под кнопками появится, с какой она карты и куда встаёт. Модель вращается мышью, колесо приближает.</p>
+  <div id="a3d" class="v3d">
+    <div class="v3d-stage">
+      <div class="v3d-canvas d3d-wrap" id="a3d-canvas" aria-label="3D: детали из карт распила собираются в шкаф"></div>
+      <div class="v3d-hint">тянуть: вращать · колесо: масштаб · клик: деталь</div>
+      <p class="v3d-fallback" id="a3d-fallback" hidden>3D не запустилось в этом браузере. Ниже те же шаги картинками.</p>
+    </div>
+    <div class="v3d-panel">
+      <div class="v3d-count"><span id="a3d-n">Шаг 1 из 8</span><span id="a3d-sec" class="v3d-sec">распил</span></div>
+      <h3 id="a3d-title"></h3>
+      <p id="a3d-text"></p>
+      <div class="v3d-nav">
+        <button type="button" id="a3d-prev">← Назад</button>
+        <button type="button" id="a3d-next" class="primary">Дальше →</button>
+      </div>
+      <div class="v3d-nav"><button type="button" id="a3d-play">▶ Проиграть всё</button></div>
+      <div class="v3d-dots" id="a3d-dots" role="tablist" aria-label="Шаги сборки из деталей"></div>
+      <div class="a3d-info" id="a3d-info" aria-live="polite">Нажми на деталь, и здесь появится, откуда она и куда встаёт.</div>
+      <button type="button" id="a3d-lbl" class="lbl-toggle" aria-pressed="true">Обозначения: вкл</button>
+      <div class="v3d-codes">Б боковина · Г горизонталь · П1–П3 стойки · П4 перегородка антресоли · Р полка · А боковина антресоли · Ц царга</div>
+      <div class="v3d-legend">
+        <span><i style="background:#eef0ee"></i>Б боковина</span>
+        <span><i style="background:#8fcbb9"></i>Г горизонталь</span>
+        <span><i style="background:#c4b5e6"></i>Р полка</span>
+        <span><i style="background:#ecc27c"></i>А боковина антресоли</span>
+        <span><i style="background:#c9bea8"></i>П1–П4 стойки</span>
+        <span><i style="background:#9dbbe0"></i>Ц царга</span>
+        <span><i style="background:#9aa3a0"></i>отход</span>
+      </div>
+    </div>
+  </div>
+  <h3>Все шаги на одном листе</h3>
+  <ol class="board" id="a3d-board"></ol>
+</section>
+
+
+<section id="s3">
+  <div class="sh"><span class="num">3</span><h2>Инструмент</h2></div>
+  <div class="grid2">
+    <div>
+      <h3>Обязательно</h3>
+      <p style="font-size:14px;color:var(--muted);margin:0 0 6px">Что из этого купить в Лемана, с артикулами, есть в конце этапа 1.</p>
+      <ul class="chk">
+        <li class="c"><input type="checkbox" id="c10"><label for="c10">Шуруповёрт с регулировкой момента, биты PH2 и шестигранник 4 мм (шлиц конфирмата уточнить по упаковке)</label></li>
+        <li class="c"><input type="checkbox" id="c11"><label for="c11">Шестигранный ключ 4 мм</label></li>
+        <li class="c"><input type="checkbox" id="c12"><label for="c12">Сверло под конфирмат (есть в покупках)</label></li>
+        <li class="c"><input type="checkbox" id="c13"><label for="c13">Свёрла по дереву 5 мм (полкодержатели), 4 мм (пилотные под 6×90 в ЛДСП), 3 мм (под 4×25)</label></li>
+        <li class="c"><input type="checkbox" id="c14"><label for="c14">Два стяжных ремня с храповиком, 5 м: стянуть модуль шириной 1550, обычная струбцина столько не охватит</label></li>
+        <li class="c"><input type="checkbox" id="c15"><label for="c15">Струбцины F‑образные 300 мм, 2–4 шт</label></li>
+        <li class="c"><input type="checkbox" id="c16"><label for="c16">Рулетка 5 м, металлическая линейка 1 м, столярный угольник</label></li>
+        <li class="c"><input type="checkbox" id="c17"><label for="c17">Уровень 2 м</label></li>
+        <li class="c"><input type="checkbox" id="c18"><label for="c18">Магнит или детектор металла, чтобы найти стойки каркаса</label></li>
+        <li class="c"><input type="checkbox" id="c19"><label for="c19">Ножовка по металлу и напильник (штанги)</label></li>
+        <li class="c"><input type="checkbox" id="c20"><label for="c20">Карандаш, малярный скотч, маркер, шило</label></li>
+        <li class="c"><input type="checkbox" id="c21"><label for="c21">Две стремянки</label></li>
+        <li class="c"><input type="checkbox" id="c22"><label for="c22">Картон на пол, 3 × 2 м</label></li>
+        <li class="c"><input type="checkbox" id="c23"><label for="c23">Два помощника на подъём модулей</label></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Желательно</h3>
+      <ul class="chk">
+        <li class="c"><input type="checkbox" id="c24"><label for="c24">Лазерный уровень</label></li>
+        <li class="c"><input type="checkbox" id="c25"><label for="c25">Кондуктор МК-20 «угольник», система 32, втулка Ø5 (у тебя есть)</label></li>
+        <li class="c"><input type="checkbox" id="c26"><label for="c26">Длинная струбцина 1600 мм вместо ремней</label></li>
+      </ul>
+      <h3>Не понадобится</h3>
+      <p>Перфоратор: бетона нет, в каркас всё крепится шуруповёртом. Пила и кромочный утюг тоже не нужны.</p>
+    </div>
+  </div>
+</section>
+
+<section id="s4">
+  <div class="sh"><span class="num">4</span><h2>Разложить и подписать детали</h2><span class="time">40 мин</span></div>
+  <ol class="steps">
+    <li>Измерить 4 боковины <span class="code cB">Б</span> и разбить на пары с разницей не больше 1 мм: <b>1Л/1П</b> для М1, <b>2Л/2П</b> для М2.</li>
+    <li>На задней кромке каждой детали наклеить скотч и написать код, стрелкой указать низ. На боковинах подписать «ВНУТРЬ» на той пласти, что смотрит в модуль.</li>
+    <li>Стойки подписать по модулям: «М1‑П2», «М2‑П3» и так далее, стрелкой указать низ. У стоек М2 подписать стороны «секция 3» и «секция 4». Отверстия с этих сторон сверлятся с разным отступом.</li>
+    <li>У горизонталей <span class="code cG">Г</span> выбрать переднюю кромку (ту, где кромка лучше) и разложить стопками: 2 крышки, 2 полки на 2112, 2 полки на 320, 4 детали для антресолей.</li>
+  </ol>
+</section>
+
+<section id="s3d2">
+  <div class="sh"><h2>Сверление крупным планом</h2><span class="time">12 шагов · к этапам 5 и 6</span></div>
+  <p>Как сделать отверстия под конфирматы и полкодержатели точно с первого раза. Малиновым показаны размеры и отступы в миллиметрах, бирюзовым то, что появляется на шаге. На время сверления детали становятся полупрозрачными, чтобы было видно сверло внутри. Для наглядности узел нарисован стоя. На деле модуль в этот момент лежит лицом вниз, и сверлить приходится горизонтально, так же как на схеме.</p>
+  <div id="d3d" class="v3d">
+    <div class="v3d-stage">
+      <div class="v3d-canvas d3d-wrap" id="d3d-canvas" aria-label="3D-схема сверления"></div>
+      <div class="v3d-hint">тянуть: вращать · колесо: масштаб</div>
+      <p class="v3d-fallback" id="d3d-fallback" hidden>3D не запустилось в этом браузере. Ниже те же шаги картинками и текстом.</p>
+    </div>
+    <div class="v3d-panel">
+      <div class="v3d-count"><span id="d3d-n">Шаг 1 из 12</span><span id="d3d-sec" class="v3d-sec">конфирматы</span></div>
+      <h3 id="d3d-title"></h3>
+      <p id="d3d-text"></p>
+      <div class="v3d-nav">
+        <button type="button" id="d3d-prev">← Назад</button>
+        <button type="button" id="d3d-next" class="primary">Дальше →</button>
+      </div>
+      <div class="v3d-dots" id="d3d-dots" role="tablist" aria-label="Шаги сверления"></div>
+      <button type="button" id="d3d-lbl" class="lbl-toggle" aria-pressed="true">Обозначения: вкл</button>
+      <div class="v3d-codes">Б боковина · Г горизонталь · П1–П3 стойки · П4 перегородка антресоли · Р полка · А боковина антресоли · Ц царга</div>
+      <div class="v3d-legend">
+        <span><i style="background:#d6336c"></i>размер, мм</span>
+        <span><i style="background:#5cc8ad"></i>новое на шаге</span>
+        <span><i style="background:#23292a"></i>отверстие</span>
+        <span><i style="background:#e03131"></i>так нельзя</span>
+      </div>
+    </div>
+  </div>
+  <h3>Все шаги сверления на одном листе</h3>
+  <ol class="board" id="d3d-board"></ol>
+</section>
+
+
+<section id="s5">
+  <div class="sh"><span class="num">5</span><h2>Разметка и сверление</h2><span class="time">3 часа</span></div>
+  <p>Сверление в 3D с размерами показано выше, в разделе <a href="#s3d2">«Сверление крупным планом»</a>.</p>
+  <figure>
+    <svg viewBox="0 0 1020 600" role="img" aria-label="Разметка боковин и перегородок"><text x="120.0" y="14.0" class="mod" text-anchor="middle">Б · М1 левая</text><rect x="70.0" y="34.0" width="100.0" height="540.0" class="sheet"/><rect x="70.0" y="510.0" width="100.0" height="3.2" class="shelfline"/><circle cx="80.0" cy="511.6" r="2.4" class="conf"/><circle cx="120.0" cy="511.6" r="2.4" class="conf"/><circle cx="160.0" cy="511.6" r="2.4" class="conf"/><rect x="70.0" y="151.6" width="100.0" height="3.2" class="shelfline"/><circle cx="80.0" cy="153.2" r="2.4" class="conf"/><circle cx="120.0" cy="153.2" r="2.4" class="conf"/><circle cx="160.0" cy="153.2" r="2.4" class="conf"/><rect x="70.0" y="34.0" width="100.0" height="3.2" class="shelfline"/><circle cx="80.0" cy="35.6" r="2.4" class="conf"/><circle cx="120.0" cy="35.6" r="2.4" class="conf"/><circle cx="160.0" cy="35.6" r="2.4" class="conf"/><circle cx="77.4" cy="112.2" r="0.9" class="pin"/><circle cx="162.6" cy="112.2" r="0.9" class="pin"/><circle cx="77.4" cy="105.8" r="0.9" class="pin"/><circle cx="162.6" cy="105.8" r="0.9" class="pin"/><circle cx="77.4" cy="99.4" r="0.9" class="pin"/><circle cx="162.6" cy="99.4" r="0.9" class="pin"/><circle cx="77.4" cy="93.0" r="0.9" class="pin"/><circle cx="162.6" cy="93.0" r="0.9" class="pin"/><circle cx="77.4" cy="86.6" r="0.9" class="pin"/><circle cx="162.6" cy="86.6" r="0.9" class="pin"/><circle cx="77.4" cy="80.2" r="0.9" class="pin"/><circle cx="162.6" cy="80.2" r="0.9" class="pin"/><circle cx="77.4" cy="73.8" r="0.9" class="pin"/><circle cx="162.6" cy="73.8" r="0.9" class="pin"/><rect x="115.0" y="169.0" width="10.0" height="10.0" class="rodmark"/><text x="72.0" y="30.0" class="dim-s" text-anchor="start">перед</text><text x="168.0" y="30.0" class="dim-s" text-anchor="end">зад</text><text x="280.0" y="14.0" class="mod" text-anchor="middle">Б · М1 правая</text><rect x="230.0" y="34.0" width="100.0" height="540.0" class="sheet"/><rect x="230.0" y="510.0" width="100.0" height="3.2" class="shelfline"/><circle cx="240.0" cy="511.6" r="2.4" class="conf"/><circle cx="280.0" cy="511.6" r="2.4" class="conf"/><circle cx="320.0" cy="511.6" r="2.4" class="conf"/><rect x="230.0" y="151.6" width="100.0" height="3.2" class="shelfline"/><circle cx="240.0" cy="153.2" r="2.4" class="conf"/><circle cx="280.0" cy="153.2" r="2.4" class="conf"/><circle cx="320.0" cy="153.2" r="2.4" class="conf"/><rect x="230.0" y="34.0" width="100.0" height="3.2" class="shelfline"/><circle cx="240.0" cy="35.6" r="2.4" class="conf"/><circle cx="280.0" cy="35.6" r="2.4" class="conf"/><circle cx="320.0" cy="35.6" r="2.4" class="conf"/><circle cx="237.4" cy="112.2" r="0.9" class="pin"/><circle cx="322.6" cy="112.2" r="0.9" class="pin"/><circle cx="237.4" cy="105.8" r="0.9" class="pin"/><circle cx="322.6" cy="105.8" r="0.9" class="pin"/><circle cx="237.4" cy="99.4" r="0.9" class="pin"/><circle cx="322.6" cy="99.4" r="0.9" class="pin"/><circle cx="237.4" cy="93.0" r="0.9" class="pin"/><circle cx="322.6" cy="93.0" r="0.9" class="pin"/><circle cx="237.4" cy="86.6" r="0.9" class="pin"/><circle cx="322.6" cy="86.6" r="0.9" class="pin"/><circle cx="237.4" cy="80.2" r="0.9" class="pin"/><circle cx="322.6" cy="80.2" r="0.9" class="pin"/><circle cx="237.4" cy="73.8" r="0.9" class="pin"/><circle cx="322.6" cy="73.8" r="0.9" class="pin"/><rect x="275.0" y="179.0" width="10.0" height="10.0" class="rodmark"/><rect x="275.0" y="349.0" width="10.0" height="10.0" class="rodmark"/><text x="440.0" y="14.0" class="mod" text-anchor="middle">Б · М2 обе</text><rect x="390.0" y="34.0" width="100.0" height="540.0" class="sheet"/><rect x="390.0" y="510.0" width="100.0" height="3.2" class="shelfline"/><circle cx="400.0" cy="511.6" r="2.4" class="conf"/><circle cx="440.0" cy="511.6" r="2.4" class="conf"/><circle cx="480.0" cy="511.6" r="2.4" class="conf"/><rect x="390.0" y="151.6" width="100.0" height="3.2" class="shelfline"/><circle cx="400.0" cy="153.2" r="2.4" class="conf"/><circle cx="440.0" cy="153.2" r="2.4" class="conf"/><circle cx="480.0" cy="153.2" r="2.4" class="conf"/><rect x="390.0" y="34.0" width="100.0" height="3.2" class="shelfline"/><circle cx="400.0" cy="35.6" r="2.4" class="conf"/><circle cx="440.0" cy="35.6" r="2.4" class="conf"/><circle cx="480.0" cy="35.6" r="2.4" class="conf"/><circle cx="397.4" cy="112.2" r="0.9" class="pin"/><circle cx="482.6" cy="112.2" r="0.9" class="pin"/><circle cx="397.4" cy="105.8" r="0.9" class="pin"/><circle cx="482.6" cy="105.8" r="0.9" class="pin"/><circle cx="397.4" cy="99.4" r="0.9" class="pin"/><circle cx="482.6" cy="99.4" r="0.9" class="pin"/><circle cx="397.4" cy="93.0" r="0.9" class="pin"/><circle cx="482.6" cy="93.0" r="0.9" class="pin"/><circle cx="397.4" cy="86.6" r="0.9" class="pin"/><circle cx="482.6" cy="86.6" r="0.9" class="pin"/><circle cx="397.4" cy="80.2" r="0.9" class="pin"/><circle cx="482.6" cy="80.2" r="0.9" class="pin"/><circle cx="397.4" cy="73.8" r="0.9" class="pin"/><circle cx="482.6" cy="73.8" r="0.9" class="pin"/><circle cx="397.4" cy="502.6" r="0.9" class="pin"/><circle cx="482.6" cy="502.6" r="0.9" class="pin"/><circle cx="397.4" cy="496.2" r="0.9" class="pin"/><circle cx="482.6" cy="496.2" r="0.9" class="pin"/><circle cx="397.4" cy="489.8" r="0.9" class="pin"/><circle cx="482.6" cy="489.8" r="0.9" class="pin"/><circle cx="397.4" cy="483.4" r="0.9" class="pin"/><circle cx="482.6" cy="483.4" r="0.9" class="pin"/><circle cx="397.4" cy="477.0" r="0.9" class="pin"/><circle cx="482.6" cy="477.0" r="0.9" class="pin"/><circle cx="397.4" cy="470.6" r="0.9" class="pin"/><circle cx="482.6" cy="470.6" r="0.9" class="pin"/><circle cx="397.4" cy="464.2" r="0.9" class="pin"/><circle cx="482.6" cy="464.2" r="0.9" class="pin"/><circle cx="397.4" cy="457.8" r="0.9" class="pin"/><circle cx="482.6" cy="457.8" r="0.9" class="pin"/><circle cx="397.4" cy="451.4" r="0.9" class="pin"/><circle cx="482.6" cy="451.4" r="0.9" class="pin"/><circle cx="397.4" cy="445.0" r="0.9" class="pin"/><circle cx="482.6" cy="445.0" r="0.9" class="pin"/><circle cx="397.4" cy="438.6" r="0.9" class="pin"/><circle cx="482.6" cy="438.6" r="0.9" class="pin"/><circle cx="397.4" cy="432.2" r="0.9" class="pin"/><circle cx="482.6" cy="432.2" r="0.9" class="pin"/><circle cx="397.4" cy="425.8" r="0.9" class="pin"/><circle cx="482.6" cy="425.8" r="0.9" class="pin"/><circle cx="397.4" cy="419.4" r="0.9" class="pin"/><circle cx="482.6" cy="419.4" r="0.9" class="pin"/><circle cx="397.4" cy="413.0" r="0.9" class="pin"/><circle cx="482.6" cy="413.0" r="0.9" class="pin"/><circle cx="397.4" cy="406.6" r="0.9" class="pin"/><circle cx="482.6" cy="406.6" r="0.9" class="pin"/><circle cx="397.4" cy="400.2" r="0.9" class="pin"/><circle cx="482.6" cy="400.2" r="0.9" class="pin"/><circle cx="397.4" cy="393.8" r="0.9" class="pin"/><circle cx="482.6" cy="393.8" r="0.9" class="pin"/><circle cx="397.4" cy="387.4" r="0.9" class="pin"/><circle cx="482.6" cy="387.4" r="0.9" class="pin"/><circle cx="397.4" cy="381.0" r="0.9" class="pin"/><circle cx="482.6" cy="381.0" r="0.9" class="pin"/><circle cx="397.4" cy="374.6" r="0.9" class="pin"/><circle cx="482.6" cy="374.6" r="0.9" class="pin"/><circle cx="397.4" cy="368.2" r="0.9" class="pin"/><circle cx="482.6" cy="368.2" r="0.9" class="pin"/><circle cx="397.4" cy="361.8" r="0.9" class="pin"/><circle cx="482.6" cy="361.8" r="0.9" class="pin"/><circle cx="397.4" cy="355.4" r="0.9" class="pin"/><circle cx="482.6" cy="355.4" r="0.9" class="pin"/><circle cx="397.4" cy="349.0" r="0.9" class="pin"/><circle cx="482.6" cy="349.0" r="0.9" class="pin"/><circle cx="397.4" cy="342.6" r="0.9" class="pin"/><circle cx="482.6" cy="342.6" r="0.9" class="pin"/><circle cx="397.4" cy="336.2" r="0.9" class="pin"/><circle cx="482.6" cy="336.2" r="0.9" class="pin"/><circle cx="397.4" cy="329.8" r="0.9" class="pin"/><circle cx="482.6" cy="329.8" r="0.9" class="pin"/><circle cx="397.4" cy="323.4" r="0.9" class="pin"/><circle cx="482.6" cy="323.4" r="0.9" class="pin"/><circle cx="397.4" cy="317.0" r="0.9" class="pin"/><circle cx="482.6" cy="317.0" r="0.9" class="pin"/><circle cx="397.4" cy="310.6" r="0.9" class="pin"/><circle cx="482.6" cy="310.6" r="0.9" class="pin"/><circle cx="397.4" cy="304.2" r="0.9" class="pin"/><circle cx="482.6" cy="304.2" r="0.9" class="pin"/><circle cx="397.4" cy="297.8" r="0.9" class="pin"/><circle cx="482.6" cy="297.8" r="0.9" class="pin"/><circle cx="397.4" cy="291.4" r="0.9" class="pin"/><circle cx="482.6" cy="291.4" r="0.9" class="pin"/><circle cx="397.4" cy="285.0" r="0.9" class="pin"/><circle cx="482.6" cy="285.0" r="0.9" class="pin"/><circle cx="397.4" cy="278.6" r="0.9" class="pin"/><circle cx="482.6" cy="278.6" r="0.9" class="pin"/><circle cx="397.4" cy="272.2" r="0.9" class="pin"/><circle cx="482.6" cy="272.2" r="0.9" class="pin"/><circle cx="397.4" cy="265.8" r="0.9" class="pin"/><circle cx="482.6" cy="265.8" r="0.9" class="pin"/><circle cx="397.4" cy="259.4" r="0.9" class="pin"/><circle cx="482.6" cy="259.4" r="0.9" class="pin"/><circle cx="397.4" cy="253.0" r="0.9" class="pin"/><circle cx="482.6" cy="253.0" r="0.9" class="pin"/><circle cx="397.4" cy="246.6" r="0.9" class="pin"/><circle cx="482.6" cy="246.6" r="0.9" class="pin"/><circle cx="397.4" cy="240.2" r="0.9" class="pin"/><circle cx="482.6" cy="240.2" r="0.9" class="pin"/><circle cx="397.4" cy="233.8" r="0.9" class="pin"/><circle cx="482.6" cy="233.8" r="0.9" class="pin"/><circle cx="397.4" cy="227.4" r="0.9" class="pin"/><circle cx="482.6" cy="227.4" r="0.9" class="pin"/><circle cx="397.4" cy="221.0" r="0.9" class="pin"/><circle cx="482.6" cy="221.0" r="0.9" class="pin"/><circle cx="397.4" cy="214.6" r="0.9" class="pin"/><circle cx="482.6" cy="214.6" r="0.9" class="pin"/><circle cx="397.4" cy="208.2" r="0.9" class="pin"/><circle cx="482.6" cy="208.2" r="0.9" class="pin"/><circle cx="397.4" cy="201.8" r="0.9" class="pin"/><circle cx="482.6" cy="201.8" r="0.9" class="pin"/><circle cx="397.4" cy="195.4" r="0.9" class="pin"/><circle cx="482.6" cy="195.4" r="0.9" class="pin"/><circle cx="397.4" cy="189.0" r="0.9" class="pin"/><circle cx="482.6" cy="189.0" r="0.9" class="pin"/><circle cx="397.4" cy="182.6" r="0.9" class="pin"/><circle cx="482.6" cy="182.6" r="0.9" class="pin"/><text x="600.0" y="14.0" class="mod" text-anchor="middle">П · М2</text><rect x="550.0" y="513.2" width="100.0" height="60.8" class="sheet"/><rect x="550.0" y="154.8" width="100.0" height="355.2" class="sheet"/><rect x="550.0" y="37.2" width="100.0" height="114.4" class="sheet"/><circle cx="557.4" cy="502.6" r="0.9" class="pin"/><circle cx="642.6" cy="502.6" r="0.9" class="pin"/><circle cx="557.4" cy="496.2" r="0.9" class="pin"/><circle cx="642.6" cy="496.2" r="0.9" class="pin"/><circle cx="557.4" cy="489.8" r="0.9" class="pin"/><circle cx="642.6" cy="489.8" r="0.9" class="pin"/><circle cx="557.4" cy="483.4" r="0.9" class="pin"/><circle cx="642.6" cy="483.4" r="0.9" class="pin"/><circle cx="557.4" cy="477.0" r="0.9" class="pin"/><circle cx="642.6" cy="477.0" r="0.9" class="pin"/><circle cx="557.4" cy="470.6" r="0.9" class="pin"/><circle cx="642.6" cy="470.6" r="0.9" class="pin"/><circle cx="557.4" cy="464.2" r="0.9" class="pin"/><circle cx="642.6" cy="464.2" r="0.9" class="pin"/><circle cx="557.4" cy="457.8" r="0.9" class="pin"/><circle cx="642.6" cy="457.8" r="0.9" class="pin"/><circle cx="557.4" cy="451.4" r="0.9" class="pin"/><circle cx="642.6" cy="451.4" r="0.9" class="pin"/><circle cx="557.4" cy="445.0" r="0.9" class="pin"/><circle cx="642.6" cy="445.0" r="0.9" class="pin"/><circle cx="557.4" cy="438.6" r="0.9" class="pin"/><circle cx="642.6" cy="438.6" r="0.9" class="pin"/><circle cx="557.4" cy="432.2" r="0.9" class="pin"/><circle cx="642.6" cy="432.2" r="0.9" class="pin"/><circle cx="557.4" cy="425.8" r="0.9" class="pin"/><circle cx="642.6" cy="425.8" r="0.9" class="pin"/><circle cx="557.4" cy="419.4" r="0.9" class="pin"/><circle cx="642.6" cy="419.4" r="0.9" class="pin"/><circle cx="557.4" cy="413.0" r="0.9" class="pin"/><circle cx="642.6" cy="413.0" r="0.9" class="pin"/><circle cx="557.4" cy="406.6" r="0.9" class="pin"/><circle cx="642.6" cy="406.6" r="0.9" class="pin"/><circle cx="557.4" cy="400.2" r="0.9" class="pin"/><circle cx="642.6" cy="400.2" r="0.9" class="pin"/><circle cx="557.4" cy="393.8" r="0.9" class="pin"/><circle cx="642.6" cy="393.8" r="0.9" class="pin"/><circle cx="557.4" cy="387.4" r="0.9" class="pin"/><circle cx="642.6" cy="387.4" r="0.9" class="pin"/><circle cx="557.4" cy="381.0" r="0.9" class="pin"/><circle cx="642.6" cy="381.0" r="0.9" class="pin"/><circle cx="557.4" cy="374.6" r="0.9" class="pin"/><circle cx="642.6" cy="374.6" r="0.9" class="pin"/><circle cx="557.4" cy="368.2" r="0.9" class="pin"/><circle cx="642.6" cy="368.2" r="0.9" class="pin"/><circle cx="557.4" cy="361.8" r="0.9" class="pin"/><circle cx="642.6" cy="361.8" r="0.9" class="pin"/><circle cx="557.4" cy="355.4" r="0.9" class="pin"/><circle cx="642.6" cy="355.4" r="0.9" class="pin"/><circle cx="557.4" cy="349.0" r="0.9" class="pin"/><circle cx="642.6" cy="349.0" r="0.9" class="pin"/><circle cx="557.4" cy="342.6" r="0.9" class="pin"/><circle cx="642.6" cy="342.6" r="0.9" class="pin"/><circle cx="557.4" cy="336.2" r="0.9" class="pin"/><circle cx="642.6" cy="336.2" r="0.9" class="pin"/><circle cx="557.4" cy="329.8" r="0.9" class="pin"/><circle cx="642.6" cy="329.8" r="0.9" class="pin"/><circle cx="557.4" cy="323.4" r="0.9" class="pin"/><circle cx="642.6" cy="323.4" r="0.9" class="pin"/><circle cx="557.4" cy="317.0" r="0.9" class="pin"/><circle cx="642.6" cy="317.0" r="0.9" class="pin"/><circle cx="557.4" cy="310.6" r="0.9" class="pin"/><circle cx="642.6" cy="310.6" r="0.9" class="pin"/><circle cx="557.4" cy="304.2" r="0.9" class="pin"/><circle cx="642.6" cy="304.2" r="0.9" class="pin"/><circle cx="557.4" cy="297.8" r="0.9" class="pin"/><circle cx="642.6" cy="297.8" r="0.9" class="pin"/><circle cx="557.4" cy="291.4" r="0.9" class="pin"/><circle cx="642.6" cy="291.4" r="0.9" class="pin"/><circle cx="557.4" cy="285.0" r="0.9" class="pin"/><circle cx="642.6" cy="285.0" r="0.9" class="pin"/><circle cx="557.4" cy="278.6" r="0.9" class="pin"/><circle cx="642.6" cy="278.6" r="0.9" class="pin"/><circle cx="557.4" cy="272.2" r="0.9" class="pin"/><circle cx="642.6" cy="272.2" r="0.9" class="pin"/><circle cx="557.4" cy="265.8" r="0.9" class="pin"/><circle cx="642.6" cy="265.8" r="0.9" class="pin"/><circle cx="557.4" cy="259.4" r="0.9" class="pin"/><circle cx="642.6" cy="259.4" r="0.9" class="pin"/><circle cx="557.4" cy="253.0" r="0.9" class="pin"/><circle cx="642.6" cy="253.0" r="0.9" class="pin"/><circle cx="557.4" cy="246.6" r="0.9" class="pin"/><circle cx="642.6" cy="246.6" r="0.9" class="pin"/><circle cx="557.4" cy="240.2" r="0.9" class="pin"/><circle cx="642.6" cy="240.2" r="0.9" class="pin"/><circle cx="557.4" cy="233.8" r="0.9" class="pin"/><circle cx="642.6" cy="233.8" r="0.9" class="pin"/><circle cx="557.4" cy="227.4" r="0.9" class="pin"/><circle cx="642.6" cy="227.4" r="0.9" class="pin"/><circle cx="557.4" cy="221.0" r="0.9" class="pin"/><circle cx="642.6" cy="221.0" r="0.9" class="pin"/><circle cx="557.4" cy="214.6" r="0.9" class="pin"/><circle cx="642.6" cy="214.6" r="0.9" class="pin"/><circle cx="557.4" cy="208.2" r="0.9" class="pin"/><circle cx="642.6" cy="208.2" r="0.9" class="pin"/><circle cx="557.4" cy="201.8" r="0.9" class="pin"/><circle cx="642.6" cy="201.8" r="0.9" class="pin"/><circle cx="557.4" cy="195.4" r="0.9" class="pin"/><circle cx="642.6" cy="195.4" r="0.9" class="pin"/><circle cx="557.4" cy="189.0" r="0.9" class="pin"/><circle cx="642.6" cy="189.0" r="0.9" class="pin"/><circle cx="557.4" cy="182.6" r="0.9" class="pin"/><circle cx="642.6" cy="182.6" r="0.9" class="pin"/><circle cx="557.4" cy="112.2" r="0.9" class="pin"/><circle cx="642.6" cy="112.2" r="0.9" class="pin"/><circle cx="557.4" cy="105.8" r="0.9" class="pin"/><circle cx="642.6" cy="105.8" r="0.9" class="pin"/><circle cx="557.4" cy="99.4" r="0.9" class="pin"/><circle cx="642.6" cy="99.4" r="0.9" class="pin"/><circle cx="557.4" cy="93.0" r="0.9" class="pin"/><circle cx="642.6" cy="93.0" r="0.9" class="pin"/><circle cx="557.4" cy="86.6" r="0.9" class="pin"/><circle cx="642.6" cy="86.6" r="0.9" class="pin"/><circle cx="557.4" cy="80.2" r="0.9" class="pin"/><circle cx="642.6" cy="80.2" r="0.9" class="pin"/><circle cx="557.4" cy="73.8" r="0.9" class="pin"/><circle cx="642.6" cy="73.8" r="0.9" class="pin"/><circle cx="562.0" cy="502.6" r="1.1" class="pin2"/><circle cx="638.0" cy="502.6" r="1.1" class="pin2"/><circle cx="562.0" cy="496.2" r="1.1" class="pin2"/><circle cx="638.0" cy="496.2" r="1.1" class="pin2"/><circle cx="562.0" cy="489.8" r="1.1" class="pin2"/><circle cx="638.0" cy="489.8" r="1.1" class="pin2"/><circle cx="562.0" cy="483.4" r="1.1" class="pin2"/><circle cx="638.0" cy="483.4" r="1.1" class="pin2"/><circle cx="562.0" cy="477.0" r="1.1" class="pin2"/><circle cx="638.0" cy="477.0" r="1.1" class="pin2"/><circle cx="562.0" cy="470.6" r="1.1" class="pin2"/><circle cx="638.0" cy="470.6" r="1.1" class="pin2"/><circle cx="562.0" cy="464.2" r="1.1" class="pin2"/><circle cx="638.0" cy="464.2" r="1.1" class="pin2"/><circle cx="562.0" cy="457.8" r="1.1" class="pin2"/><circle cx="638.0" cy="457.8" r="1.1" class="pin2"/><circle cx="562.0" cy="451.4" r="1.1" class="pin2"/><circle cx="638.0" cy="451.4" r="1.1" class="pin2"/><circle cx="562.0" cy="445.0" r="1.1" class="pin2"/><circle cx="638.0" cy="445.0" r="1.1" class="pin2"/><circle cx="562.0" cy="438.6" r="1.1" class="pin2"/><circle cx="638.0" cy="438.6" r="1.1" class="pin2"/><circle cx="562.0" cy="432.2" r="1.1" class="pin2"/><circle cx="638.0" cy="432.2" r="1.1" class="pin2"/><circle cx="562.0" cy="425.8" r="1.1" class="pin2"/><circle cx="638.0" cy="425.8" r="1.1" class="pin2"/><circle cx="562.0" cy="419.4" r="1.1" class="pin2"/><circle cx="638.0" cy="419.4" r="1.1" class="pin2"/><circle cx="562.0" cy="413.0" r="1.1" class="pin2"/><circle cx="638.0" cy="413.0" r="1.1" class="pin2"/><circle cx="562.0" cy="406.6" r="1.1" class="pin2"/><circle cx="638.0" cy="406.6" r="1.1" class="pin2"/><circle cx="562.0" cy="400.2" r="1.1" class="pin2"/><circle cx="638.0" cy="400.2" r="1.1" class="pin2"/><circle cx="562.0" cy="393.8" r="1.1" class="pin2"/><circle cx="638.0" cy="393.8" r="1.1" class="pin2"/><circle cx="562.0" cy="387.4" r="1.1" class="pin2"/><circle cx="638.0" cy="387.4" r="1.1" class="pin2"/><circle cx="562.0" cy="381.0" r="1.1" class="pin2"/><circle cx="638.0" cy="381.0" r="1.1" class="pin2"/><circle cx="562.0" cy="374.6" r="1.1" class="pin2"/><circle cx="638.0" cy="374.6" r="1.1" class="pin2"/><circle cx="562.0" cy="368.2" r="1.1" class="pin2"/><circle cx="638.0" cy="368.2" r="1.1" class="pin2"/><circle cx="562.0" cy="361.8" r="1.1" class="pin2"/><circle cx="638.0" cy="361.8" r="1.1" class="pin2"/><circle cx="562.0" cy="355.4" r="1.1" class="pin2"/><circle cx="638.0" cy="355.4" r="1.1" class="pin2"/><circle cx="562.0" cy="349.0" r="1.1" class="pin2"/><circle cx="638.0" cy="349.0" r="1.1" class="pin2"/><circle cx="562.0" cy="342.6" r="1.1" class="pin2"/><circle cx="638.0" cy="342.6" r="1.1" class="pin2"/><circle cx="562.0" cy="336.2" r="1.1" class="pin2"/><circle cx="638.0" cy="336.2" r="1.1" class="pin2"/><circle cx="562.0" cy="329.8" r="1.1" class="pin2"/><circle cx="638.0" cy="329.8" r="1.1" class="pin2"/><circle cx="562.0" cy="323.4" r="1.1" class="pin2"/><circle cx="638.0" cy="323.4" r="1.1" class="pin2"/><circle cx="562.0" cy="317.0" r="1.1" class="pin2"/><circle cx="638.0" cy="317.0" r="1.1" class="pin2"/><circle cx="562.0" cy="310.6" r="1.1" class="pin2"/><circle cx="638.0" cy="310.6" r="1.1" class="pin2"/><circle cx="562.0" cy="304.2" r="1.1" class="pin2"/><circle cx="638.0" cy="304.2" r="1.1" class="pin2"/><circle cx="562.0" cy="297.8" r="1.1" class="pin2"/><circle cx="638.0" cy="297.8" r="1.1" class="pin2"/><circle cx="562.0" cy="291.4" r="1.1" class="pin2"/><circle cx="638.0" cy="291.4" r="1.1" class="pin2"/><circle cx="562.0" cy="285.0" r="1.1" class="pin2"/><circle cx="638.0" cy="285.0" r="1.1" class="pin2"/><circle cx="562.0" cy="278.6" r="1.1" class="pin2"/><circle cx="638.0" cy="278.6" r="1.1" class="pin2"/><circle cx="562.0" cy="272.2" r="1.1" class="pin2"/><circle cx="638.0" cy="272.2" r="1.1" class="pin2"/><circle cx="562.0" cy="265.8" r="1.1" class="pin2"/><circle cx="638.0" cy="265.8" r="1.1" class="pin2"/><circle cx="562.0" cy="259.4" r="1.1" class="pin2"/><circle cx="638.0" cy="259.4" r="1.1" class="pin2"/><circle cx="562.0" cy="253.0" r="1.1" class="pin2"/><circle cx="638.0" cy="253.0" r="1.1" class="pin2"/><circle cx="562.0" cy="246.6" r="1.1" class="pin2"/><circle cx="638.0" cy="246.6" r="1.1" class="pin2"/><circle cx="562.0" cy="240.2" r="1.1" class="pin2"/><circle cx="638.0" cy="240.2" r="1.1" class="pin2"/><circle cx="562.0" cy="233.8" r="1.1" class="pin2"/><circle cx="638.0" cy="233.8" r="1.1" class="pin2"/><circle cx="562.0" cy="227.4" r="1.1" class="pin2"/><circle cx="638.0" cy="227.4" r="1.1" class="pin2"/><circle cx="562.0" cy="221.0" r="1.1" class="pin2"/><circle cx="638.0" cy="221.0" r="1.1" class="pin2"/><circle cx="562.0" cy="214.6" r="1.1" class="pin2"/><circle cx="638.0" cy="214.6" r="1.1" class="pin2"/><circle cx="562.0" cy="208.2" r="1.1" class="pin2"/><circle cx="638.0" cy="208.2" r="1.1" class="pin2"/><circle cx="562.0" cy="201.8" r="1.1" class="pin2"/><circle cx="638.0" cy="201.8" r="1.1" class="pin2"/><circle cx="562.0" cy="195.4" r="1.1" class="pin2"/><circle cx="638.0" cy="195.4" r="1.1" class="pin2"/><circle cx="562.0" cy="189.0" r="1.1" class="pin2"/><circle cx="638.0" cy="189.0" r="1.1" class="pin2"/><circle cx="562.0" cy="182.6" r="1.1" class="pin2"/><circle cx="638.0" cy="182.6" r="1.1" class="pin2"/><circle cx="562.0" cy="112.2" r="1.1" class="pin2"/><circle cx="638.0" cy="112.2" r="1.1" class="pin2"/><circle cx="562.0" cy="105.8" r="1.1" class="pin2"/><circle cx="638.0" cy="105.8" r="1.1" class="pin2"/><circle cx="562.0" cy="99.4" r="1.1" class="pin2"/><circle cx="638.0" cy="99.4" r="1.1" class="pin2"/><circle cx="562.0" cy="93.0" r="1.1" class="pin2"/><circle cx="638.0" cy="93.0" r="1.1" class="pin2"/><circle cx="562.0" cy="86.6" r="1.1" class="pin2"/><circle cx="638.0" cy="86.6" r="1.1" class="pin2"/><circle cx="562.0" cy="80.2" r="1.1" class="pin2"/><circle cx="638.0" cy="80.2" r="1.1" class="pin2"/><circle cx="562.0" cy="73.8" r="1.1" class="pin2"/><circle cx="638.0" cy="73.8" r="1.1" class="pin2"/><circle cx="560.0" cy="157.8" r="2.4" class="conf"/><circle cx="600.0" cy="157.8" r="2.4" class="conf"/><circle cx="640.0" cy="157.8" r="2.4" class="conf"/><circle cx="560.0" cy="507.0" r="2.4" class="conf"/><circle cx="600.0" cy="507.0" r="2.4" class="conf"/><circle cx="640.0" cy="507.0" r="2.4" class="conf"/><circle cx="560.0" cy="40.2" r="2.4" class="conf"/><circle cx="600.0" cy="40.2" r="2.4" class="conf"/><circle cx="640.0" cy="40.2" r="2.4" class="conf"/><text x="760.0" y="14.0" class="mod" text-anchor="middle">П · М1</text><rect x="710.0" y="513.2" width="100.0" height="60.8" class="sheet"/><rect x="710.0" y="154.8" width="100.0" height="355.2" class="sheet"/><rect x="710.0" y="37.2" width="100.0" height="114.4" class="sheet"/><circle cx="717.4" cy="112.2" r="0.9" class="pin"/><circle cx="802.6" cy="112.2" r="0.9" class="pin"/><circle cx="717.4" cy="105.8" r="0.9" class="pin"/><circle cx="802.6" cy="105.8" r="0.9" class="pin"/><circle cx="717.4" cy="99.4" r="0.9" class="pin"/><circle cx="802.6" cy="99.4" r="0.9" class="pin"/><circle cx="717.4" cy="93.0" r="0.9" class="pin"/><circle cx="802.6" cy="93.0" r="0.9" class="pin"/><circle cx="717.4" cy="86.6" r="0.9" class="pin"/><circle cx="802.6" cy="86.6" r="0.9" class="pin"/><circle cx="717.4" cy="80.2" r="0.9" class="pin"/><circle cx="802.6" cy="80.2" r="0.9" class="pin"/><circle cx="717.4" cy="73.8" r="0.9" class="pin"/><circle cx="802.6" cy="73.8" r="0.9" class="pin"/><circle cx="722.0" cy="112.2" r="1.1" class="pin2"/><circle cx="798.0" cy="112.2" r="1.1" class="pin2"/><circle cx="722.0" cy="105.8" r="1.1" class="pin2"/><circle cx="798.0" cy="105.8" r="1.1" class="pin2"/><circle cx="722.0" cy="99.4" r="1.1" class="pin2"/><circle cx="798.0" cy="99.4" r="1.1" class="pin2"/><circle cx="722.0" cy="93.0" r="1.1" class="pin2"/><circle cx="798.0" cy="93.0" r="1.1" class="pin2"/><circle cx="722.0" cy="86.6" r="1.1" class="pin2"/><circle cx="798.0" cy="86.6" r="1.1" class="pin2"/><circle cx="722.0" cy="80.2" r="1.1" class="pin2"/><circle cx="798.0" cy="80.2" r="1.1" class="pin2"/><circle cx="722.0" cy="73.8" r="1.1" class="pin2"/><circle cx="798.0" cy="73.8" r="1.1" class="pin2"/><rect x="755.0" y="169.0" width="10.0" height="10.0" class="rodmark"/><rect x="755.0" y="179.0" width="10.0" height="10.0" class="rodmark2"/><rect x="755.0" y="349.0" width="10.0" height="10.0" class="rodmark2"/><circle cx="720.0" cy="157.8" r="2.4" class="conf"/><circle cx="760.0" cy="157.8" r="2.4" class="conf"/><circle cx="800.0" cy="157.8" r="2.4" class="conf"/><circle cx="720.0" cy="507.0" r="2.4" class="conf"/><circle cx="760.0" cy="507.0" r="2.4" class="conf"/><circle cx="800.0" cy="507.0" r="2.4" class="conf"/><circle cx="720.0" cy="40.2" r="2.4" class="conf"/><circle cx="760.0" cy="40.2" r="2.4" class="conf"/><circle cx="800.0" cy="40.2" r="2.4" class="conf"/><line x1="56.0" y1="574.0" x2="56.0" y2="34.0" class="dim"/><line x1="52.0" y1="574.0" x2="60.0" y2="574.0" class="dim"/><text x="49.0" y="578.0" class="dim-s" text-anchor="end">0 низ</text><line x1="52.0" y1="510.0" x2="60.0" y2="510.0" class="dim"/><text x="49.0" y="514.0" class="dim-s" text-anchor="end">320</text><line x1="52.0" y1="502.6" x2="60.0" y2="502.6" class="dim"/><text x="49.0" y="506.6" class="dim-s" text-anchor="end">357</text><line x1="52.0" y1="182.6" x2="60.0" y2="182.6" class="dim"/><text x="49.0" y="186.6" class="dim-s" text-anchor="end">1957</text><line x1="52.0" y1="151.6" x2="60.0" y2="151.6" class="dim"/><text x="49.0" y="155.6" class="dim-s" text-anchor="end">2112</text><line x1="52.0" y1="112.2" x2="60.0" y2="112.2" class="dim"/><text x="49.0" y="116.2" class="dim-s" text-anchor="end">2309</text><line x1="52.0" y1="73.8" x2="60.0" y2="73.8" class="dim"/><text x="49.0" y="77.8" class="dim-s" text-anchor="end">2501</text><line x1="52.0" y1="34.0" x2="60.0" y2="34.0" class="dim"/><text x="49.0" y="38.0" class="dim-s" text-anchor="end">2700</text><circle cx="845.0" cy="114.0" r="3" class="conf"/><text x="858.0" y="118.0" class="dim-s" text-anchor="start">конфирмат (50·250·450)</text><circle cx="845.0" cy="132.0" r="2" class="pin"/><text x="858.0" y="136.0" class="dim-s" text-anchor="start">Ø5×9, 37 от кромок</text><circle cx="845.0" cy="150.0" r="2" class="pin2"/><text x="858.0" y="154.0" class="dim-s" text-anchor="start">Ø5×9, 60 от кромок —</text><text x="858.0" y="172.0" class="dim-s" text-anchor="start">обратная сторона</text><rect x="840.0" y="181.0" width="10.0" height="10.0" class="rodmark"/><text x="858.0" y="190.0" class="dim-s" text-anchor="start">штанга, одна сторона</text><rect x="840.0" y="199.0" width="10.0" height="10.0" class="rodmark2"/><text x="858.0" y="208.0" class="dim-s" text-anchor="start">штанга, другая сторона</text><rect x="839.0" y="219.0" width="12.0" height="5.0" class="shelfline"/><text x="858.0" y="226.0" class="dim-s" text-anchor="start">линия полки 16 мм</text><text x="890.0" y="382.0" class="mod" text-anchor="middle">А и П4 антресоли</text><rect x="840.0" y="394.0" width="100.0" height="80.0" class="sheet"/><circle cx="850.0" cy="395.6" r="2.4" class="conf"/><circle cx="890.0" cy="395.6" r="2.4" class="conf"/><circle cx="930.0" cy="395.6" r="2.4" class="conf"/><circle cx="850.0" cy="472.4" r="2.4" class="conf"/><circle cx="890.0" cy="472.4" r="2.4" class="conf"/><circle cx="930.0" cy="472.4" r="2.4" class="conf"/><text x="890.0" y="490.0" class="dim-t" text-anchor="middle">А 400×500</text><rect x="840.0" y="510.0" width="100.0" height="73.6" class="sheet"/><circle cx="850.0" cy="512.0" r="2.4" class="conf"/><circle cx="890.0" cy="512.0" r="2.4" class="conf"/><circle cx="930.0" cy="512.0" r="2.4" class="conf"/><circle cx="850.0" cy="581.0" r="2.4" class="conf"/><circle cx="890.0" cy="581.0" r="2.4" class="conf"/><circle cx="930.0" cy="581.0" r="2.4" class="conf"/><text x="890.0" y="598.0" class="dim-t" text-anchor="middle">П4 368×500</text></svg>
+    <figcaption>Внутренние пласти боковин и обе стороны стоек перегородки. Чёрные точки — отверстия под полкодержатели на одной стороне (37 мм от кромок). Полые точки — на обратной стороне (60 мм от кромок). Конфирматы сверлятся при сборке, здесь показано, где их разметить.</figcaption>
+  </figure>
+
+  <h3>5.1 Разметка</h3>
+  <ol class="steps">
+    <li><b>Боковины:</b> от нижнего торца провести по внутренней пласти линии <span class="d">304</span>/<span class="d">320</span> и <span class="d">2096</span>/<span class="d">2112</span>. На наружной пласти отметить центры конфирматов: высоты <span class="d">312</span>, <span class="d">2104</span>, <span class="d">2692</span>, по 50, 250 и 450 мм от передней кромки.</li>
+    <li><b>Горизонтали модулей:</b> ось перегородки на <span class="d">759</span> мм от каждого торца. Толщина стойки ложится на отметки 751–767. На оси отметить 3 точки конфирматов (50, 250, 450 от переда): на верхней пласти полки 2112, на нижней пласти полки 320, на верхней пласти крышки.</li>
+    <li><b>Дно и крыша антресолей:</b> ось 759 от торцов, 3 точки снаружи: на нижней пласти дна и на верхней пласти крыши.</li>
+    <li><b>Царги:</b> на задней пласти отметить точки конфирматов. В 8 мм от каждого торца (в торцы боковин) на высоте 30 и 70 от нижней кромки царги. На 775 мм (в стойку) тоже на 30 и 70. Ещё в 300 мм от каждого торца, в 8 мм от верхней кромки царги (в кромку полки или крышки).</li>
+  </ol>
+
+  <h3>5.2 Отверстия под полкодержатели и штанги</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Деталь</th><th>Сторона</th><th>Отверстия Ø5 × 9, шаг 32</th><th>Отступ рядов</th></tr></thead>
+    <tbody>
+      <tr><td>Боковины 1Л, 1П</td><td>внутренняя</td><td>верхняя зона 2309–2501 от низа, 7 шт</td><td class="mono">37 / 37</td></tr>
+      <tr><td>Боковины 2Л, 2П</td><td>внутренняя</td><td>357–1957 (51 шт) и 2309–2501 (7 шт)</td><td class="mono">37 / 37</td></tr>
+      <tr><td>М2‑П2</td><td>обе</td><td>от низа стойки 37–1637, 51 шт (это 357–1957 от пола)</td><td class="mono">секция 3: 37 · секция 4: 60</td></tr>
+      <tr><td>М2‑П3, М1‑П3</td><td>обе</td><td>от низа стойки 197–389, 7 шт</td><td class="mono">одна сторона 37, другая 60</td></tr>
+      <tr><td>Держатели штанг</td><td></td><td colspan="2">центр в 250 мм от переда. 1Л: 2000. 1П: 1950 и 1100. М1‑П2: со стороны секции 1 на 1680 от низа стойки, со стороны секции 2 на 1630 и 780</td></tr>
+    </tbody>
+  </table></div>
+  <div class="note"><strong>Глубина 9 мм.</strong> Флажок на сверле ставится на толщину кондуктора у втулки + 9 мм от кончика. На стойках, где отверстия с двух сторон, одна сторона сверлится на 37 мм от кромок, другая на 60 мм. Тогда отверстия не встречаются в толще 16 мм.</div>
+  <h3>5.3 Сверлить кондуктором МК-20</h3>
+  <p>У кондуктора голова-упор, носик и 17 втулок Ø5 с шагом 32. Первая втулка стоит в <b>37 мм</b> от упора. Все высоты в инструкции подобраны под эту сетку, поэтому каждая деталь сверлится одинаково: <b>головой в нижний торец</b>.</p>
+  <ol class="steps">
+    <li>Деталь положить внутренней пластью вверх. У нижнего торца провести короткую риску в 37 мм от передней кромки (или в 60 мм для второй стороны стойки).</li>
+    <li>Голову кондуктора прижать к нижнему торцу, носик поставить на риску, зажать струбциной.</li>
+    <li><b>Боковины:</b> втулки 1–10 попадают ниже полки 320, их пропускаем. Сверлить втулки 11–17 (357…549). <b>Стойка П2:</b> сверлить сразу с втулки 1, это и есть 357 от пола. <b>Стойка П3:</b> втулки 6–12 (197…389 от её низа).</li>
+    <li>Продолжить ряд. Кондуктор перевернуть головой вверх, упор (полкодержатель или хвостовик сверла 5 мм) вставить через первую втулку в последнее отверстие. Ряд выровнять по риске, продолженной карандашом вдоль детали, и сверлить втулки 2–17. Повторять до 1957.</li>
+    <li>Второй ряд: риска в 37 мм от задней кромки, всё так же.</li>
+    <li><b>Верхняя зона боковин 1Л и 1П</b> (там нет нижнего ряда, от которого продолжать): отметить рулеткой 2309 от низа, поставить на отметку первую втулку, выровнять по риске и сверлить 7 отверстий.</li>
+  </ol>
+  <p>Пошагово с анимацией это показано в разделе <a href="#s3d2">«Сверление крупным планом»</a>, шаги 6–13.</p>
+</section>
+
+<section id="s6">
+  <div class="sh"><span class="num">6</span><h2>Сборка модулей М1 и М2</h2><span class="time">~2,5 часа на модуль</span></div>
+  <p>Модуль собирается лёжа лицом вниз, на передних кромках. Царги ложатся сверху. Порядок важен: стойки перегородки ставятся в строгой очерёдности, иначе к части конфирматов не подобраться.</p>
+  <ol class="steps">
+    <li>Постелить картон. Боковины поставить на передние кромки, пластями «ВНУТРЬ» друг к другу, на расстоянии 1518 мм.</li>
+    <li><b>Крышка</b> вровень с верхними торцами и передними кромками. Стянуть модуль ремнём через обе боковины, проверить угольник. Ступенчатым сверлом насквозь через боковину в торец и 3 конфирмата с каждой стороны. Головки вровень с пластью.</li>
+    <li><b>Полка на 2112</b> по линиям 2096–2112, 3 + 3 конфирмата.</li>
+    <li><b>Полка на 320</b> по линиям 304–320, 3 + 3 конфирмата. Под середину длинных полок подложить обрезок, чтобы не провисали.</li>
+    <li><b>Стойка П2</b> (1776) между полками 320 и 2112 по оси 759. Рулеткой проверить 751 мм до обеих боковин спереди и сзади. Сверху через полку 2112 (из верхней зоны) 3 конфирмата в торец стойки. Снизу через полку 320 ещё 3: низ модуля открыт, дрель заходит со стороны нижнего торца.</li>
+    <li><b>Стойка П3</b> (572) между полкой 2112 и крышкой по той же оси. Сверху через крышку 3 конфирмата. Низ закрепить двумя уголками 20×20, по одному с каждой стороны, саморезами 3,5×16.</li>
+    <li><b>Стойка П1</b> (304) под полку 320 по той же оси. Пока она просто вставлена, её зафиксирует нижняя царга.</li>
+    <li><b>Диагонали:</b> обе <span class="d">≈ 3113</span>, разница не больше 2 мм. Если больше, надавить на угол по длинной диагонали.</li>
+    <li><b>Верхняя царга</b> 1550×100 на задние кромки, вровень с верхними торцами и наружными пластями боковин (на 2600–2700). Сверлить по разметке сквозь царгу и вкрутить 8 конфирматов: по 2 в торцы боковин, 2 в стойку П3, 2 в кромку крышки.</li>
+    <li><b>Нижняя царга</b> на 220–320, верхняя кромка вровень с плоскостью полки 320. Так же 8 конфирматов: боковины, П1, кромка полки. Теперь модуль жёсткий.</li>
+    <li>Подписать модуль и отставить. Поднимать его только с обеими царгами.</li>
+  </ol>
+  <div class="note"><strong>Перед вторым модулем проверить:</strong> 43 конфирмата утоплены, стойка на оси (751 / 751), крышка и царга вровень с торцами, диагонали сходятся.</div>
+</section>
+
+<section id="s7">
+  <div class="sh"><span class="num">7</span><h2>Сборка антресолей</h2><span class="time">~40 мин на короб</span></div>
+  <ol class="steps">
+    <li>Две боковины <span class="code cA">А</span> поставить на передние кромки, между ними дно и крышу <span class="code cG">Г</span> вровень с торцами. Стянуть ремнём, 12 конфирматов.</li>
+    <li>Перегородку <span class="code cZ">П4</span> (368) поставить по оси 759. Снаружи 3 конфирмата через дно и 3 через крышу.</li>
+    <li>Сверить диагонали <span class="d">≈ 1601</span>. Задника у антресоли нет, жёсткость ей дают перегородка и крепление к модулю.</li>
+  </ol>
+</section>
+
+<section id="s8">
+  <div class="sh"><span class="num">8</span><h2>Установка в нишу</h2><span class="time">3 часа, втроём</span></div>
+  <h3>8.1 Модули</h3>
+  <ol class="steps">
+    <li>Поднять М1 в вертикаль: около 75 кг, диагональ 2750 мм, у стены 3377 места хватает. Задвинуть к наружной стене царгами к стене «Вид 1» и оставить до наружной стены 15–20 мм, подложив проставки.</li>
+    <li>Выставить по уровню: вертикаль по передней кромке и пласти боковины, горизонт по крышке. Клинья подбивать под торцы боковин и под стойку П1, она тоже должна стоять на полу.</li>
+    <li>М2 вплотную к М1, передние кромки и верх заподлицо, стянуть струбцинами у передней кромки.</li>
+    <li>Скрутить модули 8 саморезами 4×25 с пилотным отверстием 3 мм. Из М1 в 80 мм от передней кромки, из М2 в 80 мм от задней, на высотах <span class="d">150</span>, <span class="d">1000</span>, <span class="d">1700</span>, <span class="d">2400</span>.</li>
+    <li>Проверить общую ширину <span class="d">3100</span>, крышки в одной плоскости, фасад по шнуру с отклонением не больше 2 мм. До стены у проёма останется около 30 мм.</li>
+  </ol>
+  <h3>8.2 Антресоли</h3>
+  <ol class="steps">
+    <li>Вдвоём со стремянок поставить антресоль на крышку модуля. Боковины над боковинами, перегородка над стойкой П3, передние кромки заподлицо.</li>
+    <li>Изнутри модуля, из верхней зоны, прикрутить снизу через крышку 6 саморезами 4×25 с пилотным отверстием: по паре у каждой боковины и у перегородки, в 80 мм от переда и зада.</li>
+    <li>Вторую антресоль так же, короба стянуть между собой 4 саморезами 4×25.</li>
+  </ol>
+</section>
+
+<section id="s9">
+  <div class="sh"><span class="num">9</span><h2>Крепление к стенам модульного дома</h2><span class="time">1,5 часа</span></div>
+  <p>Без задней стенки шкаф держится за стены, и главное крепление идёт через царги в стойки каркаса стены «Вид 1». Крайние боковины дополнительно крепятся к наружной стене и к стене у проёма. <b>У тебя каркас с вагонкой</b>, это первая строка таблицы.</p>
+  <div class="tw"><table>
+    <thead><tr><th>Какая стена</th><th>Как понять</th><th>Царги к задней стене</th><th>Боковины к боковым стенам</th></tr></thead>
+    <tbody>
+      <tr><td><b>Каркас:</b> стойки, ОСП, отделка</td><td>саморезы обшивки идут вертикальными рядами через 400–600 мм</td><td>в каждую стойку за царгой по 2 самореза <b>6×90</b> (на 30 и 70 мм от низа царги)</td><td>если попали в стойку, 6×90. Иначе в ОСП 2 самореза <b>5×60</b> на точку</td></tr>
+      <tr><td><b>SIP-панели</b></td><td>под отделкой сплошная ОСП, стойки только на стыках панелей</td><td>в ОСП <b>5×60</b> через 150–200 мм по всей длине царги, 8 шт на царгу</td><td>в ОСП по 2 самореза 5×60 на точку</td></tr>
+      <tr><td><b>Гипсокартон по металлопрофилю</b></td><td>магнит липнет к профилю, стена звучит пусто</td><td colspan="2">6×90 и 5×60 не подходят. Нужны саморезы по металлу в профиль или закладные, подберём отдельно</td></tr>
+    </tbody>
+  </table></div>
+  <div class="grid2">
+    <div>
+      <h3>Точки крепления</h3>
+      <ul>
+        <li><b>Царги:</b> все стойки, что попали за царгу, обычно 2–3 на модуль. Каждая из 4 царг держится минимум за 2 стойки.</li>
+        <li><b>Боковины</b>: левая у М1 к наружной стене, правая у М2 к стене у проёма. Высоты <span class="d">150</span>, <span class="d">1000</span>, <span class="d">1700</span>, <span class="d">2450</span>, <b>в 60 мм от задней кромки</b>: там, в углу стен, стоит стойка каркаса. Если стойки в этом месте нет, по 2 самореза 5×60 в вагонку на точку.</li>
+        <li><b>Антресоли:</b> по 1 точке в крайних боковинах на высоте <span class="d">2900</span>.</li>
+      </ul>
+    </div>
+    <figure style="margin:0"><svg viewBox="0 0 340 185" role="img" aria-label="Крепление боковины к каркасной стене через проставку в стойку"><rect x="20.0" y="40.0" width="90.0" height="60.0" class="stud"/><text x="65.0" y="120.0" class="dim-s" text-anchor="middle">стойка каркаса</text><text x="65.0" y="132.0" class="dim-s" text-anchor="middle">обычно шаг 600</text><rect x="110.0" y="20.0" width="12.0" height="100.0" class="osb"/><text x="116.0" y="14.0" class="dim-s" text-anchor="middle">ОСП</text><rect x="122.0" y="20.0" width="12.0" height="100.0" class="finish"/><text x="140.0" y="158.0" class="dim-s" text-anchor="middle">отделка / ГКЛ</text><rect x="134.0" y="55.0" width="6.0" height="30.0" class="shim"/><text x="150.0" y="50.0" class="dim-s" text-anchor="start">проставка</text><rect x="140.0" y="20.0" width="16.0" height="100.0" class="part"/><text x="160.0" y="174.0" class="dim-s" text-anchor="middle">боковина шкафа</text><line x1="46.0" y1="70.0" x2="162.0" y2="70.0" class="screw"/><rect x="156.0" y="64.0" width="5.0" height="12.0" class="screwhead"/><text x="175.0" y="74.0" class="dim-s" text-anchor="start">саморез 6×90</text><text x="175.0" y="88.0" class="dim-s" text-anchor="start">≥ 40 мм в стойку</text><text x="250.0" y="30.0" class="dim-s" text-anchor="start">внутри шкафа →</text></svg><figcaption>Вид сверху на узел: проставка в зазоре, саморез проходит отделку и ОСП и входит в стойку минимум на 40 мм.</figcaption></figure>
+  </div>
+  <ol class="steps">
+    <li>Перенести отметки стоек со стены на царги: карандашом по верхней кромке царги.</li>
+    <li>В каждой точке измерить зазор до стены. Если он больше 1 мм, вставить жёсткую проставку этой толщины: обрезки ЛДСП или клинья. Без проставки саморез притянет царгу или боковину к стене и изогнёт её.</li>
+    <li>В ЛДСП сверлить пилотное отверстие 4 мм под 6×90 (или 3 мм под 5×60), иначе плита расколется. В дерево стойки можно без пилотного.</li>
+    <li>Затягивать до прижима, без усилия. Головка должна встать вровень с ЛДСП.</li>
+    <li><b>Длина самореза</b> = 16 мм (ЛДСП) + проставка + вагонка (обычно 14–20 мм) + минимум 40 мм в стойку. С проставкой 20 мм у наружной стены выходит 16 + 20 + 20 + 40 = 96, там лучше взять 6×120. В остальных местах хватит 6×90.</li>
+  </ol>
+  <div class="note"><strong>Не делать:</strong> не использовать дюбель-гвозди и пластиковые дюбели для бетона, в дереве они не держат. Не крепить шкаф к потолку. Проверка: шкаф не качается, если потянуть за переднюю кромку крышки.</div>
+</section>
+
+<section id="s10">
+  <div class="sh"><span class="num">10</span><h2>Наполнение</h2><span class="time">1 час</span></div>
+  <h3>Штанги</h3>
+  <ol class="steps">
+    <li>Измерить проём секции на высоте штанги (≈ 751). Надеть держатели на штангу, приложить, отметить длину, отпилить и снять заусенец.</li>
+    <li>Секция 1: штанга на <span class="d">2000</span>. Секция 2: на <span class="d">1950</span> и <span class="d">1100</span>. Центр держателя в 250 мм от переда, горизонт проверить уровнем.</li>
+  </ol>
+  <h3>Полки</h3>
+  <ul class="chk">
+    <li class="c"><input type="checkbox" id="c27"><label for="c27">Секции 3 и 4: по 4 полки <span class="code cR">Р</span> на отверстиях <span class="d">677</span>, <span class="d">1029</span>, <span class="d">1381</span>, <span class="d">1733</span> от пола.</label></li>
+    <li class="c"><input type="checkbox" id="c28"><label for="c28">Все 4 секции, верхняя зона: по 1 полке на <span class="d">2405</span>.</label></li>
+    <li class="c"><input type="checkbox" id="c29"><label for="c29">Каждая полка стоит на 4 полкодержателях на одной высоте, проверить уровнем. На стойке П2 отверстия со стороны секции 4 смещены (60 мм от кромки), это нормально.</label></li>
+  </ul>
+</section>
+
+<section id="s11">
+  <div class="sh"><span class="num">11</span><h2>Приёмка и подготовка под купе</h2></div>
+  <ul class="chk">
+    <li class="c"><input type="checkbox" id="c30"><label for="c30">Все конфирматы затянуты, модули и антресоли стянуты, каждая царга держится минимум за 2 стойки каркаса.</label></li>
+    <li class="c"><input type="checkbox" id="c31"><label for="c31">Общий размер <span class="d">3100 × 3100</span>, верх антресолей в одной плоскости.</label></li>
+    <li class="c"><input type="checkbox" id="c32"><label for="c32">Фасадная плоскость ровная, отклонение не больше 2–3 мм. Ничего не выступает за передние кромки.</label></li>
+    <li class="c"><input type="checkbox" id="c33"><label for="c33">Клинья подрезаны заподлицо с передней кромкой.</label></li>
+    <li class="c"><input type="checkbox" id="c34"><label for="c34">Мастеру по дверям передать: глубина шкафа <b>516 мм</b>, до наличника окна 611, до проёма 618, потолок наклонный, нужен короб под рельс. К корпусу ничего не крепить.</label></li>
+  </ul>
+</section>
+
+<footer>
+  Детали и размеры в миллиметрах. Цены и артикулы с lemanapro.ru (Москва) на 25–27.09.2026, в магазине могут отличаться.
+  Предыдущие версии: v1 (5 вертикалей, модель в <span class="mono">Desktop\wardrobe_3100x3100x500_3d_bundle</span>) и v2 (4 модуля с задником).
+</footer>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>(function(){
+  var STEPS = [
+    {t:'Боковины на ребро', sec:'этап 6', x:'Постелить картон на площади примерно 3 × 2 м. Две боковины М1 поставить на передние кромки, пластями «ВНУТРЬ» друг к другу, на расстоянии около 1518 мм. Модуль собирается лёжа лицом вниз, задом кверху.'},
+    {t:'Крышка', sec:'этап 6', x:'Крышку 1518 вставить вровень с верхними торцами и передними кромками. Прижать струбцинами, проверить угольник. Сверлить насквозь через боковину в торец и вкрутить по 3 конфирмата с каждой стороны (50, 250, 450 мм от переда).'},
+    {t:'Полка на 2112', sec:'этап 6', x:'Полку поставить по линиям 2096–2112 на боковинах, 3 + 3 конфирмата.'},
+    {t:'Полка на 320', sec:'этап 6', x:'Полку поставить по линиям 304–320, 3 + 3 конфирмата. Пока полки длинные и провисают, под середину подложить обрезок.'},
+    {t:'Средняя стойка', sec:'этап 6', x:'Стойку П2 (1776) поставить между полками 320 и 2112 точно по центру: 751 мм от каждой боковины. Через полку 2112 сверху 3 конфирмата в её торец, через полку 320 снизу ещё 3. Нижняя стойка П1 пока не стоит, поэтому снизу место свободно.'},
+    {t:'Нижняя и верхняя стойки', sec:'этап 6', x:'П3 (572) поставить между полкой 2112 и крышкой по той же оси. Сверху через крышку 3 конфирмата, низ закрепить двумя уголками 20×20. П1 (304) вставить под полку 320 по оси, её держат полка и нижняя царга.'},
+    {t:'Царги', sec:'этап 6', x:'Проверить диагонали: около 3113 мм, разница не больше 2 мм. Царги 1550×100 положить на задние кромки: одну вровень с верхом (2600–2700), другую на 220–320. Конфирматы сзади: по 2 в каждую боковину, 2 в стойку, 2 в кромку полки.'},
+    {t:'М1 в нишу', sec:'этап 8.1', x:'Вдвоём поднять модуль, он весит около 75 кг. Задвинуть к левой стене, царгами к задней стене. Выставить по уровню клиньями под торцами боковин и стойки П1.'},
+    {t:'М2 и стяжка', sec:'этап 8.1', x:'М2 собрать так же, поставить вплотную к М1, передние кромки и верх заподлицо. Стянуть 8 саморезами 4×25: 4 из М1 у переда, 4 из М2 у зада, на высотах 150, 1000, 1700 и 2400. Общая ширина 3100.'},
+    {t:'Антресоль', sec:'этап 7', x:'Две боковины 400, дно и крыша 1518, по центру перегородка П4 368. Боковины на 12 конфирматах, перегородка на 3 сверху и 3 снизу. Диагональ около 1601 мм. Собрать 2 короба.'},
+    {t:'Антресоли наверх', sec:'этап 8.2', x:'Вдвоём со стремянок поставить короба на крышки модулей, перегородка антресоли над стойкой модуля. Изнутри модуля прикрутить снизу через крышку 6 саморезами 4×25. Короба стянуть между собой 4 саморезами.'},
+    {t:'Крепление к стенам', sec:'этап 9', x:'Главное крепление через царги к задней стене: в каждую стойку каркаса по 2 самореза 6×90. Дополнительно крайние боковины к боковым стенам: 4 точки внизу и 1 в антресоли, в стойку или в ОСП. В каждый зазор ставится проставка.'},
+    {t:'Штанги и полки', sec:'этап 10', x:'Штанги: секция 1 на 2000, секция 2 на 1950 и 1100, центр в 250 мм от переда. Полки секций 3–4 на 677, 1029, 1381 и 1733, в верхней зоне всех секций на 2405.'},
+    {t:'Готово', sec:'этап 11', x:'Приёмка: шкаф не качается, фасадная плоскость ровная, ничего не выступает за передние кромки. Мастеру по дверям передать глубину 516 мм по царгам.'}
+  ];
+  var N = STEPS.length;
+  var board = document.getElementById('board');
+  var imgs = [];
+  STEPS.forEach(function(st, i){
+    var li = document.createElement('li');
+    var b = document.createElement('button'); b.type='button'; b.className='board-img'; b.setAttribute('aria-label','Показать шаг '+(i+1)+' в 3D');
+    var im = document.createElement('img'); im.alt = 'Шаг '+(i+1)+': '+st.t; im.width=720; im.height=450;
+    b.appendChild(im); imgs.push(im);
+    var cap = document.createElement('div'); cap.className='board-cap';
+    cap.innerHTML = '<div class="board-h"><b>'+(i+1)+'</b><span>'+st.t+'</span><em>'+st.sec+'</em></div><p>'+st.x+'</p>';
+    li.appendChild(b); li.appendChild(cap); board.appendChild(li);
+    b.addEventListener('click', function(){ go(i+1); document.getElementById('v3d').scrollIntoView({behavior:'smooth', block:'start'}); });
+  });
+  var elN=document.getElementById('v3d-n'), elSec=document.getElementById('v3d-sec'), elT=document.getElementById('v3d-title'), elX=document.getElementById('v3d-text');
+  var dots=document.getElementById('v3d-dots');
+  for(var d=1; d<=N; d++){ (function(k){ var b=document.createElement('button'); b.type='button'; b.textContent=k; b.setAttribute('role','tab'); b.addEventListener('click', function(){ go(k); }); dots.appendChild(b); })(d); }
+  function ui(s){
+    var st=STEPS[s-1];
+    elN.textContent='Шаг '+s+' из '+N; elSec.textContent=st.sec; elT.textContent=st.t; elX.textContent=st.x;
+    Array.prototype.forEach.call(dots.children, function(b,i){ b.setAttribute('aria-selected', i===s-1 ? 'true':'false'); });
+    document.getElementById('v3d-prev').disabled = s===1;
+    document.getElementById('v3d-next').disabled = s===N;
+  }
+  var cur = 1;
+  var go = function(s){ cur=s; ui(s); };
+  document.getElementById('v3d-prev').addEventListener('click', function(){ go(Math.max(1, cur-1)); });
+  document.getElementById('v3d-next').addEventListener('click', function(){ go(Math.min(N, cur+1)); });
+  document.getElementById('v3d').addEventListener('keydown', function(e){
+    if(e.key==='ArrowRight'){ go(Math.min(N,cur+1)); e.preventDefault(); }
+    if(e.key==='ArrowLeft'){ go(Math.max(1,cur-1)); e.preventDefault(); }
+  });
+  ui(1);
+
+  var LBL_KEY='wardrobe-labels';
+  var showLbl=(function(){ try{ var v=localStorage.getItem(LBL_KEY); return v===null ? true : v==='1'; }catch(e){ return true; } })();
+  var lblBtn=document.getElementById('v3d-lbl');
+  function lblUi(){ lblBtn.textContent='Обозначения: '+(showLbl?'вкл':'выкл'); lblBtn.setAttribute('aria-pressed', showLbl?'true':'false'); }
+  lblUi();
+  lblBtn.addEventListener('click', function(){
+    showLbl=!showLbl; try{ localStorage.setItem(LBL_KEY, showLbl?'1':'0'); }catch(e){}
+    window.dispatchEvent(new CustomEvent('wardrobe-labels', {detail:showLbl}));
+  });
+  var onLbl=null;
+  window.addEventListener('wardrobe-labels', function(e){ showLbl=e.detail; lblUi(); if(onLbl) onLbl(); });
+
+  function fail(){ document.getElementById('v3d-fallback').hidden=false; document.getElementById('v3d').classList.add('no3d'); }
+  if(!window.THREE){ fail(); return; }
+  var T = window.THREE, V = T.Vector3;
+  var wrap = document.getElementById('v3d-canvas');
+  var renderer;
+  try { renderer = new T.WebGLRenderer({antialias:true, preserveDrawingBuffer:true}); } catch(e){ fail(); return; }
+  if(!renderer || !renderer.getContext()){ fail(); return; }
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio||1, 2));
+  wrap.appendChild(renderer.domElement);
+  var overlay=document.createElement('canvas'); overlay.className='d3d-overlay'; overlay.style.pointerEvents='none'; wrap.appendChild(overlay); var octx=overlay.getContext('2d');
+  var scene = new T.Scene();
+  var camera = new T.PerspectiveCamera(35, 1.6, 10, 80000);
+  scene.add(new T.HemisphereLight(0xffffff, 0x8a938f, 0.85));
+  var dl = new T.DirectionalLight(0xffffff, 0.5); dl.position.set(3000,6000,5000); scene.add(dl);
+  var dl2 = new T.DirectionalLight(0xffffff, 0.25); dl2.position.set(-5000,2500,1500); scene.add(dl2);
+
+  var MAT = {
+    ldsp: new T.MeshLambertMaterial({color:0xeef0ee}),
+    hl: new T.MeshLambertMaterial({color:0x5cc8ad}),
+    rod: new T.MeshLambertMaterial({color:0xa9b2b6}),
+    conf: new T.MeshBasicMaterial({color:0x0d6b59}),
+    screw: new T.MeshBasicMaterial({color:0xe0a21b}),
+    corner: new T.MeshLambertMaterial({color:0x8d979b}),
+    wall: new T.MeshLambertMaterial({color:0xaeb8b3, transparent:true, opacity:0.22, depthWrite:false}),
+    stud: new T.MeshLambertMaterial({color:0xc9a46a, transparent:true, opacity:0.55, depthWrite:false}),
+    floor: new T.MeshLambertMaterial({color:0xcfd6d1})
+  };
+  var EDGE = new T.LineBasicMaterial({color:0x33403b});
+  var parts = [];
+  function box(w,h,dp,x,y,z,mat,noEdge){
+    var g = new T.BoxGeometry(w,h,dp), m = new T.Mesh(g, mat);
+    if(!noEdge) m.add(new T.LineSegments(new T.EdgesGeometry(g), EDGE));
+    m.position.set(x,y,z); return m;
+  }
+  function dot(r,x,y,z,mat){ var m=new T.Mesh(new T.SphereGeometry(r,14,10), mat); m.position.set(x,y,z); return m; }
+  function add(group, mesh, appear, o){
+    o=o||{}; group.add(mesh);
+    parts.push({mesh:mesh, base:mesh.material, appear:appear, until:(o.until||99), home:mesh.position.clone(), off:(o.off||new V()), hl:o.hl!==false, code:o.code||null});
+  }
+
+  var env = new T.Group(); scene.add(env);
+  var fl = new T.Mesh(new T.PlaneGeometry(12000,12000), MAT.floor); fl.rotation.x=-Math.PI/2; fl.position.y=-2; env.add(fl);
+  env.add(box(100,3300,780,-1603,1650,122,MAT.wall,true));
+  env.add(box(100,3300,780,1603,1650,122,MAT.wall,true));
+  env.add(box(3306,3300,100,0,1650,-318,MAT.wall,true));
+  var fx = new T.Group(); scene.add(fx);
+  [-1500,-900,-300,300,900,1500].forEach(function(x){ add(fx, box(50,3300,80,x,1650,-318,MAT.stud,true), 12, {until:12, hl:false}); });
+
+  var MW=1550, OW=751, I=new T.Quaternion();
+  var lyingQ = new T.Quaternion().setFromRotationMatrix(new T.Matrix4().makeBasis(new V(0,0,-1), new V(1,0,0), new V(0,-1,0)));
+  var groups = [];
+  function P(x,y,z,q){ return {pos:new V(x,y,z), q:q||I}; }
+  var secX = [-(OW/2+8), (OW/2+8)];
+
+  for(var i=0;i<2;i++){
+    var g = new T.Group(); scene.add(g); groups.push(g);
+    var first = i===0;
+    var st = function(n){ return first ? n : 9; };
+    var of = function(v){ return first ? v : new V(); };
+    var up = new V(0,0,-800);
+    add(g, box(16,2700,500,-MW/2+8,1350,0,MAT.ldsp), st(1), {off:of(new V(-300,0,-800)), code:'Б 2700'});
+    add(g, box(16,2700,500, MW/2-8,1350,0,MAT.ldsp), st(1), {off:of(new V(300,0,-800)), code:'Б 2700'});
+    add(g, box(1518,16,500,0,2692,0,MAT.ldsp), st(2), {off:of(up), code:'Г 1518'});
+    add(g, box(1518,16,500,0,2104,0,MAT.ldsp), st(3), {off:of(up), code:'Г 1518'});
+    add(g, box(1518,16,500,0,312,0,MAT.ldsp), st(4), {off:of(up), code:'Г 1518'});
+    add(g, box(16,1776,500,0,1208,0,MAT.ldsp), st(5), {off:of(up), code:'П2 1776'});
+    add(g, box(16,572,500,0,2398,0,MAT.ldsp), st(6), {off:of(up), code:'П3 572'});
+    add(g, box(16,304,500,0,152,0,MAT.ldsp), st(6), {off:of(up), code:'П1 304'});
+    add(g, box(1550,100,16,0,2650,-258,MAT.ldsp), st(7), {off:of(up), code:'Ц 1550'});
+    add(g, box(1550,100,16,0,270,-258,MAT.ldsp), st(7), {off:of(up), code:'Ц 1550'});
+    if(first){
+      var cf = function(x,y,z,step,rotAxis){ var c=new T.Mesh(new T.CylinderGeometry(12,12,6,14), MAT.conf); if(rotAxis==='x') c.rotation.z=Math.PI/2; if(rotAxis==='z') c.rotation.x=Math.PI/2; c.position.set(x,y,z); add(g,c,step,{until:step, hl:false}); };
+      [[2700,2],[2112,3],[320,4]].forEach(function(a){ [-1,1].forEach(function(sx){ [200,0,-200].forEach(function(z){ cf(sx*(MW/2+3), a[0]-8, z, a[1], 'x'); }); }); });
+      [200,0,-200].forEach(function(z){ cf(0, 2115, z, 5); cf(0, 301, z, 5); cf(0, 2703, z, 6); });
+      [-1,1].forEach(function(sx){ add(g, box(20,20,20, sx*18, 2122, 100, MAT.corner), 6, {until:6, hl:false}); });
+      [[-767,[2630,2670]],[767,[2630,2670]],[0,[2630,2670]],[-475,[2692]],[475,[2692]],
+       [-767,[250,290]],[767,[250,290]],[0,[250,290]],[-475,[312]],[475,[312]]].forEach(function(a){
+        a[1].forEach(function(y){ cf(a[0], y, -269, 7, 'z'); });
+      });
+    }
+    var fill = new V(0,0,800);
+    secX.forEach(function(cx, k){
+      add(g, box(749,16,500,cx,2416,0,MAT.ldsp), 13, {off:fill, code:'Р 749'});
+      if(i===1) [677,1029,1381,1733].forEach(function(h){ add(g, box(749,16,500,cx,h+11,0,MAT.ldsp), 13, {off:fill, code:'Р 749'}); });
+      var rods = i===0 ? (k===0?[2000]:[1950,1100]) : [];
+      rods.forEach(function(h){
+        var r=new T.Mesh(new T.CylinderGeometry(10,10,745,20), MAT.rod); r.rotation.z=Math.PI/2; r.scale.set(1.5,1,0.75); r.position.set(cx,h,0);
+        add(g, r, 13, {off:fill});
+      });
+    });
+    g.userData = first
+      ? {appear:1, enter:new V(), pose:function(s){ return s<=7 ? P(-1350,252,1550,lyingQ) : P(-775,0,0); }}
+      : {appear:9, enter:new V(0,0,1800), pose:function(){ return P(775,0,0); }};
+  }
+  for(var j=0;j<2;j++){
+    var a = new T.Group(); scene.add(a); groups.push(a);
+    var f = j===0, aap = f?10:11;
+    var ao = function(v){ return f ? v : new V(); };
+    add(a, box(16,400,500,-MW/2+8,200,0,MAT.ldsp), aap, {off:ao(new V(-300,0,0)), code:'А 400'});
+    add(a, box(16,400,500, MW/2-8,200,0,MAT.ldsp), aap, {off:ao(new V(300,0,0)), code:'А 400'});
+    add(a, box(1518,16,500,0,8,0,MAT.ldsp), aap, {off:ao(new V(0,0,700)), code:'Г 1518'});
+    add(a, box(1518,16,500,0,392,0,MAT.ldsp), aap, {off:ao(new V(0,500,0)), code:'Г 1518'});
+    add(a, box(16,368,500,0,200,0,MAT.ldsp), aap, {off:ao(new V(0,700,0)), code:'П4 368'});
+    a.userData = f
+      ? {appear:10, enter:new V(), pose:function(s){ return s<=10 ? P(-775,0,1300) : P(-775,2700,0); }}
+      : {appear:11, enter:new V(0,800,0), pose:function(){ return P(775,2700,0); }};
+  }
+  [150,1000,1700,2400].forEach(function(y){ [170,-170].forEach(function(z){ add(fx, dot(30, 0, y, z, MAT.screw), 9, {until:9, hl:false}); }); });
+  [-775,775].forEach(function(cx){ [-500,0,500].forEach(function(dx){ [170,-170].forEach(function(z){ add(fx, dot(30, cx+dx+(dx===0?40:0), 2700, z, MAT.screw), 11, {until:11, hl:false}); }); }); });
+  [-1500,-900,-300,300,900,1500].forEach(function(x){ [2630,2670,250,290].forEach(function(y){ add(fx, dot(24, x, y, -268, MAT.screw), 12, {until:12, hl:false}); }); });
+  [-1,1].forEach(function(sx){ [150,1000,1700,2450,2900].forEach(function(y){ add(fx, dot(40, sx*1553, y, 0, MAT.screw), 12, {until:12, hl:false}); }); });
+
+  var L = {t:[0,270,1550],d:4300,th:0.55,ph:0.85};
+  var CAMS = {
+    1:L, 2:L, 3:L, 4:L, 5:L, 6:L, 7:{t:[0,270,1550],d:4100,th:0.3,ph:0.55},
+    8:{t:[-500,1400,500],d:6800,th:0.5,ph:1.2}, 9:{t:[0,1450,0],d:6600,th:0.45,ph:1.25},
+    10:{t:[-775,260,1300],d:3300,th:0.6,ph:0.95}, 11:{t:[0,2300,300],d:6200,th:0.4,ph:1.02},
+    12:{t:[0,1550,0],d:6600,th:-2.6,ph:1.2}, 13:{t:[0,1550,0],d:5800,th:0.12,ph:1.4}, 14:{t:[0,1550,0],d:6200,th:-0.45,ph:1.3}
+  };
+  var cam = {t:new V(), d:5000, th:0, ph:1};
+  function setCam(c){ cam.t.set(c.t[0],c.t[1],c.t[2]); cam.d=c.d; cam.th=c.th; cam.ph=c.ph; }
+  function placeCam(){
+    var sp=Math.sin(cam.ph);
+    camera.position.set(cam.t.x+cam.d*sp*Math.sin(cam.th), cam.t.y+cam.d*Math.cos(cam.ph), cam.t.z+cam.d*sp*Math.cos(cam.th));
+    camera.lookAt(cam.t);
+  }
+  function wallsFor(s){ env.children.forEach(function(m,idx){ if(idx===3) m.visible = s!==12; }); }
+  function applyParts(s){
+    wallsFor(s);
+    parts.forEach(function(p){
+      p.mesh.visible = s>=p.appear && s<=p.until;
+      p.mesh.material = (p.hl && s===p.appear) ? MAT.hl : p.base;
+      p.mesh.position.copy(p.home);
+    });
+  }
+  function applyInstant(s){
+    applyParts(s);
+    groups.forEach(function(g){ var q=g.userData.pose(s); g.position.copy(q.pos); g.quaternion.copy(q.q); });
+    setCam(CAMS[s]); placeCam();
+  }
+
+  var _wp=new V();
+  function tok(n,d){ return getComputedStyle(document.documentElement).getPropertyValue(n).trim()||d; }
+  function drawLabels(ctx,w,h,scale){
+    if(!showLbl) return;
+    var surf=tok('--surface','#fff'), ink=tok('--ink','#1b211e');
+    ctx.font='600 '+Math.round(10*scale)+'px "JetBrains Mono", Consolas, monospace'; ctx.textBaseline='middle'; ctx.textAlign='center';
+    parts.forEach(function(p){
+      if(!p.code || !p.mesh.visible) return;
+      p.mesh.getWorldPosition(_wp); var v=_wp.project(camera); if(v.z>1) return;
+      var x=(v.x+1)/2*w, y=(1-v.y)/2*h; if(x<0||x>w||y<0||y>h) return;
+      var tw=ctx.measureText(p.code).width, px=4*scale, bh=15*scale, col=(p.appear===cur)?'#1f7a66':ink;
+      ctx.fillStyle=surf; ctx.globalAlpha=0.88; ctx.beginPath();
+      if(ctx.roundRect) ctx.roundRect(x-tw/2-px,y-bh/2,tw+2*px,bh,3*scale); else ctx.rect(x-tw/2-px,y-bh/2,tw+2*px,bh);
+      ctx.fill(); ctx.globalAlpha=1; ctx.strokeStyle=col; ctx.lineWidth=scale; ctx.stroke(); ctx.fillStyle=col; ctx.fillText(p.code,x,y+0.5);
+    });
+  }
+  function drawOverlay(){
+    var w=overlay.clientWidth, h=overlay.clientHeight, pr=Math.min(window.devicePixelRatio||1,2);
+    if(overlay.width!==Math.round(w*pr)){ overlay.width=Math.round(w*pr); overlay.height=Math.round(h*pr); }
+    octx.setTransform(pr,0,0,pr,0,0); octx.clearRect(0,0,w,h); drawLabels(octx,w,h,1);
+  }
+  var anim=null, dirty=true, userMoved=false;
+  function ease(k){ return k<0.5 ? 4*k*k*k : 1-Math.pow(-2*k+2,3)/2; }
+  go = function(s){
+    var prev=cur; cur=s; ui(s);
+    var from = groups.map(function(g){ return {pos:g.position.clone(), q:g.quaternion.clone()}; });
+    applyParts(s);
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    anim = {from:from, cf:{t:cam.t.clone(), d:cam.d, th:cam.th, ph:cam.ph}, ct:CAMS[s], t0:performance.now(), dur:reduce?1:1100, fwd:s>prev};
+    userMoved=false; dirty=true;
+  };
+  window.__v3dGo = go;
+  function frame(now){
+    requestAnimationFrame(frame);
+    if(anim){
+      var k=Math.min(1,(now-anim.t0)/anim.dur), e=ease(k);
+      groups.forEach(function(g,idx){
+        var tp=g.userData.pose(cur), fp=anim.from[idx].pos, fq=anim.from[idx].q;
+        if(anim.fwd && g.userData.appear===cur){ fp=tp.pos.clone().add(g.userData.enter); fq=tp.q; }
+        g.position.lerpVectors(fp, tp.pos, e);
+        g.quaternion.copy(fq).slerp(tp.q, e);
+        if(fq.angleTo(tp.q)>0.01) g.position.y += Math.sin(Math.PI*e)*700;
+      });
+      parts.forEach(function(p){
+        if(anim.fwd && p.appear===cur && p.mesh.visible) p.mesh.position.copy(p.home).addScaledVector(p.off, 1-e);
+      });
+      if(!userMoved){
+        var c=anim.cf, t=anim.ct;
+        cam.t.set(c.t.x+(t.t[0]-c.t.x)*e, c.t.y+(t.t[1]-c.t.y)*e, c.t.z+(t.t[2]-c.t.z)*e);
+        cam.d=c.d+(t.d-c.d)*e; cam.th=c.th+(t.th-c.th)*e; cam.ph=c.ph+(t.ph-c.ph)*e;
+      }
+      if(k>=1) anim=null;
+      dirty=true;
+    }
+    if(dirty){ placeCam(); renderer.render(scene,camera); drawOverlay(); dirty=false; }
+  }
+  var cv = renderer.domElement, drag=null;
+  cv.addEventListener('pointerdown', function(e){ drag={x:e.clientX,y:e.clientY}; cv.setPointerCapture(e.pointerId); });
+  cv.addEventListener('pointermove', function(e){
+    if(!drag) return;
+    cam.th -= (e.clientX-drag.x)*0.006; cam.ph = Math.max(0.12, Math.min(1.55, cam.ph-(e.clientY-drag.y)*0.006));
+    drag={x:e.clientX,y:e.clientY}; userMoved=true; dirty=true;
+  });
+  function end(){ drag=null; }
+  cv.addEventListener('pointerup', end); cv.addEventListener('pointercancel', end);
+  cv.addEventListener('wheel', function(e){ e.preventDefault(); cam.d=Math.max(1200, Math.min(16000, cam.d*(e.deltaY>0?1.1:0.9))); userMoved=true; dirty=true; }, {passive:false});
+  function bg(){
+    var c=getComputedStyle(document.documentElement).getPropertyValue('--sheet').trim()||'#F7F8F6';
+    try{ scene.background=new T.Color(c); }catch(e){ scene.background=new T.Color('#F7F8F6'); }
+    dirty=true;
+  }
+  function size(){ var w=wrap.clientWidth||640, h=Math.round(w/1.6); renderer.setSize(w,h); overlay.style.width=w+'px'; overlay.style.height=h+'px'; camera.aspect=w/h; camera.updateProjectionMatrix(); dirty=true; }
+  function snapshots(){
+    var pr=renderer.getPixelRatio(), sz=renderer.getSize(new T.Vector2()), keep=cur, kc={t:cam.t.clone(),d:cam.d,th:cam.th,ph:cam.ph};
+    renderer.setPixelRatio(1); renderer.setSize(720,450,false); camera.aspect=1.6; camera.updateProjectionMatrix();
+    var comp=document.createElement('canvas'); comp.width=720; comp.height=450; var cctx=comp.getContext('2d');
+    for(var s=1;s<=N;s++){ cur=s; applyInstant(s); renderer.render(scene,camera); cctx.clearRect(0,0,720,450); cctx.drawImage(renderer.domElement,0,0); drawLabels(cctx,720,450,1); try{ imgs[s-1].src=comp.toDataURL('image/jpeg',0.88); }catch(e){} }
+    cur=keep; applyInstant(keep); cam.t.copy(kc.t); cam.d=kc.d; cam.th=kc.th; cam.ph=kc.ph;
+    renderer.setPixelRatio(pr); renderer.setSize(sz.x,sz.y,false); camera.aspect=sz.x/sz.y; camera.updateProjectionMatrix(); dirty=true;
+  }
+  onLbl=function(){ dirty=true; snapshots(); };
+  bg(); size(); applyInstant(1); snapshots();
+  if(window.ResizeObserver) new ResizeObserver(size).observe(wrap); else window.addEventListener('resize', size);
+  function retheme(){ bg(); snapshots(); }
+  if(window.matchMedia) window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', retheme);
+  new MutationObserver(retheme).observe(document.documentElement, {attributes:true, attributeFilter:['data-theme']});
+  requestAnimationFrame(frame);
+})();
+</script>
+<script>(function(){
+  var STEPS = [
+    {t:'Разметить точки', sec:'конфирматы', x:'На наружной пласти боковины провести линию оси: она проходит посередине толщины полки, на 8 мм ниже её верхней плоскости (для полки на 320 это 312 от низа). На линии отметить три точки: 50, 250 и 450 мм от передней кромки. Сначала попробовать весь узел на обрезке.'},
+    {t:'Прижать и проверить угол', sec:'конфирматы', x:'Полку поставить торцом к боковине по разметке, передние кромки заподлицо. Модуль стянуть стяжным ремнём через обе боковины, или длинной струбциной. Угольником проверить 90° в углу. Пока угол не прямой, не сверлить.'},
+    {t:'Сверлить ступенчатым сверлом', sec:'конфирматы', x:'Сверло строго горизонтально и перпендикулярно пласти, по центру точки. Одним проходом: Ø7 сквозь боковину (16 мм), Ø4,5 в торец полки (~36 мм), зенковка до упора. Средние обороты, в конце не давить. Так же ещё две точки.'},
+    {t:'Вкрутить конфирмат', sec:'конфирматы', x:'Конфирмат 7×50 вкрутить шуруповёртом на малом моменте, последние обороты дотянуть шестигранником 4 мм. Головка должна встать вровень с пластью: к этой стороне вплотную прижмётся соседний модуль. Перетянуть нельзя, резьба в ДСП сорвётся.'},
+    {t:'Так нельзя', sec:'конфирматы', x:'Если дрель наклонена или ось ушла от середины толщины, сверло выходит на пласть полки или раскалывает торец. Такой конфирмат не держит. Сверло ведётся по оси 8 мм, дрель держится горизонтально, для контроля рядом ставится угольник.'},
+    {t:'Кондуктор МК-20', sec:'полкодержатели', x:'Кондуктор-угольник: голова-упор, носик и 17 закалённых втулок Ø5 с шагом 32. Первая втулка в 37 мм от упора, последняя в 549. Голова упирается в торец детали, носик ставится на риску. Это заменяет самодельный шаблон и сверлит точнее.'},
+    {t:'Флажок глубины', sec:'полкодержатели', x:'Отверстие нужно 9 мм. Измерить толщину кондуктора у втулки (t) и поставить флажок из малярного скотча на t + 9 от кончика сверла 5 мм. Сверлить до касания флажком кондуктора.'},
+    {t:'Упереть в нижний торец', sec:'полкодержатели', x:'Деталь лежит внутренней пластью вверх. У нижнего торца провести короткую риску в 37 мм от передней кромки. Голову кондуктора прижать к нижнему торцу, носик поставить на риску, прижать струбциной.'},
+    {t:'Сверлить нужные втулки', sec:'полкодержатели', x:'Втулки 1–10 попадают ниже полки, их пропускаем. Сверлить через втулки 11–17: это 357…549 мм от низа. Сверло вертикально, до флажка, стружку выдувать.'},
+    {t:'Продолжить ряд', sec:'полкодержатели', x:'Дальше торца нет. Кондуктор переворачивается головой вверх, в его первую втулку и в последнее отверстие вставляется упор (полкодержатель или хвостовик сверла 5 мм). Ряд выровнять по риске, сверлить втулки 2–17. Повторять до 1957.'},
+    {t:'Второй ряд', sec:'полкодержатели', x:'Риска в 37 мм от задней кромки, голова снова в нижний торец, носик на риску. Сверлить те же втулки и продолжить так же.'},
+    {t:'Перегородки с двух сторон', sec:'полкодержатели', x:'Стойки П2 и П3 сверлятся так же, головой в нижний торец стойки. На одной стороне риска в 37 мм от кромок, на другой в 60 мм, иначе отверстия встретятся в толще 16 мм. У П2 первая втулка сразу даёт 357 от пола.'},
+    {t:'Проверить', sec:'полкодержатели', x:'Вставить 4 полкодержателя в отверстия на одной высоте спереди и сзади и положить линейку. Она должна лежать без качания.'}
+  ];
+  var N=STEPS.length, pre='d3d';
+  var $=function(id){ return document.getElementById(pre+'-'+id); };
+  var board=$('board'), imgs=[];
+  STEPS.forEach(function(st,i){
+    var li=document.createElement('li');
+    var b=document.createElement('button'); b.type='button'; b.className='board-img'; b.setAttribute('aria-label','Показать шаг '+(i+1)+' в 3D');
+    var im=document.createElement('img'); im.alt='Шаг '+(i+1)+': '+st.t; im.width=720; im.height=450; b.appendChild(im); imgs.push(im);
+    var cap=document.createElement('div'); cap.className='board-cap';
+    cap.innerHTML='<div class="board-h"><b>'+(i+1)+'</b><span>'+st.t+'</span><em>'+st.sec+'</em></div><p>'+st.x+'</p>';
+    li.appendChild(b); li.appendChild(cap); board.appendChild(li);
+    b.addEventListener('click',function(){ go(i+1); document.getElementById(pre).scrollIntoView({behavior:'smooth',block:'start'}); });
+  });
+  var dots=$('dots');
+  for(var d=1; d<=N; d++){ (function(k){ var b=document.createElement('button'); b.type='button'; b.textContent=k; b.setAttribute('role','tab'); b.addEventListener('click',function(){ go(k); }); dots.appendChild(b); })(d); }
+  function ui(s){
+    var st=STEPS[s-1];
+    $('n').textContent='Шаг '+s+' из '+N; $('sec').textContent=st.sec; $('title').textContent=st.t; $('text').textContent=st.x;
+    Array.prototype.forEach.call(dots.children,function(b,i){ b.setAttribute('aria-selected', i===s-1?'true':'false'); });
+    $('prev').disabled=s===1; $('next').disabled=s===N;
+  }
+  var cur=1;
+  var go=function(s){ cur=s; ui(s); };
+  $('prev').addEventListener('click',function(){ go(Math.max(1,cur-1)); });
+  $('next').addEventListener('click',function(){ go(Math.min(N,cur+1)); });
+  document.getElementById(pre).addEventListener('keydown',function(e){
+    if(e.key==='ArrowRight'){ go(Math.min(N,cur+1)); e.preventDefault(); }
+    if(e.key==='ArrowLeft'){ go(Math.max(1,cur-1)); e.preventDefault(); }
+  });
+  ui(1);
+
+  var LBL_KEY='wardrobe-labels';
+  var showLbl=(function(){ try{ var v=localStorage.getItem(LBL_KEY); return v===null ? true : v==='1'; }catch(e){ return true; } })();
+  var lblBtn=document.getElementById('d3d-lbl');
+  function lblUi(){ lblBtn.textContent='Обозначения: '+(showLbl?'вкл':'выкл'); lblBtn.setAttribute('aria-pressed', showLbl?'true':'false'); }
+  lblUi();
+  lblBtn.addEventListener('click', function(){
+    showLbl=!showLbl; try{ localStorage.setItem(LBL_KEY, showLbl?'1':'0'); }catch(e){}
+    window.dispatchEvent(new CustomEvent('wardrobe-labels', {detail:showLbl}));
+  });
+  var onLbl=null;
+  window.addEventListener('wardrobe-labels', function(e){ showLbl=e.detail; lblUi(); if(onLbl) onLbl(); });
+
+  function fail(){ $('fallback').hidden=false; document.getElementById(pre).classList.add('no3d'); }
+  if(!window.THREE){ fail(); return; }
+  var T=window.THREE, V=T.Vector3;
+  var wrap=$('canvas'), renderer;
+  try{ renderer=new T.WebGLRenderer({antialias:true, preserveDrawingBuffer:true}); }catch(e){ fail(); return; }
+  if(!renderer||!renderer.getContext()){ fail(); return; }
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,2));
+  wrap.appendChild(renderer.domElement);
+  var overlay=document.createElement('canvas'); overlay.className='d3d-overlay'; wrap.appendChild(overlay);
+  var scene=new T.Scene(), camera=new T.PerspectiveCamera(35,1.6,1,20000);
+  scene.add(new T.HemisphereLight(0xffffff,0x8a938f,0.85));
+  var dl=new T.DirectionalLight(0xffffff,0.5); dl.position.set(-800,1500,1200); scene.add(dl);
+  var dl2=new T.DirectionalLight(0xffffff,0.25); dl2.position.set(1500,600,-500); scene.add(dl2);
+
+  var MAT={
+    ldsp:new T.MeshLambertMaterial({color:0xeef0ee}),
+    xray:new T.MeshLambertMaterial({color:0xdfe5e2, transparent:true, opacity:0.32, depthWrite:false}),
+    hl:new T.MeshLambertMaterial({color:0x5cc8ad}),
+    hlx:new T.MeshLambertMaterial({color:0x5cc8ad, transparent:true, opacity:0.4, depthWrite:false}),
+    hole:new T.MeshBasicMaterial({color:0x23292a}),
+    steel:new T.MeshLambertMaterial({color:0x8d979b}),
+    brass:new T.MeshLambertMaterial({color:0xc9a44a}),
+    body:new T.MeshLambertMaterial({color:0x2e3735}),
+    accent:new T.MeshLambertMaterial({color:0xe0a21b}),
+    tape:new T.MeshLambertMaterial({color:0xf2d36b}),
+    red:new T.MeshBasicMaterial({color:0xe03131, transparent:true, opacity:0.45, depthWrite:false}),
+    pencil:new T.MeshBasicMaterial({color:0x4a5552}),
+    floor:new T.MeshLambertMaterial({color:0xd3d9d5})
+  };
+  var EDGE=new T.LineBasicMaterial({color:0x33403b});
+  var DIM=new T.LineBasicMaterial({color:0xd6336c, depthTest:false});
+  var parts=[], groups=[], labels=[];
+
+  function vis(o,s){ if(o.steps) return o.steps.indexOf(s)>=0; return s>=o.appear && s<=o.until; }
+  function box(w,h,dp,x,y,z,mat,noEdge){ var g=new T.BoxGeometry(w,h,dp), m=new T.Mesh(g,mat); if(!noEdge) m.add(new T.LineSegments(new T.EdgesGeometry(g),EDGE)); m.position.set(x,y,z); return m; }
+  // цилиндр вдоль оси от точки start длиной len (+x или -y)
+  function cyl(r,len,axis,mat,r2){
+    var g=new T.CylinderGeometry(r2===undefined?r:r2, r, len, 20);
+    if(axis==='x'){ g.translate(0,len/2,0); g.rotateZ(-Math.PI/2); }
+    else if(axis==='-y'){ g.translate(0,-len/2,0); }
+    else { g.translate(0,len/2,0); }
+    return new T.Mesh(g,mat);
+  }
+  function add(parent,mesh,o){
+    parent.add(mesh); o=o||{};
+    var p={mesh:mesh, base:mesh.material, appear:o.appear||1, until:o.until||99, steps:o.steps, home:mesh.position.clone(),
+      off:o.off||null, hl:!!o.hl, xr:o.xr||[], grow:o.grow||null, delay:o.delay||0, win:o.win||1, spin:!!o.spin};
+    parts.push(p); return p;
+  }
+  function grp(o){ var g=new T.Group(); scene.add(g); g.userData=o; groups.push(g); return g; }
+  function dim(a,b,off,text,o){
+    var A=new V().fromArray(a), B=new V().fromArray(b), O=new V().fromArray(off), A2=A.clone().add(O), B2=B.clone().add(O);
+    var tk=O.clone().normalize().multiplyScalar(5);
+    var pts=[A,A2.clone().add(tk), B,B2.clone().add(tk), A2,B2];
+    var dir=B2.clone().sub(A2).normalize(), n=new V().crossVectors(dir,O).normalize();
+    var d45=dir.clone().add(O.clone().normalize()).normalize().multiplyScalar(5);
+    pts.push(A2.clone().sub(d45),A2.clone().add(d45),B2.clone().sub(d45),B2.clone().add(d45));
+    var g=new T.BufferGeometry().setFromPoints(pts), l=new T.LineSegments(g,DIM); l.renderOrder=10;
+    scene.add(l); parts.push({mesh:l, base:null, appear:o.appear||1, until:o.until||o.appear||99, steps:o.steps, home:l.position.clone(), xr:[]});
+    labels.push({p:A2.clone().add(B2).multiplyScalar(0.5), text:text, kind:'dim', appear:o.appear, until:o.until||o.appear, steps:o.steps});
+  }
+  function label(p,text,kind,o){ labels.push({p:new V().fromArray(p), text:text, kind:kind||'note', appear:o.appear, until:o.until||o.appear, steps:o.steps}); }
+
+  var fl=new T.Mesh(new T.PlaneGeometry(6000,6000),MAT.floor); fl.rotation.x=-Math.PI/2; fl.position.y=-60; scene.add(fl);
+  var flCon={appear:1,until:5}, flPin={appear:6,until:12};
+  function floorFor(s){ fl.position.y = s<=5 ? -40 : -2; }
+
+  // ---------- Узел под конфирмат (шаги 1–5) ----------
+  var J=grp({pose:function(){ return {pos:new V(), q:new T.Quaternion()}; }});
+  add(J, box(16,240,500,-8,120,0,MAT.ldsp), {appear:1, until:5, xr:[3,4,5], hl:false});
+  add(J, box(320,16,500,160,232,0,MAT.ldsp), {appear:2, until:5, xr:[3,4,5], hl:true, off:new V(260,0,0)});
+  add(J, box(0.6,1.2,520,-16.4,232,0,MAT.pencil,true), {appear:1, until:2});
+  [200,0,-200].forEach(function(z){
+    add(J, box(0.6,1.2,24,-16.5,232,z,MAT.pencil,true), {appear:1, until:2});
+    add(J, box(0.6,24,1.2,-16.5,232,z,MAT.pencil,true), {appear:1, until:2});
+  });
+  // струбцина
+  var clampParts=[box(420,14,24,150,300,120,MAT.body), box(14,70,24,-40,265,120,MAT.body), box(14,70,24,334,265,120,MAT.accent), box(20,6,40,-26,232,120,MAT.body)];
+  clampParts.forEach(function(m){ add(J,m,{appear:2, until:5, off:new V(0,160,0)}); });
+  // угольник
+  add(J, box(3,200,20,1.5,124,258,MAT.steel), {appear:2, until:2, off:new V(0,0,120)});
+  add(J, box(200,3,20,100,222.5,258,MAT.steel), {appear:2, until:2, off:new V(0,0,120)});
+  // отверстия
+  [200,0,-200].forEach(function(z,i){
+    var h7=cyl(3.5,16,'x',MAT.hole); h7.position.set(-16,232,z);
+    var h4=cyl(2.25,36,'x',MAT.hole); h4.position.set(0,232,z);
+    var ap=i===0?3:4;
+    add(J,h7,{appear:ap, until:5, grow:i===0?'x':null, delay:0.51, win:0.12});
+    add(J,h4,{appear:ap, until:5, grow:i===0?'x':null, delay:0.63, win:0.27});
+  });
+  // конфирматы
+  [200,0,-200].forEach(function(z,i){
+    var c=new T.Group(); c.position.set(-16,232,z);
+    var head=cyl(5,4,'x',MAT.brass,5); head.position.x=0; c.add(head);
+    var sh=cyl(3.5,12,'x',MAT.brass); sh.position.x=4; c.add(sh);
+    var th=cyl(3.5,34,'x',MAT.steel); th.position.x=16; c.add(th);
+    var slot=box(1,6,1.2,-0.3,0,0,MAT.body,true); c.add(slot);
+    add(J,c,{appear:4, until:4, off:i===0?new V(-160,0,0):null, spin:i===0});
+  });
+  // дрель со ступенчатым сверлом (кончик в начале координат, тело по -x)
+  function drillH(mat){
+    var g=new T.Group();
+    var tip=cyl(2.25,36,'x',mat||MAT.steel); tip.position.x=-36; g.add(tip);
+    var st=cyl(3.5,16,'x',mat||MAT.steel); st.position.x=-52; g.add(st);
+    var cone=cyl(6,4,'x',mat||MAT.steel,3.5); cone.position.x=-56; g.add(cone);
+    var sh=cyl(4,74,'x',mat||MAT.steel); sh.position.x=-130; g.add(sh);
+    var ch=cyl(22,60,'x',mat||MAT.body); ch.position.x=-190; g.add(ch);
+    g.add(box(150,70,60,-265,0,0,mat||MAT.body,!!mat));
+    g.add(box(40,110,44,-280,-80,0,mat||MAT.accent,!!mat));
+    return g;
+  }
+  var DH=grp({pose:function(s){ return {pos:new V(36,232,200), q:new T.Quaternion()}; }, enter:{3:new V(-120,0,0)}, lin:true});
+  add(DH, drillH(), {appear:3, until:3});
+  var ghostQ=new T.Quaternion().setFromAxisAngle(new V(0,0,1), 0.14);
+  var DG=grp({pose:function(){ return {pos:new V(30,226,0), q:ghostQ}; }});
+  add(DG, drillH(MAT.red), {appear:5, until:5});
+
+  dim([-16,240,250],[-16,240,200],[0,40,0],'50',{appear:1,until:1});
+  dim([-16,240,250],[-16,240,0],[0,80,0],'250',{appear:1,until:1});
+  dim([-16,240,250],[-16,240,-200],[0,120,0],'450',{appear:1,until:1});
+  dim([-16,240,250],[-16,232,250],[0,0,40],'8',{appear:1,until:1});
+  dim([-16,240,-250],[0,240,-250],[0,30,0],'16',{appear:1,until:1});
+  label([-16,150,60],'ось = середина полки','note',{appear:1});
+  label([60,150,260],'90°','ok',{appear:2});
+  label([150,330,120],'струбцина','note',{appear:2});
+  dim([-16,232,200],[0,232,200],[0,95,0],'Ø7 · 16',{appear:3,until:3});
+  dim([0,232,200],[36,232,200],[0,50,0],'Ø4,5 · 36',{appear:3,until:3});
+  label([-16,200,235],'зенковка до упора','note',{appear:3});
+  label([-16,205,225],'головка вровень','ok',{appear:4});
+  label([40,265,200],'конфирмат 7×50','note',{appear:4});
+  label([-200,330,0],'перекос: сверло выйдет на пласть','warn',{appear:5});
+  label([40,180,130],'ниже оси: торец лопнет','warn',{appear:5});
+  label([-16,285,230],'правильно: по оси, горизонтально','ok',{appear:5});
+  dim([-16,240,200],[-16,232,200],[0,0,40],'8',{appear:5,until:5});
+
+  // ---------- Полкодержатели кондуктором МК-20 (шаги 6–13) ----------
+  var S=grp({pose:function(){ return {pos:new V(), q:new T.Quaternion()}; }});
+  add(S, box(1200,16,500,600,8,0,MAT.ldsp), {appear:6, until:13, xr:[]});
+  add(S, box(60,0.6,1.4,30,16.3,213,MAT.pencil,true), {appear:8, until:10});
+  add(S, box(60,0.6,1.4,30,16.3,-213,MAT.pencil,true), {appear:11, until:11});
+  add(S, box(60,0.6,1.4,30,16.3,190,MAT.pencil,true), {appear:12, until:12});
+  var MK={
+    yellow:new T.MeshLambertMaterial({color:0xf2c230}),
+    black:new T.MeshLambertMaterial({color:0x22282a})
+  };
+  var flipQ=new T.Quaternion().setFromAxisAngle(new V(1,0,0), Math.PI);
+  var JG=grp({arc:120, pose:function(s){
+    if(s<=7) return {pos:new V(0,200,213), q:new T.Quaternion()};
+    if(s===10) return {pos:new V(512,28,213), q:flipQ};
+    if(s===11) return {pos:new V(0,16,-213), q:new T.Quaternion()};
+    if(s===12) return {pos:new V(0,16,190), q:new T.Quaternion()};
+    return {pos:new V(0,16,213), q:new T.Quaternion()};
+  }});
+  (function(){
+    var jp=function(m){ JG.add(m); parts.push({mesh:m, base:m.material, appear:6, until:12, home:m.position.clone(), xr:[]}); };
+    jp(box(22,28,190,-11,-2,0,MK.black));
+    jp(box(580,12,30,290,6,0,MK.yellow));
+    var br=box(250,12,16,118,6,-60,MK.yellow); br.rotation.y=0.46; jp(br);
+    var nose=box(10,12,10,4,6,21,MK.black); nose.rotation.y=Math.PI/4; jp(nose);
+    for(var k=0;k<17;k++){ var b=cyl(2.6,12.8,'y',MAT.hole); b.position.set(37+32*k,-0.4,0); jp(b); }
+  })();
+  function sideHole(x,z,ap,dl){ var h=cyl(2.5,9.3,'-y',MAT.hole); h.position.set(x,16.3,z); add(S,h,{appear:ap, until:13, grow:'y', delay:dl, win:0.16}); }
+  var k2;
+  for(k2=10;k2<=16;k2++) sideHole(37+32*k2, 213, 9, 0.3+(k2-10)/7*0.5);
+  for(k2=1;k2<=16;k2++) sideHole(549+32*k2, 213, 10, 0.45+(k2-1)/16*0.4);
+  for(k2=10;k2<=16;k2++) sideHole(37+32*k2, -213, 11, 0.35+(k2-10)/7*0.45);
+  for(k2=10;k2<=16;k2++){ var hh=cyl(2.5,9.3,'-y',MAT.hole); hh.position.set(37+32*k2,16.3,190); add(S,hh,{appear:12, until:12, grow:'y', delay:0.35+(k2-10)/7*0.45, win:0.16}); }
+  // упор-полкодержатель в последнем отверстии при перестановке
+  var pin=cyl(2.5,40,'y',MAT.steel); pin.position.set(549,7,213); add(S,pin,{appear:10, until:10, off:new V(0,90,0), hl:true});
+  // проверка
+  [213,-213].forEach(function(z){ var p=cyl(2.5,24,'y',MAT.steel); p.position.set(485,7,z); add(S,p,{appear:13, until:13, off:new V(0,60,0)}); add(S,box(10,2,16,485,31,z,MAT.steel,true),{appear:13, until:13, off:new V(0,60,0)}); });
+  add(S, box(30,3,520,485,33.5,0,MAT.accent), {appear:13, until:13, off:new V(0,120,0), hl:true});
+  // сверло 5 мм
+  var DV=grp({enter:{9:new V(0,150,0)}, pose:function(s){ return s===7 ? {pos:new V(357,245,213), q:new T.Quaternion()} : {pos:new V(357,7,213), q:new T.Quaternion()}; }});
+  (function(){
+    var dv=function(m){ DV.add(m); parts.push({mesh:m, base:m.material, steps:[7,9], home:m.position.clone(), xr:[]}); };
+    dv(cyl(2.5,70,'y',MAT.steel));
+    dv(box(16,7,1.5,9,21,0,MAT.tape));
+    var ch=cyl(20,50,'y',MAT.body); ch.position.y=70; dv(ch);
+    dv(box(60,140,70,0,190,0,MAT.body));
+    dv(box(44,40,110,0,170,-80,MAT.accent));
+  })();
+
+  dim([0,212,250],[37,212,250],[0,0,40],'37',{appear:6,until:6});
+  dim([37,212,250],[69,212,250],[0,0,80],'32',{appear:6,until:6});
+  dim([0,212,-20],[549,212,-20],[0,0,-90],'17 втулок · до 549',{appear:6,until:6});
+  label([-60,280,60],'голова-упор','note',{appear:6});
+  label([60,170,330],'носик','note',{appear:6});
+  dim([357,245,213],[357,266,213],[-40,0,0],'t + 9',{appear:7,until:7});
+  label([470,300,213],'t — толщина кондуктора у втулки','note',{appear:7});
+  dim([0,16,260],[37,16,260],[0,0,50],'37 от торца',{appear:8,until:8});
+  dim([80,16,250],[80,16,213],[0,40,0],'37 от кромки',{appear:8,until:8});
+  label([10,60,213],'носик на риске','ok',{appear:8});
+  label([-30,40,40],'голова в нижний торец','note',{appear:8});
+  label([450,70,213],'втулки 11–17 = 357…549 от низа','note',{appear:9});
+  label([357,50,300],'Ø5 · глубина 9','note',{appear:9});
+  dim([549,28,265],[1061,28,265],[0,0,50],'+512 = 16 × 32',{appear:10,until:10});
+  label([549,90,213],'упор в последнем отверстии','ok',{appear:10});
+  label([800,110,100],'кондуктор перевёрнут головой вверх','note',{appear:10});
+  dim([80,16,-250],[80,16,-213],[0,40,0],'37 от задней кромки',{appear:11,until:11});
+  dim([80,16,250],[80,16,190],[0,40,0],'60',{appear:12,until:12});
+  label([450,70,190],'перегородка, вторая сторона: 60 от кромок','note',{appear:12});
+  label([485,70,0],'лежит без качания','ok',{appear:13});
+  label([485,40,260],'485 · перед и зад одинаково','note',{appear:13});
+
+
+  label([-16,90,-120],'Б 2700','code',{appear:1,until:5});
+  label([240,232,-160],'Г 1518','code',{appear:2,until:5});
+  label([1000,16,-150],'Б 2700 (низ боковины)','code',{steps:[6,7,8,9,10,11,13]});
+  label([1000,16,-150],'П2 1776 (низ стойки)','code',{steps:[12]});
+  var CAMS={
+    1:{t:[-16,210,30],d:1150,th:-1.05,ph:1.2}, 2:{t:[110,190,60],d:1250,th:-0.55,ph:1.05},
+    3:{t:[-30,232,200],d:520,th:-0.45,ph:1.12}, 4:{t:[-8,232,170],d:430,th:-0.8,ph:1.1}, 5:{t:[-40,232,60],d:720,th:-0.35,ph:1.08},
+    6:{t:[290,190,140],d:1050,th:0.35,ph:0.85}, 7:{t:[357,265,213],d:560,th:0.7,ph:1.2}, 8:{t:[150,20,160],d:760,th:0.55,ph:0.82},
+    9:{t:[330,20,160],d:900,th:0.4,ph:0.78}, 10:{t:[720,30,150],d:1350,th:0.3,ph:0.72}, 11:{t:[330,20,-120],d:950,th:0.4,ph:0.72},
+    12:{t:[300,20,190],d:820,th:0.4,ph:0.78}, 13:{t:[485,20,0],d:800,th:1.15,ph:0.95}
+  };
+  var cam={t:new V(),d:1000,th:0,ph:1};
+  function setCam(c){ cam.t.set(c.t[0],c.t[1],c.t[2]); cam.d=c.d; cam.th=c.th; cam.ph=c.ph; }
+  function placeCam(){ var sp=Math.sin(cam.ph); camera.position.set(cam.t.x+cam.d*sp*Math.sin(cam.th), cam.t.y+cam.d*Math.cos(cam.ph), cam.t.z+cam.d*sp*Math.cos(cam.th)); camera.lookAt(cam.t); }
+  function applyParts(s){
+    floorFor(s);
+    parts.forEach(function(p){
+      p.mesh.visible=vis(p,s);
+      if(p.base){
+        var x=p.xr.indexOf(s)>=0, h=p.hl&&s===p.appear;
+        p.mesh.material = h ? (x?MAT.hlx:MAT.hl) : (x?MAT.xray:p.base);
+      }
+      p.mesh.position.copy(p.home); p.mesh.scale.set(1,1,1); if(p.spin) p.mesh.rotation.x=0;
+    });
+  }
+  function applyInstant(s){ applyParts(s); groups.forEach(function(g){ var q=g.userData.pose(s); g.position.copy(q.pos); g.quaternion.copy(q.q); }); setCam(CAMS[s]); placeCam(); }
+
+  // подписи поверх 3D
+  var octx=overlay.getContext('2d');
+  function tok(n,d){ return getComputedStyle(document.documentElement).getPropertyValue(n).trim()||d; }
+  function drawLabels(ctx,w,h,scale){
+    var surf=tok('--surface','#fff'), ink=tok('--ink','#1b211e');
+    ctx.font='600 '+Math.round(12*scale)+'px "JetBrains Mono", Consolas, monospace';
+    ctx.textBaseline='middle';
+    labels.forEach(function(l){
+      if(!vis(l,cur)) return;
+      if(l.kind==='code' && !showLbl) return;
+      var v=l.p.clone().project(camera); if(v.z>1) return;
+      var x=(v.x+1)/2*w, y=(1-v.y)/2*h, tw=ctx.measureText(l.text).width, px=6*scale, bh=20*scale;
+      var col = l.kind==='dim' ? '#d6336c' : l.kind==='warn' ? '#e03131' : l.kind==='ok' ? '#1f9a7e' : l.kind==='code' ? '#1f7a66' : ink;
+      x=Math.max(tw/2+px+2, Math.min(w-tw/2-px-2, x)); y=Math.max(bh/2+2, Math.min(h-bh/2-2, y));
+      ctx.fillStyle=surf; ctx.globalAlpha=0.92; ctx.beginPath();
+      if(ctx.roundRect) ctx.roundRect(x-tw/2-px, y-bh/2, tw+2*px, bh, 3*scale); else ctx.rect(x-tw/2-px, y-bh/2, tw+2*px, bh);
+      ctx.fill(); ctx.globalAlpha=1; ctx.strokeStyle=col; ctx.lineWidth=1*scale; ctx.stroke();
+      ctx.fillStyle=col; ctx.textAlign='center'; ctx.fillText(l.text, x, y+0.5);
+    });
+  }
+  function drawOverlay(){
+    var w=overlay.clientWidth, h=overlay.clientHeight, pr=Math.min(window.devicePixelRatio||1,2);
+    if(overlay.width!==Math.round(w*pr)){ overlay.width=Math.round(w*pr); overlay.height=Math.round(h*pr); }
+    octx.setTransform(pr,0,0,pr,0,0); octx.clearRect(0,0,w,h); drawLabels(octx,w,h,1);
+  }
+
+  var anim=null, dirty=true, userMoved=false;
+  function ease(k){ return k<0.5?4*k*k*k:1-Math.pow(-2*k+2,3)/2; }
+  function clamp(x){ return x<0?0:x>1?1:x; }
+  go=function(s){
+    var prev=cur; cur=s; ui(s);
+    var from=groups.map(function(g){ return {pos:g.position.clone(), q:g.quaternion.clone()}; });
+    applyParts(s);
+    var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var jump=(prev<=5)!==(s<=5);
+    anim={from:from, cf:{t:cam.t.clone(),d:cam.d,th:cam.th,ph:cam.ph}, ct:CAMS[s], t0:performance.now(), dur:reduce?1:1800, fwd:s===prev+1, jump:jump};
+    if(jump){ setCam(CAMS[s]); }
+    userMoved=false; dirty=true;
+  };
+  function frame(now){
+    requestAnimationFrame(frame);
+    if(anim){
+      var k=Math.min(1,(now-anim.t0)/anim.dur), e=ease(k);
+      groups.forEach(function(g,idx){
+        var tp=g.userData.pose(cur), fp=anim.from[idx].pos, fq=anim.from[idx].q, en=g.userData.enter&&g.userData.enter[cur];
+        if(anim.jump){ fp=tp.pos; fq=tp.q; }
+        if(anim.fwd && en){ fp=tp.pos.clone().add(en); fq=tp.q; }
+        var ke = en&&anim.fwd ? (g.userData.lin ? clamp(k/0.9) : ease(clamp(k/0.45))) : e;
+        g.position.lerpVectors(fp,tp.pos,ke); g.quaternion.copy(fq).slerp(tp.q,ke);
+        if(g.userData.arc && (fq.angleTo(tp.q)>0.01 || fp.distanceTo(tp.pos)>50)) g.position.y+=Math.sin(Math.PI*ke)*g.userData.arc;
+      });
+      parts.forEach(function(p){
+        if(!anim.fwd || p.appear!==cur || !p.mesh.visible) return;
+        if(p.off) p.mesh.position.copy(p.home).addScaledVector(p.off, 1-ease(clamp(k/0.5)));
+        if(p.grow){ var q=clamp((k-p.delay)/p.win); if(p.grow==='x') p.mesh.scale.x=Math.max(0.001,q); else p.mesh.scale.y=Math.max(0.001,q); }
+        if(p.spin) p.mesh.rotation.x=(1-e)*30;
+      });
+      if(!userMoved && !anim.jump){
+        var c=anim.cf,t=anim.ct, ce=ease(clamp(k/0.6));
+        cam.t.set(c.t.x+(t.t[0]-c.t.x)*ce, c.t.y+(t.t[1]-c.t.y)*ce, c.t.z+(t.t[2]-c.t.z)*ce);
+        cam.d=c.d+(t.d-c.d)*ce; cam.th=c.th+(t.th-c.th)*ce; cam.ph=c.ph+(t.ph-c.ph)*ce;
+      }
+      if(k>=1) anim=null;
+      dirty=true;
+    }
+    if(dirty){ placeCam(); renderer.render(scene,camera); drawOverlay(); dirty=false; }
+  }
+  var cv=renderer.domElement, drag=null;
+  overlay.style.pointerEvents='none';
+  cv.addEventListener('pointerdown',function(e){ drag={x:e.clientX,y:e.clientY}; cv.setPointerCapture(e.pointerId); });
+  cv.addEventListener('pointermove',function(e){ if(!drag) return; cam.th-=(e.clientX-drag.x)*0.006; cam.ph=Math.max(0.12,Math.min(1.55,cam.ph-(e.clientY-drag.y)*0.006)); drag={x:e.clientX,y:e.clientY}; userMoved=true; dirty=true; });
+  function end(){ drag=null; }
+  cv.addEventListener('pointerup',end); cv.addEventListener('pointercancel',end);
+  cv.addEventListener('wheel',function(e){ e.preventDefault(); cam.d=Math.max(200,Math.min(4000,cam.d*(e.deltaY>0?1.1:0.9))); userMoved=true; dirty=true; },{passive:false});
+  function bg(){ try{ scene.background=new T.Color(tok('--sheet','#F7F8F6')); }catch(e){ scene.background=new T.Color('#F7F8F6'); } dirty=true; }
+  function size(){ var w=wrap.clientWidth||640, h=Math.round(w/1.6); renderer.setSize(w,h); overlay.style.width=w+'px'; overlay.style.height=h+'px'; camera.aspect=w/h; camera.updateProjectionMatrix(); dirty=true; }
+  var comp=document.createElement('canvas'); comp.width=720; comp.height=450; var cctx=comp.getContext('2d');
+  function snapshots(){
+    var pr=renderer.getPixelRatio(), sz=renderer.getSize(new T.Vector2()), keep=cur, kc={t:cam.t.clone(),d:cam.d,th:cam.th,ph:cam.ph};
+    renderer.setPixelRatio(1); renderer.setSize(720,450,false); camera.aspect=1.6; camera.updateProjectionMatrix();
+    for(var s=1;s<=N;s++){ cur=s; applyInstant(s); renderer.render(scene,camera); cctx.clearRect(0,0,720,450); cctx.drawImage(renderer.domElement,0,0); drawLabels(cctx,720,450,1.15); try{ imgs[s-1].src=comp.toDataURL('image/jpeg',0.88); }catch(e){} }
+    cur=keep; applyInstant(keep); cam.t.copy(kc.t); cam.d=kc.d; cam.th=kc.th; cam.ph=kc.ph;
+    renderer.setPixelRatio(pr); renderer.setSize(sz.x,sz.y,false); camera.aspect=sz.x/sz.y; camera.updateProjectionMatrix(); dirty=true;
+  }
+  onLbl=function(){ dirty=true; snapshots(); };
+  bg(); size(); applyInstant(1); snapshots();
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(function(){ snapshots(); dirty=true; });
+  if(window.ResizeObserver) new ResizeObserver(size).observe(wrap); else window.addEventListener('resize',size);
+  function retheme(){ bg(); snapshots(); }
+  if(window.matchMedia) window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',retheme);
+  new MutationObserver(retheme).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+  requestAnimationFrame(frame);
+})();
+</script>
+<script>(function(){
+  var STEPS = [
+    {t:'Детали после распила', sec:'распил', x:'17 деталей 2700×500 и 4 детали 2700×100, разрезанные по картам: 4 целые боковины, карты 1–5 и царги. Серые куски — отход. Дальше детали по группам встанут на свои места.'},
+    {t:'Боковины Б', sec:'4 шт', x:'Четыре целые детали 2700×500 без распила становятся боковинами модулей М1 и М2. Кромка оказывается спереди и сзади.'},
+    {t:'Горизонтали модулей Г', sec:'6 шт', x:'Шесть деталей 1518 (из карт 1, 2 и 3): в каждом модуле полка на 320, полка на 2112 и крышка на 2700. Все встают между боковинами.'},
+    {t:'Стойки перегородки П1–П3', sec:'6 шт', x:'Из карты 5 (по панели на модуль): П2 1776 между полками 320 и 2112, П3 572 между полкой 2112 и крышкой, П1 304 под полкой 320. Встают по центру модуля.'},
+    {t:'Царги Ц', sec:'4 шт', x:'Из деталей 2700×100 отрезается 1550. По две сзади на каждый модуль: на 220–320 и на 2600–2700. Остатки ~1130 — отход.'},
+    {t:'Антресоли', sec:'10 шт', x:'Дно и крыша: ещё 4 детали 1518 (карта 3). Боковины А 400 из карты 1, перегородки П4 368 из карты 2. Два короба на крышках модулей.'},
+    {t:'Полки Р', sec:'12 шт', x:'Регулируемые полки 749 из карт 1–4. По 4 в секциях 3 и 4 и по одной в верхней зоне каждой секции. Тринадцатая полка остаётся в запасе.'},
+    {t:'Шкаф целиком', sec:'готово', x:'Все детали на местах, на полу остались только отход и запасная полка. Можно покрутить модель и нажать на любую деталь.'}
+  ];
+  var N=STEPS.length, pre='a3d';
+  var $=function(id){ return document.getElementById(pre+'-'+id); };
+  var board=$('board'), imgs=[];
+  STEPS.forEach(function(st,i){
+    var li=document.createElement('li');
+    var b=document.createElement('button'); b.type='button'; b.className='board-img'; b.setAttribute('aria-label','Показать шаг '+(i+1)+' в 3D');
+    var im=document.createElement('img'); im.alt='Шаг '+(i+1)+': '+st.t; im.width=720; im.height=450; b.appendChild(im); imgs.push(im);
+    var cap=document.createElement('div'); cap.className='board-cap';
+    cap.innerHTML='<div class="board-h"><b>'+(i+1)+'</b><span>'+st.t+'</span><em>'+st.sec+'</em></div><p>'+st.x+'</p>';
+    li.appendChild(b); li.appendChild(cap); board.appendChild(li);
+    b.addEventListener('click',function(){ stopPlay(); go(i+1); document.getElementById(pre).scrollIntoView({behavior:'smooth',block:'start'}); });
+  });
+  var dots=$('dots');
+  for(var d=1; d<=N; d++){ (function(k){ var b=document.createElement('button'); b.type='button'; b.textContent=k; b.setAttribute('role','tab'); b.addEventListener('click',function(){ stopPlay(); go(k); }); dots.appendChild(b); })(d); }
+  function ui(s){
+    var st=STEPS[s-1];
+    $('n').textContent='Шаг '+s+' из '+N; $('sec').textContent=st.sec; $('title').textContent=st.t; $('text').textContent=st.x;
+    Array.prototype.forEach.call(dots.children,function(b,i){ b.setAttribute('aria-selected', i===s-1?'true':'false'); });
+    $('prev').disabled=s===1; $('next').disabled=s===N;
+  }
+  var cur=1, playTimer=null;
+  var go=function(s){ cur=s; ui(s); };
+  function stopPlay(){ if(playTimer){ clearInterval(playTimer); playTimer=null; $('play').textContent='▶ Проиграть всё'; } }
+  $('prev').addEventListener('click',function(){ stopPlay(); go(Math.max(1,cur-1)); });
+  $('next').addEventListener('click',function(){ stopPlay(); go(Math.min(N,cur+1)); });
+  $('play').addEventListener('click',function(){
+    if(playTimer){ stopPlay(); return; }
+    $('play').textContent='❚❚ Пауза';
+    go(1);
+    playTimer=setInterval(function(){ if(cur>=N){ stopPlay(); return; } go(cur+1); }, 3400);
+  });
+  document.getElementById(pre).addEventListener('keydown',function(e){
+    if(e.key==='ArrowRight'){ stopPlay(); go(Math.min(N,cur+1)); e.preventDefault(); }
+    if(e.key==='ArrowLeft'){ stopPlay(); go(Math.max(1,cur-1)); e.preventDefault(); }
+  });
+  ui(1);
+
+  var LBL_KEY='wardrobe-labels';
+  var showLbl=(function(){ try{ var v=localStorage.getItem(LBL_KEY); return v===null ? true : v==='1'; }catch(e){ return true; } })();
+  var lblBtn=document.getElementById('a3d-lbl');
+  function lblUi(){ lblBtn.textContent='Обозначения: '+(showLbl?'вкл':'выкл'); lblBtn.setAttribute('aria-pressed', showLbl?'true':'false'); }
+  lblUi();
+  lblBtn.addEventListener('click', function(){
+    showLbl=!showLbl; try{ localStorage.setItem(LBL_KEY, showLbl?'1':'0'); }catch(e){}
+    window.dispatchEvent(new CustomEvent('wardrobe-labels', {detail:showLbl}));
+  });
+  var onLbl=null;
+  window.addEventListener('wardrobe-labels', function(e){ showLbl=e.detail; lblUi(); if(onLbl) onLbl(); });
+
+  function fail(){ $('fallback').hidden=false; document.getElementById(pre).classList.add('no3d'); }
+  if(!window.THREE){ fail(); return; }
+  var T=window.THREE, V=T.Vector3;
+  var wrap=$('canvas'), renderer;
+  try{ renderer=new T.WebGLRenderer({antialias:true, preserveDrawingBuffer:true}); }catch(e){ fail(); return; }
+  if(!renderer||!renderer.getContext()){ fail(); return; }
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,2));
+  wrap.appendChild(renderer.domElement);
+  var overlay=document.createElement('canvas'); overlay.className='d3d-overlay'; wrap.appendChild(overlay);
+  var scene=new T.Scene(), camera=new T.PerspectiveCamera(35,1.6,10,90000);
+  scene.add(new T.HemisphereLight(0xffffff,0x8a938f,0.85));
+  var dl=new T.DirectionalLight(0xffffff,0.5); dl.position.set(3000,7000,6000); scene.add(dl);
+  var dl2=new T.DirectionalLight(0xffffff,0.25); dl2.position.set(-5000,3000,1000); scene.add(dl2);
+  var fl=new T.Mesh(new T.PlaneGeometry(30000,30000), new T.MeshLambertMaterial({color:0xd3d9d5})); fl.rotation.x=-Math.PI/2; fl.position.y=-2; scene.add(fl);
+  var wall=new T.Mesh(new T.BoxGeometry(3306,3300,100), new T.MeshLambertMaterial({color:0xaeb8b3, transparent:true, opacity:0.2, depthWrite:false})); wall.position.set(0,1650,-318); scene.add(wall);
+
+  var COL={'Б':0xeef0ee,'Г':0x8fcbb9,'Р':0xc4b5e6,'А':0xecc27c,'П':0xc9bea8,'Ц':0x9dbbe0,'x':0x9aa3a0};
+  var MATS={}; Object.keys(COL).forEach(function(k){ MATS[k]=new T.MeshLambertMaterial({color:COL[k]}); });
+  var SEL=new T.MeshLambertMaterial({color:0xffd43b, emissive:0x664d00});
+  var EDGE=new T.LineBasicMaterial({color:0x33403b});
+  var pieces=[], labels=[];
+  var qFlat=new T.Quaternion();
+  var qVert=new T.Quaternion().setFromAxisAngle(new V(0,0,1), Math.PI/2);
+  var qRail=new T.Quaternion().setFromAxisAngle(new V(1,0,0), Math.PI/2);
+
+  // очереди мест назначения
+  var cx=[-775,775];
+  var DEST={
+    'Б':[], 'Гм':[], 'Га':[], 'П1':[], 'П2':[], 'П3':[], 'П4':[], 'А':[], 'Ц':[], 'Р':[]
+  };
+  [0,1].forEach(function(m){
+    [-1,1].forEach(function(sd){ DEST['Б'].push({p:[cx[m]+sd*767,1350,0], q:qVert, d:'боковина '+(sd<0?'левая':'правая')+' М'+(m+1), step:2}); });
+  });
+  [0,1].forEach(function(m){
+    [[312,'полка на 320'],[2104,'полка на 2112'],[2692,'крышка']].forEach(function(a){ DEST['Гм'].push({p:[cx[m],a[0],0], q:qFlat, d:a[1]+' М'+(m+1), step:3}); });
+  });
+  [0,1].forEach(function(m){
+    DEST['П1'].push({p:[cx[m],152,0], q:qVert, d:'стойка П1 (низ) М'+(m+1), step:4});
+    DEST['П2'].push({p:[cx[m],1208,0], q:qVert, d:'стойка П2 (середина) М'+(m+1), step:4});
+    DEST['П3'].push({p:[cx[m],2398,0], q:qVert, d:'стойка П3 (верх) М'+(m+1), step:4});
+    DEST['Ц'].push({p:[cx[m],2650,-258], q:qRail, d:'верхняя царга М'+(m+1), step:5});
+    DEST['Ц'].push({p:[cx[m],270,-258], q:qRail, d:'нижняя царга М'+(m+1), step:5});
+    DEST['Га'].push({p:[cx[m],2708,0], q:qFlat, d:'дно антресоли '+(m+1), step:6});
+    DEST['Га'].push({p:[cx[m],3092,0], q:qFlat, d:'крыша антресоли '+(m+1), step:6});
+    DEST['П4'].push({p:[cx[m],2900,0], q:qVert, d:'перегородка П4 антресоли '+(m+1), step:6});
+    [-1,1].forEach(function(sd){ DEST['А'].push({p:[cx[m]+sd*767,2900,0], q:qVert, d:'боковина антресоли '+(m+1)+' '+(sd<0?'левая':'правая'), step:6}); });
+  });
+  var secC=[-775-383.5,-775+383.5,775-383.5,775+383.5];
+  secC.forEach(function(x,j){ DEST['Р'].push({p:[x,2416,0], q:qFlat, d:'полка верхней зоны, секция '+(j+1), step:7}); });
+  [2,3].forEach(function(j){ [677,1029,1381,1733].forEach(function(h){ DEST['Р'].push({p:[secC[j],h+11,0], q:qFlat, d:'полка на '+h+', секция '+(j+1), step:7}); }); });
+
+  function take(key){ return DEST[key].shift(); }
+  // раскладка на полу: 3 колонки × 6 рядов
+  var COLX=[-2950,0,2950], ROW0=1500, ROWD=720, slot=0;
+  function slotPos(){ var c=slot%3, r=Math.floor(slot/3); slot++; return {x:COLX[c]-1350, z:ROW0+r*ROWD}; }
+  function mk(code,L,W,x,z,dest,src,lc){
+    var g=new T.BoxGeometry(L,16,W), m=new T.Mesh(g,MATS[code]); m.add(new T.LineSegments(new T.EdgesGeometry(g),EDGE));
+    m.position.set(x,8,z); scene.add(m);
+    var p={mesh:m, code:code, lc:(lc||code), L:L, W:W, start:new V(x,8,z), dest:dest, src:src};
+    m.userData.piece=p; pieces.push(p); return p;
+  }
+  function panel(name,list,rail){
+    var sp=slotPos(); var x=sp.x;
+    labels.push({p:new V(sp.x-230,20,sp.z), text:name.replace('Б — боковина ','Б-').replace('Карта ','К').replace(' · ','-').replace('Царги 2700×100','Ц'), kind:'note', steps:[1]});
+    if(rail){
+      [0,1,2,3].forEach(function(k){
+        var z=sp.z-190+k*125;
+        var d=take('Ц'); mk('Ц',1550,100,x+10+775,z,d,'деталь 2700×100 № '+(k+1));
+        mk('x',1130,100,x+10+1550+20+565,z,null,'остаток царги');
+      });
+      return;
+    }
+    var cursor=x+10, used=10;
+    list.forEach(function(it){
+      var code=it[0], L=it[1], key=it[2];
+      var d=key?take(key):null;
+      mk(code,L,500,cursor+L/2,sp.z,d,name,(code==='П'&&key)?key:code);
+      cursor+=L+22; used+=L+4;
+    });
+    var rest=2700-used;
+    if(rest>60) mk('x',rest,500,cursor+rest/2,sp.z,null,'остаток '+name);
+  }
+  for(var i=0;i<4;i++) panel('Б — боковина '+(i+1),[['Б',2700,'Б']]);
+  for(i=0;i<4;i++) panel('Карта 1 · '+(i+1),[['Г',1518,'Гм'],['Р',749,'Р'],['А',400,'А']]);
+  for(i=0;i<2;i++) panel('Карта 2 · '+(i+1),[['Г',1518,i===0?'Гм':'Гм'],['Р',749,'Р'],['П',368,'П4']]);
+  for(i=0;i<4;i++) panel('Карта 3 · '+(i+1),[['Г',1518,i<0?'Гм':'Га'],['Р',749,'Р']]);
+  panel('Карта 4',[['Р',749,'Р'],['Р',749,'Р'],['Р',749,null]]);
+  for(i=0;i<2;i++) panel('Карта 5 · '+(i+1),[['П',1776,'П2'],['П',572,'П3'],['П',304,'П1']]);
+  panel('Царги 2700×100',null,true);
+  // запасная полка
+  pieces.forEach(function(p){ if(p.code==='Р' && !p.dest) p.spare=true; });
+  // горизонтали: карты 1 и 2 дают 6 шт на модули, карта 3 — 4 шт на антресоли (очереди уже распределены)
+
+  function placeAt(p,s){
+    if(p.dest && s>=p.dest.step){ p.mesh.position.fromArray(p.dest.p); p.mesh.quaternion.copy(p.dest.q); }
+    else { p.mesh.position.copy(p.start); p.mesh.quaternion.copy(qFlat); }
+  }
+  var W1={t:[0,700,2600],d:14500,th:0.28,ph:0.95};
+  var CAMS={
+    1:{t:[0,0,3350],d:10200,th:0,ph:0.26}, 2:W1, 3:W1, 4:W1, 5:{t:[0,900,2000],d:12500,th:-0.55,ph:0.95}, 6:W1, 7:W1,
+    8:{t:[0,1550,300],d:7200,th:0.45,ph:1.2}
+  };
+  var cam={t:new V(),d:9000,th:0,ph:1};
+  function setCam(c){ cam.t.set(c.t[0],c.t[1],c.t[2]); cam.d=c.d; cam.th=c.th; cam.ph=c.ph; }
+  function placeCam(){ var sp=Math.sin(cam.ph); camera.position.set(cam.t.x+cam.d*sp*Math.sin(cam.th), cam.t.y+cam.d*Math.cos(cam.ph), cam.t.z+cam.d*sp*Math.cos(cam.th)); camera.lookAt(cam.t); }
+  var selected=null;
+  function applyInstant(s){ pieces.forEach(function(p){ placeAt(p,s); }); setCam(CAMS[s]); placeCam(); }
+
+  var octx=overlay.getContext('2d');
+  function tok(n,d){ return getComputedStyle(document.documentElement).getPropertyValue(n).trim()||d; }
+  function drawLabels(ctx,w,h,scale,s){
+    var surf=tok('--surface','#fff'), ink=tok('--ink','#1b211e');
+    ctx.font='600 '+Math.round(11*scale)+'px "JetBrains Mono", Consolas, monospace'; ctx.textBaseline='middle';
+    var list=[];
+    if(showLbl){
+      labels.forEach(function(l){ if(l.steps.indexOf(s)>=0) list.push({p:l.p, text:l.text, col:ink}); });
+      pieces.forEach(function(p){
+        if(p.code==='x') return;
+        var moving=p.dest && p.dest.step===s;
+        if(s===1 || moving || (p.dest && p.dest.step<s) || p.spare) list.push({p:p.mesh.position, text:p.lc+' '+p.L+(p.spare&&s===N?' — запас':''), col:moving?'#1f7a66':ink});
+      });
+    }
+    if(selected) list.push({p:selected.mesh.position, text:selected.lc+' '+selected.L+'×'+selected.W, col:'#b8860b'});
+    list.forEach(function(l){
+      var v=l.p.clone().project(camera); if(v.z>1) return;
+      var x=(v.x+1)/2*w, y=(1-v.y)/2*h, tw=ctx.measureText(l.text).width, px=5*scale, bh=18*scale;
+      if(x<-50||x>w+50||y<-20||y>h+20) return;
+      ctx.fillStyle=surf; ctx.globalAlpha=0.9; ctx.beginPath();
+      if(ctx.roundRect) ctx.roundRect(x-tw/2-px,y-bh/2,tw+2*px,bh,3*scale); else ctx.rect(x-tw/2-px,y-bh/2,tw+2*px,bh);
+      ctx.fill(); ctx.globalAlpha=1; ctx.strokeStyle=l.col; ctx.lineWidth=scale; ctx.stroke();
+      ctx.fillStyle=l.col; ctx.textAlign='center'; ctx.fillText(l.text,x,y+0.5);
+    });
+  }
+  function drawOverlay(){
+    var w=overlay.clientWidth, h=overlay.clientHeight, pr=Math.min(window.devicePixelRatio||1,2);
+    if(overlay.width!==Math.round(w*pr)){ overlay.width=Math.round(w*pr); overlay.height=Math.round(h*pr); }
+    octx.setTransform(pr,0,0,pr,0,0); octx.clearRect(0,0,w,h); drawLabels(octx,w,h,1,cur);
+  }
+
+  var anim=null, dirty=true, userMoved=false;
+  function ease(k){ return k<0.5?4*k*k*k:1-Math.pow(-2*k+2,3)/2; }
+  function clamp(x){ return x<0?0:x>1?1:x; }
+  go=function(s){
+    var prev=cur; cur=s; ui(s);
+    var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    pieces.forEach(function(p){ placeAt(p, s===prev+1 ? prev : s); });
+    var moving=pieces.filter(function(p){ return p.dest && p.dest.step===s; });
+    anim={cf:{t:cam.t.clone(),d:cam.d,th:cam.th,ph:cam.ph}, ct:CAMS[s], t0:performance.now(), dur:reduce?1:2600, fwd:s===prev+1, moving:moving};
+    if(!anim.fwd) pieces.forEach(function(p){ placeAt(p,s); });
+    userMoved=false; dirty=true;
+  };
+  function frame(now){
+    requestAnimationFrame(frame);
+    if(anim){
+      var k=Math.min(1,(now-anim.t0)/anim.dur);
+      if(anim.fwd){
+        var n=anim.moving.length;
+        anim.moving.forEach(function(p,i){
+          var dly=n>1 ? i/(n-1)*0.45 : 0, q=ease(clamp((k-dly)/0.55));
+          var a=p.start, b=new V().fromArray(p.dest.p);
+          p.mesh.position.lerpVectors(a,b,q); p.mesh.position.y+=Math.sin(Math.PI*q)*900;
+          p.mesh.quaternion.copy(qFlat).slerp(p.dest.q,q);
+        });
+      }
+      if(!userMoved){
+        var c=anim.cf,t=anim.ct, ce=ease(clamp(k/0.5));
+        cam.t.set(c.t.x+(t.t[0]-c.t.x)*ce, c.t.y+(t.t[1]-c.t.y)*ce, c.t.z+(t.t[2]-c.t.z)*ce);
+        cam.d=c.d+(t.d-c.d)*ce; cam.th=c.th+(t.th-c.th)*ce; cam.ph=c.ph+(t.ph-c.ph)*ce;
+      }
+      if(k>=1){ pieces.forEach(function(p){ placeAt(p,cur); }); anim=null; }
+      dirty=true;
+    }
+    if(dirty){ placeCam(); renderer.render(scene,camera); drawOverlay(); dirty=false; }
+  }
+  // вращение, масштаб, выбор детали
+  var cv=renderer.domElement, drag=null, moved=0, ray=new T.Raycaster(), mouse=new T.Vector2();
+  overlay.style.pointerEvents='none';
+  cv.addEventListener('pointerdown',function(e){ drag={x:e.clientX,y:e.clientY}; moved=0; cv.setPointerCapture(e.pointerId); });
+  cv.addEventListener('pointermove',function(e){ if(!drag) return; var dx=e.clientX-drag.x, dy=e.clientY-drag.y; moved+=Math.abs(dx)+Math.abs(dy); cam.th-=dx*0.006; cam.ph=Math.max(0.12,Math.min(1.55,cam.ph-dy*0.006)); drag={x:e.clientX,y:e.clientY}; userMoved=true; dirty=true; });
+  cv.addEventListener('pointerup',function(e){
+    drag=null;
+    if(moved>4) return;
+    var r=cv.getBoundingClientRect(); mouse.set((e.clientX-r.left)/r.width*2-1, -(e.clientY-r.top)/r.height*2+1);
+    ray.setFromCamera(mouse,camera);
+    var hit=ray.intersectObjects(pieces.map(function(p){ return p.mesh; }), false)[0];
+    if(selected) selected.mesh.material=MATS[selected.code];
+    selected=hit ? hit.object.userData.piece : null;
+    var info=$('info');
+    if(selected){
+      selected.mesh.material=SEL;
+      var name={'Б':'Боковина','Г':'Горизонталь','Р':'Полка','А':'Боковина антресоли','П':'Стойка','Ц':'Царга','x':'Отход'}[selected.code];
+      info.innerHTML='<b>'+(selected.code==='x'?'':selected.lc+' · ')+name+' '+selected.L+'×'+selected.W+'</b><br>откуда: '+selected.src+'<br>куда: '+(selected.dest?selected.dest.d+' (шаг '+selected.dest.step+')':(selected.spare?'запасная полка':'не используется'));
+    } else info.textContent='Нажми на деталь, и здесь появится, откуда она и куда встаёт.';
+    dirty=true;
+  });
+  cv.addEventListener('pointercancel',function(){ drag=null; });
+  cv.addEventListener('wheel',function(e){ e.preventDefault(); cam.d=Math.max(1500,Math.min(20000,cam.d*(e.deltaY>0?1.1:0.9))); userMoved=true; dirty=true; },{passive:false});
+  function bg(){ try{ scene.background=new T.Color(tok('--sheet','#F7F8F6')); }catch(e){ scene.background=new T.Color('#F7F8F6'); } dirty=true; }
+  function size(){ var w=wrap.clientWidth||640, h=Math.round(w/1.6); renderer.setSize(w,h); overlay.style.width=w+'px'; overlay.style.height=h+'px'; camera.aspect=w/h; camera.updateProjectionMatrix(); dirty=true; }
+  var comp=document.createElement('canvas'); comp.width=720; comp.height=450; var cctx=comp.getContext('2d');
+  function snapshots(){
+    var pr=renderer.getPixelRatio(), sz=renderer.getSize(new T.Vector2()), keep=cur, kc={t:cam.t.clone(),d:cam.d,th:cam.th,ph:cam.ph}, ksel=selected;
+    if(selected){ selected.mesh.material=MATS[selected.code]; selected=null; }
+    renderer.setPixelRatio(1); renderer.setSize(720,450,false); camera.aspect=1.6; camera.updateProjectionMatrix();
+    for(var s=1;s<=N;s++){ cur=s; applyInstant(s); renderer.render(scene,camera); cctx.clearRect(0,0,720,450); cctx.drawImage(renderer.domElement,0,0); drawLabels(cctx,720,450,1.05,s); try{ imgs[s-1].src=comp.toDataURL('image/jpeg',0.88); }catch(e){} }
+    cur=keep; pieces.forEach(function(p){ placeAt(p,keep); }); cam.t.copy(kc.t); cam.d=kc.d; cam.th=kc.th; cam.ph=kc.ph;
+    if(ksel){ selected=ksel; selected.mesh.material=SEL; }
+    renderer.setPixelRatio(pr); renderer.setSize(sz.x,sz.y,false); camera.aspect=sz.x/sz.y; camera.updateProjectionMatrix(); dirty=true;
+  }
+  onLbl=function(){ dirty=true; snapshots(); };
+  bg(); size(); applyInstant(1); snapshots();
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(function(){ snapshots(); });
+  if(window.ResizeObserver) new ResizeObserver(size).observe(wrap); else window.addEventListener('resize',size);
+  function retheme(){ bg(); snapshots(); }
+  if(window.matchMedia) window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',retheme);
+  new MutationObserver(retheme).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+  requestAnimationFrame(frame);
+})();
+</script>
+<script>
+(function(){
+  var KEY='wardrobe3100-v2';
+  var state={};
+  try{ state=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){ state={}; }
+  document.querySelectorAll('ul.chk input[type=checkbox]').forEach(function(cb){
+    if(state[cb.id]) cb.checked=true;
+    cb.addEventListener('change',function(){
+      state[cb.id]=cb.checked;
+      try{ localStorage.setItem(KEY,JSON.stringify(state)); }catch(e){}
+    });
+  });
+})();
+</script>
+
+</html>

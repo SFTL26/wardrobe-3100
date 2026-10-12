@@ -1,0 +1,32 @@
+<section id="s3d">
+  <div class="sh"><h2>3D-сборка по шагам</h2><span class="time">13 шагов</span></div>
+  <p>Модель в масштабе. Бирюзовым подсвечено то, что добавляется на текущем шаге, жёлтые точки показывают крепёж. Модель можно вращать мышью или пальцем и приближать колесом. Подробности к каждому шагу есть в этапах ниже, номер этапа указан над заголовком шага.</p>
+  <div id="v3d" class="v3d">
+    <div class="v3d-stage">
+      <div id="v3d-canvas" class="v3d-canvas" aria-label="3D-модель шкафа"></div>
+      <div class="v3d-hint">тянуть: вращать · колесо: масштаб</div>
+      <p class="v3d-fallback" id="v3d-fallback" hidden>3D не запустилось в этом браузере. Ниже те же шаги картинками и текстом.</p>
+    </div>
+    <div class="v3d-panel">
+      <div class="v3d-count"><span id="v3d-n">Шаг 1 из 13</span><span id="v3d-sec" class="v3d-sec">этап 6</span></div>
+      <h3 id="v3d-title">Боковины на ребро</h3>
+      <p id="v3d-text"></p>
+      <div class="v3d-nav">
+        <button type="button" id="v3d-prev">← Назад</button>
+        <button type="button" id="v3d-next" class="primary">Дальше →</button>
+      </div>
+      <div class="v3d-dots" id="v3d-dots" role="tablist" aria-label="Шаги"></div>
+      <button type="button" id="v3d-lbl" class="lbl-toggle" aria-pressed="true">Обозначения: вкл</button>
+      <div class="v3d-codes">Б боковина · Г горизонталь · П1–П3 стойки · П4 перегородка антресоли · Р полка · А боковина антресоли · Ц царга</div>
+      <div class="v3d-legend">
+        <span><i style="background:#5cc8ad"></i>новое на шаге</span>
+        <span><i style="background:#eef0ee"></i>ЛДСП</span>
+        <span><i style="background:#c9a46a"></i>стойка каркаса</span>
+        <span><i style="background:#e0a21b;border-radius:50%"></i>крепёж</span>
+        <span><i style="background:#0d6b59;border-radius:50%"></i>конфирмат</span>
+      </div>
+    </div>
+  </div>
+  <h3>Все шаги на одном листе</h3>
+  <ol class="board" id="board"></ol>
+</section>
